@@ -1,5 +1,6 @@
 # myWord
-syllable, word and phrase segmenter for Burmese (Myanmar language)
+syllable, word and phrase segmenter for Burmese (Myanmar language)  
+(Plan to release soon & please wait...)   
 
 ဒီနေ့အထိ ဗမာစာ စာလုံးတွေကို ပေါ့ပေါ့ပါးပါးနဲ့ ဖြတ်ပေးနိုင်ပြီး developer တွေက လွယ်လွယ်ကူကူ ယူသုံးနိုင်တဲ့၊ ပြီးတော့ extend လုပ်နိုင်တဲ့ "syllable, word, phrase segmentation" လုပ်ပေးနိုင်တဲ့ segmentation tool က မရှိသေးဘူးလို့ နားလည်ထားတယ်။ အဲဒီ ကွက်လပ်ကို ဖြည့်ဖို့ ရည်ရွယ်ပါတယ်။  
 
