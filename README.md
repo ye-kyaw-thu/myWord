@@ -38,3 +38,5 @@ corpus ကို independent ဖြစ်ဖို့အတွက်က original
 စတဲ့ အချက်တွေလည်း ရှိတာကြောင့် Normalized PMI (NPMI) (Bouma 2009) ကို သုံးသင့်တယ်လို့ ထင်ပါတယ်။   
 NPMI ဆိုတာက အောက်ပါအတိုင်း သတ်မှတ်ထားပါတယ်။  
 
+NPMI (v, w) = log p (v, w) / (p (v) * p (w)) / (-log p (v, w))  
+
