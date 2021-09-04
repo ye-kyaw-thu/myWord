@@ -10,10 +10,18 @@ Note: WAT2021 Machine Translation Share Task အလုပ်မှာ word segme
 
 Draft Writing ...  
 
+## Regular Expression based Syllable Segmentation
+
+xxx
+## Vitabi Word Segmentation
+xxx
 
 ## Unsupervised Phrase Segmentation with NPMI
 
-Wrod2Vec နဲ့ ပတ်သက်တဲ့ နာမည်ကြီး စာတမ်းနှစ်စောင် ကို အရင်ဆုံး refer လုပ်ချင်ပါတယ်။
+Phrase Segmentation လုပ်တာက Normalized pointwise mutual information (NPMI) နဲ့ပါ။  
+[Assoc. Prof. Daichi Mochihashi](http://chasen.org/~daiti-m/diary/) ရဲ့ ဂျပန်လိုရေးထားတဲ့ blog ကို တွေ့ပြီး မြန်မာစာအတွက် စမ်းကြည့်ဖို့ အိုက်ဒီယာ ရခဲ့ပါတယ်။ သူ ရှင်းပြထားတာကိုပဲ အခြေခံပြီး ဗမာစာအတွက် စမ်းခဲ့တဲ့ အပိုင်းကို ရှင်းပြသွားပါမယ်။   
+
+Wrod2Vec နဲ့ ပတ်သက်တဲ့ နာမည်ကြီး စာတမ်းနှစ်စောင် ကို အရင်ဆုံး refer လုပ်ကြမှ အသေးစိတ် ဇာတ်ရည်လည်ပါလိမ့်မယ်။  
 
 ပထမစာတမ်း ဖြစ်တဲ့ [Efficient Estimation of Word Representations in Vector Space, (Mikolov et al., 2013)](https://arxiv.org/pdf/1310.4546.pdf) စာတမ်းထဲမှာ အောက်ပါအတိုင်း ဖော်ပြထားတာကို တွေ့ရပါလိမ့်မယ်။
 
