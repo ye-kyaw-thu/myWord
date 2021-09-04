@@ -13,30 +13,45 @@ Draft Writing ...
 ## Regular Expression based Syllable Segmentation
 
 xxx
+
+
 ## Vitabi Word Segmentation
 
-myword မှာ သုံးထားတဲ့ Word Segmentation က manual word segmentation လုပ်ထားတဲ့ corpus ကနေ unigram, bigram dictionary တွေကို ကြိုဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့ စာလုံးဖြတ်တဲ့ နည်းလမ်းပါ။  
+myword မှာ သုံးထားတဲ့ Word Segmentation က manual word segmentation လုပ်ထားတဲ့ corpus ကနေ unigram, bigram dictionary တွေကို ကြိုဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့ စာလုံးဖြတ်တဲ့ နည်းလမ်းပါ။    
 
-xxx draft theory explanation
+xxx draft theory explanation  
 
- (Word n-gram dictionary building with full dictionary filenames parameters)
+ကိုယ်မှာ manual word segmentation လုပ်ထားပြီးသား corpus က အဆင့်သင့်ရှိတယ်ဆိုရင် myword နဲ့ n-gram dictionary ဆောက်ဖို့အတွက်က အောက်ပါအတိုင်း command ပေးပါ။  
+ဒီနေရာမှာ myword က unigram, bigram အဘိဓာန်တွေကို text file format အနေနဲ့ရော binary file format အနေနဲ့ရော ဆောက်ပေးသွားမှာမို့ အဲဒီ output filename တွေကို ```--unigram_word_txt unigram-word.txt```, ``` --bigram_word_txt bigram-word.txt```,  ```--unigram_word_bin unigram-word.bin```, ``` --bigram_word_bin bigram-word.bin``` ဆိုပြီး ကိုယ်ပေးချင်တဲ့ ဖိုင်နာမည်တွေကို  assign လုပ်သွားလို့ ရပါတယ်။  
+
+Word n-gram dictionary building with full dictionary filenames parameters:  
  ```
  $ python ./myword.py build_dict --unigram_word_txt unigram-word.txt --bigram_word_txt bigram-word.txt --unigram_word_bin unigram-word.bin --bigram_word_bin bigram-word.bin ./corpus2.1k 
  ```
  
- (Word n-gram dictionary building with default filenames)
+ တကယ်လို့ default ngram dictionary နာမည်တွေနဲ့ပဲ ဆောက်သွားမယ်၊ ဖိုင်နာမည်တွေကို သီးသန့် assign လုပ်တာမျိုး မလုပ်ဘူး ဆိုရင်တော့ အောက်ပါအတိုင်း command အတိုနဲ့ပဲ ngram အဘိဓာန်တွေကို ဆောက်သွားလို့ ရပါတယ်။  
+Word n-gram dictionary building with default filenames:  
  ```
  $ python ./myword.py build_dict ./corpus2.1k 
  ```
- (Word segmentation with default n-gram dictionaries)
+ 
+ myword နဲ့ word segmentation လုပ်တာကို default n-gram dictionary တွေကိုပဲ သုံးပြီး စာလုံးဖြတ်မယ်ဆိုရင်တော့ အောက်ပါအတိုင်း command ပေးရပါတယ်။  
+ ဒီနေရာမှာ ./test.txt ဖိုင်က input file ဖြစ်ပြီးတော့ ./test.word ကတော့ စာလုံးဖြတ်ပြီး ထွက်လာတဲ့ ဖိုင်ကိုသိမ်းစေချင်တဲ့ နာမည်ပါ။  
+ 
+ Word segmentation with default n-gram dictionaries:  
  ```
  python ./myword.py word ./test.txt ./test.word
  ```
  
- (Word segmentation with binary n-gram dictionaries)
+ **unigram, bigram dictionary တွေကို ဆောက်တဲ့အခါမှာ text file format အနေနဲ့ရော binary file format အနေနဲ့ရော ဆောက်ပေးသွားပေမဲ့ word segmentation လုပ်တဲ့အခါမှာတော့ binary dictionary နှစ်ခုပဲ လိုအပ်ပါတယ်။ text file format အဘိဓာန်တွေက developer/researcher တွေအနေနဲ့ မျက်လုံးနဲ့ စစ်ကြည့်ပြီး corpus ကို update လုပ်တာ သို့မဟုတ် အဘိဓာန်ကို update လုပ်ပြီး binary အဖြစ် ပြောင်းတာတွေ လုပ်နိုင်အောင်လို့ facility အနေနဲ့ ထည့်ပေးထားတာပါ။**  
+ 
+ word segmentation လုပ်တဲ့ အခါမှာ unigram, bigram အဘိဓာန်တွေကို assign လုပ်ပြီး ဖြတ်မယ်ဆိုရင်တော့ အောက်ပါအတိုင်း command ပေးပြီး run ပါ။  
+ (Word segmentation with unigram, binary n-gram dictionaries)
  ```
  $ python ./myword.py word --unigram_word_bin ./unigram-word.bin --bigram_word_bin ./bigram-word.bin ./test.txt ./test.word
  ```
+ 
+ Word Segmentation ဖြတ်တဲ့အခါမှာ default က space နဲ့ခြားပေးမှာ ဖြစ်ပေမဲ့ delimiter ကိုလည်း အမျိုးမျိုး ပြောင်းလို့ ရပါတယ်။ ဥပမာ delimiter ကို pipe အဖြစ်ထားပြီး word segmentation လုပ်ချင်တယ် ဆိုရင်တော့ အောက်ပါအတိုင်း command ပေး run ပါ။  
  
  (Word segmentation with delimiter "pipe")
  ```
