@@ -14,7 +14,35 @@ Draft Writing ...
 
 xxx
 ## Vitabi Word Segmentation
-xxx
+
+myword မှာ သုံးထားတဲ့ Word Segmentation က manual word segmentation လုပ်ထားတဲ့ corpus ကနေ unigram, bigram dictionary တွေကို ကြိုဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့ စာလုံးဖြတ်တဲ့ နည်းလမ်းပါ။  
+
+xxx draft theory explanation
+
+ (Word n-gram dictionary building with full dictionary filenames parameters)
+ ```
+ $ python ./myword.py build_dict --unigram_word_txt unigram-word.txt --bigram_word_txt bigram-word.txt --unigram_word_bin unigram-word.bin --bigram_word_bin bigram-word.bin ./corpus2.1k 
+ ```
+ 
+ (Word n-gram dictionary building with default filenames)
+ ```
+ $ python ./myword.py build_dict ./corpus2.1k 
+ ```
+ (Word segmentation with default n-gram dictionaries)
+ ```
+ python ./myword.py word ./test.txt ./test.word
+ ```
+ 
+ (Word segmentation with binary n-gram dictionaries)
+ ```
+ $ python ./myword.py word --unigram_word_bin ./unigram-word.bin --bigram_word_bin ./bigram-word.bin ./test.txt ./test.word
+ ```
+ 
+ (Word segmentation with delimiter "pipe")
+ ```
+ $ python ./myword.py word --delimiter "|" ./test.txt ./test.word
+```
+
 
 ## Unsupervised Phrase Segmentation with NPMI
 
