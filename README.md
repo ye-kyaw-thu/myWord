@@ -185,3 +185,48 @@ Football_Observatory ဆွန်ဟောင်မင် ကို_ယူရိ
 ဟံသာဝတီ မြေ ကို_နင်း_မိ ပေ_ပြီ_။
 ၂၀၁၈_ခုနှစ် တရားမကြီး_မှု_အမှတ်_- ၃၅
 ```
+
+ကိုယ်မှာက manual word segmentation လုပ်ထားတဲ့ corpus လည်း မရှိဘူး ဆိုရင်တော့ myword က version အလိုက် default အနေနဲ့ training လုပ်ပြီး သုံးထားတဲ့ dictionary ကိုပဲ သုံးပြီး phrase segmentation လုပ်ချင်တယ် ဆိုရင်တော့ အောက်ပါအတိုင်း command ပေးပါ။  
+
+```
+$ python ./myword.py phrase ./test.space.txt ./test.phrase
+{'command': 'phrase', 'threshold': 0.1, 'minfreq': 1, 'unigram_phrase_bin': 'unigram-phrase.bin', 'bigram_phrase_bin': 'bigram-phrase.bin', 'input': './test.space.txt', 'output': './test.phrase'}
+computing phrases: threshold = 0.1 minfreq = 1
+phrase segmentation...
+- read unigram dictionary
+- read bigram dictionary
+- computing phrases..
+- writing output..., filename:  ./test.phrase
+done.
+```
+
+လက်ရှိ default ထားထားတဲ့ dictionary နဲ့ ဖြတ်ပြီး ရလာတဲ့ output က အောက်ပါအတိုင်းပါ။  
+
+```
+$ cat ./test.phrase
+ကျွန်တော်_က သုတေသန သမား ပါ_။
+နေ့ ရော ည ရော_မြန်မာစာ နဲ့ ကွန်ပျူတာ_နဲ့ ပဲ အလုပ် များ ပါ_တယ်
+မင်း_က ကော_ဘာ အလုပ်_လုပ် တာ_လဲ ။
+ပြော_ပြ ပါ_အုံး
+ကောဖီ လည်း ထပ်_သောက် ချင်_ရင် ပြော ကွာ
+မန္တလေး_မှာ ဒေါ်_အောင်ဆန်းစုကြည် မိန့်ခွန်း_ပြော မယ် တဲ့ ။
+```
+
+**တစ်ခု သတိထားရမှာက input ဖိုင်က word ဖြတ်ထားတဲ့ ဖိုင်ကိုပေးမှသာ phrase အဖြစ် ဖြတ်ပေးမှာပါ**  
+
+```
+$ cat test.space.txt 
+ကျွန်တော် က သုတေသန သမား ပါ ။
+နေ့ ရော ည ရော မြန်မာစာ နဲ့ ကွန်ပျူတာ နဲ့ ပဲ အလုပ် များ ပါ တယ်
+မင်း က ကော ဘာ အလုပ် လုပ် တာ လဲ ။
+ပြော ပြ ပါ အုံး
+ကောဖီ လည်း ထပ် သောက် ချင် ရင် ပြော ကွာ
+မန္တလေး မှာ ဒေါ် အောင်ဆန်းစုကြည် မိန့်ခွန်း ပြော မယ် တဲ့ ။
+```
+
+တကယ်လို့ ကိုယ့် word segmented corpus နဲ့ အမျိုးမျိုး training/experiment လုပ်ထားပြီး ကိုယ်သုံးချင်တဲ့ dictionary ကို command line argument အနေနဲ့ assign လုပ်ပြီး သုံးချင်တယ် ဆိုရင်တော့ အောက်ပါအတိုင်း run ပါ။  
+
+```
+python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phrase_bin ./bigram-phrase.bin ./test2.txt ./test2.phrase
+```
+
