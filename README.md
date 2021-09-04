@@ -69,6 +69,9 @@ def compute_phrase (unigram, bigram, threshold = 0.5):
 Threshold တန်ဖိုးက ဂျပန်စာအတွက်က 0.5 ထားပြီး စမ်းခဲ့ပေမဲ့ မြန်မာစာအတွက်က (0.1...0.5) ထားပြီး အမျိုးမျိုး စမ်းကြည့်ခဲ့ပါတယ်။  
 အထက်ပါ algorighm ကို word segmentation လုပ်ထားတဲ့ မြန်မာစာ corpus တစ်ခုလုံးကို pass လုပ်ပြီးသွားတဲ့ အခါမှာ စာလုံး နှစ်လုံးတွဲ စကားစု (two-word phrase) တွေကို ရရှိလာမှာ ဖြစ်ပါတယ်။ တကယ်လို့ ဒုတိယအကြိမ် pass လုပ်ပြီးသွားရင်တော့ စာလုံး နှစ်လုံး ကနေ လေးလုံးအထိ တွဲလျက်ရှိနေတတ်တဲ့ စကားစု (two- to four-word phrase) တွေကို ရရှိလာမှာ ဖြစ်ပါတယ်။ အဲဒါကြောင့် သီအိုရီအရကတော့ passing ကို n pass အထိ လုပ်မယ် ဆိုရင် 2 ကနေ 2^n စာလုံးတွဲ phrase တွေကို ရရှိနိုင်မှာ ဖြစ်ပါတယ်။  
 
+လက်နဲ့ word segmentation လုပ်ထားတဲ့ စာကြောင်းရေ ၅သိန်းကျော် ရှိတဲ့ corpus ကို သုံးပြီး phrase segmentation experiment တချို့ လုပ်ကြည့်ကြရအောင်။  
+
+
 ```
 $ time python ./myword.py train_phrase -l 1 -t 0.1 -f 3 --unigram_phrase_txt unigram.l1.t0.1f3.txt --bigram_phrase_txt bigram.l1.t0.1f3.txt --unigram_phrase_bin unigram.l1.t0.1f3.bin --bigram_phrase_bin bigram.l1.t0.1f3.bin ./corpus2 ./train.l1t0.1f3.out
 {'command': 'train_phrase', 'iteration': 1, 'threshold': 0.1, 'minfreq': 3, 'unigram_phrase_txt': 'unigram.l1.t0.1f3.txt', 'bigram_phrase_txt': 'bigram.l1.t0.1f3.txt', 'unigram_phrase_bin': 'unigram.l1.t0.1f3.bin', 'bigram_phrase_bin': 'bigram.l1.t0.1f3.bin', 'input': './corpus2', 'output': './train.l1t0.1f3.out'}
@@ -116,6 +119,37 @@ sys	0m1.125s
 
 ```
 $ tail ./train.l2t0.1f3.out 
+သူ_ဟာ လက်ဝှေ့ပွဲ မှာ အနိုင်_ရ နိုင် စရာ_ရှိ_တယ်
+သူ_ဟာ လက်ဝှေ့ ထိုးသတ်ပွဲ မှာ_ရှုံးနိမ့် ဖို့_မ_ဖြစ်_နိုင် လောက်_ဘူး
+သူငယ်_ကလေး ဟာ ငါး_မျှား နေ_တယ်
+သူ ကံကောင်း_ရင် ငါး_တစ်_ကောင် မိ နိုင်_တယ်
+သစ်ကိုင်း ဟာ သိပ်_မ ခိုင် ဘူး
+၎င်း ဟာ‍ ကျိုး ချင် ကျိုး_သွား နိုင်_တယ်
+သစ်ကိုင်း_ကျိုး ကျ_သွား ရင်_ကောင်ကလေး ဟာ မြစ်_ထဲ_ကို ကျ_သွား ဖို့_အလားအလာ_ရှိ တယ်
+သူ မြစ်_ထဲ_ကို ကျ_သွား ရင် သူ ရေစို ဖို့ ဖြစ် ကောင်း_ဖြစ်_နိုင် လိမ့်_မယ်
+ရုပ်ပုံ_ထဲ_မှာ ပျား_တစ်_ကောင် ရှိ_တယ်
+၎င်း ဘာ_လုပ် နိုင်_မယ်_လို့ ခင်ဗျား ထင်_သလဲ
+```
+
+```
+$ time python ./myword.py train_phrase -l 2 -t 0.1 -f 1 --unigram_phrase_txt unigram.l2.t0.1f1.txt --bigram_phrase_txt bigram.l2.t0.1f1.txt --unigram_phrase_bin unigram.l2.t0.1f1.bin --bigram_phrase_bin bigram.l2.t0.1f1.bin ./corpus2 ./train.l2t0.1f1.out
+{'command': 'train_phrase', 'iteration': 2, 'threshold': 0.1, 'minfreq': 1, 'unigram_phrase_txt': 'unigram.l2.t0.1f1.txt', 'bigram_phrase_txt': 'bigram.l2.t0.1f1.txt', 'unigram_phrase_bin': 'unigram.l2.t0.1f1.bin', 'bigram_phrase_bin': 'bigram.l2.t0.1f1.bin', 'input': './corpus2', 'output': './train.l2t0.1f1.out'}
+computing phrases: threshold = 0.1 minfreq = 1
+pass [1/2]..
+- computing phrases..
+- writing output..
+pass [2/2]..
+- computing phrases..
+- writing output..
+done.
+
+real	1m57.006s
+user	1m55.366s
+sys	0m1.373s
+```
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ tail ./train.l2t0.1f3.out 
 သူ_ဟာ လက်ဝှေ့ပွဲ မှာ အနိုင်_ရ နိုင် စရာ_ရှိ_တယ်
 သူ_ဟာ လက်ဝှေ့ ထိုးသတ်ပွဲ မှာ_ရှုံးနိမ့် ဖို့_မ_ဖြစ်_နိုင် လောက်_ဘူး
 သူငယ်_ကလေး ဟာ ငါး_မျှား နေ_တယ်
