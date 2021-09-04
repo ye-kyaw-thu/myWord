@@ -21,7 +21,6 @@ myConsonant = r"က-အ"
 enChar = r"a-zA-Z0-9"
 otherChar = r"ဣဤဥဦဧဩဪဿ၌၍၏၀-၉၊။!-/:-@[-`{-~\s"
 ssSymbol = r'္'
-ngaThat = r'င်' # sylbreak.pl မှာ " င်" ကို မထည့်ထားဘူး။ ဘာကြောင့်လဲ ဆိုတာကို ပြန်လေ့လာရန်
 aThat = r'်'
 
 
