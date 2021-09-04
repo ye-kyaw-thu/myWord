@@ -30,6 +30,31 @@ BreakPattern = re.compile(r"((?<!" + ssSymbol + r")["+ myConsonant + r"](?![" + 
 ```
 
 
+input file က အောက်ပါအတိုင်းရှိတယ်လို့ ဆိုကြပါစို့...  
+
+```
+$ cat test.txt 
+ကျွန်တော်ကသုတေသနသမားပါ။
+နေ့ရောညရောမြန်မာစာနဲ့ကွန်ပျူတာနဲ့ပဲအလုပ် များ ပါ တယ်
+မင်းကကောဘာအလုပ်လုပ်တာလဲ။
+ပြောပြပါအုံး
+ကောဖီလည်းထပ်သောက်ချင်ရင်ပြောကွာ
+မန္တလေးမှာဒေါ်အောင်ဆန်းစုကြည်မိန့်ခွန်းပြောမယ်တဲ့။
+```
+
+syllable segmentation လုပ်ဖို့အတွက်က command line argument ကို syllable လို့ ပေးပြီးနောက် <input-file> နဲ့ <output-file> တွေရဲ့ နာမည်တွေကို ရိုက်ထည့်ပေးလိုက်ယုံပါပဲ။  
+ 
+```
+$ python ./myword.py syllable ./test.txt ./test.syllable
+$ cat ./test.syllable 
+ကျွန် တော် က သု တေ သ န သ မား ပါ ။
+နေ့ ရော ည ရော မြန် မာ စာ နဲ့ ကွန် ပျူ တာ နဲ့ ပဲ အ လုပ် များ ပါ တယ်
+မင်း က ကော ဘာ အ လုပ် လုပ် တာ လဲ ။
+ပြော ပြ ပါ အုံး
+ကော ဖီ လည်း ထပ် သောက် ချင် ရင် ပြော ကွာ
+မန္တ လေး မှာ ဒေါ် အောင် ဆန်း စု ကြည် မိန့် ခွန်း ပြော မယ် တဲ့ ။
+```
+
 ## Vitabi Word Segmentation
 
 myword မှာ သုံးထားတဲ့ Word Segmentation က manual word segmentation လုပ်ထားတဲ့ corpus ကနေ unigram, bigram dictionary တွေကို ကြိုဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့ စာလုံးဖြတ်တဲ့ နည်းလမ်းပါ။    
