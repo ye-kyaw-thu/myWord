@@ -23,7 +23,7 @@ myword မှာ သုံးထားတဲ့ Word Segmentation က manual wor
 
 xxx draft theory explanation  
 
-ကိုယ်မှာ manual word segmentation လုပ်ထားပြီးသား corpus က အဆင့်သင့်ရှိတယ်ဆိုရင် myword နဲ့ n-gram dictionary ဆောက်ဖို့အတွက်က အောက်ပါအတိုင်း command ပေးပါ။  
+ကိုယ့်မှာ manual word segmentation လုပ်ထားပြီးသား corpus က အဆင့်သင့်ရှိတယ်ဆိုရင် myword နဲ့ n-gram dictionary ဆောက်ဖို့အတွက်က အောက်ပါအတိုင်း command ပေးပါ။  
 ဒီနေရာမှာ myword က unigram, bigram အဘိဓာန်တွေကို text file format အနေနဲ့ရော binary file format အနေနဲ့ရော ဆောက်ပေးသွားမှာမို့ အဲဒီ output filename တွေကို ```--unigram_word_txt unigram-word.txt```, ``` --bigram_word_txt bigram-word.txt```,  ```--unigram_word_bin unigram-word.bin```, ``` --bigram_word_bin bigram-word.bin``` ဆိုပြီး ကိုယ်ပေးချင်တဲ့ ဖိုင်နာမည်တွေကို  assign လုပ်သွားလို့ ရပါတယ်။  
 
 Word n-gram dictionary building with full dictionary filenames parameters:  
