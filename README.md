@@ -359,4 +359,4 @@ python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phr
 7. Python implementation of Viterbi algorithm for word segmentation
 A clean-up of this: [(http://norvig.com/ngrams/ch14.pdf)](http://norvig.com/ngrams/ch14.pdf), [https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6](https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6)
 8. Python Word Segmentation: [https://github.com/grantjenks/python-wordsegment](https://github.com/grantjenks/python-wordsegment)
-9. 
+9. Yining Wang, Long Zhou, Jiajun Zhang and Chengqing Zong, Word, Subword or Character? An Empirical Study of Granularity in Chinese-English {NMT}, CoRR, abs/1711.04457, 2017. [[https://arxiv.org/pdf/1711.04457.pdf]](https://arxiv.org/pdf/1711.04457.pdf)
