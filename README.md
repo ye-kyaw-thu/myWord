@@ -348,3 +348,10 @@ $ cat test.space.txt
 python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phrase_bin ./bigram-phrase.bin ./test2.txt ./test2.phrase
 ```
 
+## Reference
+ 
+ 1. Slade, George. (2013). The Viterbi algorithm demystified. Link: 
+ 2. The Viterbi Algorithm Demystified, By Andrew J. Viterbi, March 16, 2017, Link: (The Viterbi Algorithm Demystified
+By Andrew J. Viterbi | March 16, 2017)[https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-demystified/]
+ 3. The Viterbi Algorithm at 50: (The Viterbi Algorithm at 50)[https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-50/]
+ 
