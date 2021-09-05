@@ -351,7 +351,6 @@ python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phr
 ## Reference
  
  1. Slade, George. (2013). The Viterbi algorithm demystified. Link: 
- 2. The Viterbi Algorithm Demystified, By Andrew J. Viterbi, March 16, 2017, Link: (The Viterbi Algorithm Demystified
-By Andrew J. Viterbi | March 16, 2017)[https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-demystified/]
- 3. The Viterbi Algorithm at 50: (The Viterbi Algorithm at 50)[https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-50/]
+ 2. The Viterbi Algorithm Demystified, By Andrew J. Viterbi, March 16, 2017, Link: [https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-demystified/](https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-demystified/)
+ 3. The Viterbi Algorithm at 50: [https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-50/](https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-50/)
  
