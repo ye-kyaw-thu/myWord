@@ -350,7 +350,7 @@ python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phr
 
 ## Reference
  
-1. Viterbi, Andrew. Error bounds for convolutional codes and an asymptotically optimum decoding algorithm. IEEE transactions on Information Theory, 13(2):260–269, 1967 [Paper](https://ieeexplore.ieee.org/document/1054010)
+1. Viterbi, Andrew. Error bounds for convolutional codes and an asymptotically optimum decoding algorithm. IEEE transactions on Information Theory, 13(2):260–269, 1967 [[Paper]](https://ieeexplore.ieee.org/document/1054010)
 2. Slade, George. (2013). The Viterbi algorithm demystified. Link:[https://www.researchgate.net/publication/235958269_The_Viterbi_algorithm_demystified](https://www.researchgate.net/publication/235958269_The_Viterbi_algorithm_demystified) 
 3. The Viterbi Algorithm Demystified, By Andrew J. Viterbi, March 16, 2017, Link: [https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-demystified/](https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-demystified/)
 4. Forney, G David. The Viterbi algorithm. Proceedings of the IEEE, 61(3):268–278, 1973, [https://www2.isye.gatech.edu/~yxie77/ece587/viterbi_algorithm.pdf](https://www2.isye.gatech.edu/~yxie77/ece587/viterbi_algorithm.pdf)
