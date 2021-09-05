@@ -356,4 +356,6 @@ python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phr
  4. Forney, G David. The Viterbi algorithm. <i>Proceedings of the IEEE</i>, 61(3):268–278, 1973, [https://www2.isye.gatech.edu/~yxie77/ece587/viterbi_algorithm.pdf](https://www2.isye.gatech.edu/~yxie77/ece587/viterbi_algorithm.pdf)
 5. The Viterbi Algorithm at 50: [https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-50/](https://viterbischool.usc.edu/news/2017/03/viterbi-algorithm-50/)
 6. Backurs, A. &amp; Tzamos, C.. (2017). Improving Viterbi is Hard: Better Runtimes Imply Faster Clique Algorithms. <i>Proceedings of the 34th International Conference on Machine Learning</i>, in <i>Proceedings of Machine Learning Research</i>, 70:311-321 [http://proceedings.mlr.press/v70/backurs17a/backurs17a.pdf](http://proceedings.mlr.press/v70/backurs17a/backurs17a.pdf)
- 
+7. Python implementation of Viterbi algorithm for word segmentation
+A clean-up of this: (http://norvig.com/ngrams/ch14.pdf)[http://norvig.com/ngrams/ch14.pdf], [https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6](https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6)
+8. 
