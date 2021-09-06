@@ -589,6 +589,18 @@ Bound Accuracy: 97.60% (531488/544530)
  
 - [ ] adding sub_word unit for NMT
 - [ ] upload Word Segmentation Guideline for Burmese (Myanmar language)
+
+## License
+
+myWord is MIT-licensed. The license applies to the pre-build unigram, bigram dictionaries as well.  
+ 
+## Citation
+ 
+Currently, please cite as:
+ 
+```
+myWord: Syllable, Word and Phrase Segmenter for Burmese, Ye Kyaw Thu, September 2021, Link: 
+```
  
 ## Reference
  
