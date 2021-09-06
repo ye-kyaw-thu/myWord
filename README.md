@@ -60,6 +60,52 @@ $ cat ./test.syllable
 myword မှာ သုံးထားတဲ့ Word Segmentation က manual word segmentation လုပ်ထားတဲ့ corpus ကနေ unigram, bigram dictionary တွေကို ကြိုဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့ စာလုံးဖြတ်တဲ့ နည်းလမ်းပါ။    
 
 xxx draft theory explanation  
+ 
+```
+first_prob:  -5.010681493131443 , remain_prob:  0.0 , [first_word]: ['\n'] , remain_word:  []
+Candidates:  [(-5.010681493131443, ['\n'])]
+max(candidates): (-5.010681493131443, ['\n'])
+====================
+first_prob:  -4.1075915061395 , remain_prob:  -5.010681493131443 , [first_word]: ['ာ'] , remain_word:  ['\n']
+Candidates:  [(-9.118272999270943, ['ာ', '\n'])]
+first_prob:  -6.010681493131443 , remain_prob:  0.0 , [first_word]: ['ာ\n'] , remain_word:  []
+Candidates:  [(-9.118272999270943, ['ာ', '\n']), (-6.010681493131443, ['ာ\n'])]
+max(candidates): (-6.010681493131443, ['ာ\n'])
+====================
+first_prob:  0.1586284272686064 , remain_prob:  -6.010681493131443 , [first_word]: ['ရ'] , remain_word:  ['ာ\n']
+Candidates:  [(-5.852053065862837, ['ရ', 'ာ\n'])]
+first_prob:  -5.010681493131443 , remain_prob:  0.0 , [first_word]: ['\n'] , remain_word:  []
+Candidates:  [(-5.010681493131443, ['\n'])]
+max(candidates): (-5.010681493131443, ['\n'])
+====================
+first_prob:  -0.7876530661591914 , remain_prob:  -5.010681493131443 , [first_word]: ['ရာ'] , remain_word:  ['\n']
+Candidates:  [(-5.852053065862837, ['ရ', 'ာ\n']), (-5.798334559290635, ['ရာ', '\n'])]
+first_prob:  -7.010681493131443 , remain_prob:  0.0 , [first_word]: ['ရာ\n'] , remain_word:  []
+Candidates:  [(-5.852053065862837, ['ရ', 'ာ\n']), (-5.798334559290635, ['ရာ', '\n']), (-7.010681493131443, ['ရာ\n'])]
+max(candidates): (-5.798334559290635, ['ရာ', '\n'])
+====================
+first_prob:  -2.3584351521281204 , remain_prob:  -5.798334559290635 , [first_word]: ['ဆ'] , remain_word:  ['ရာ', '\n']
+Candidates:  [(-8.156769711418756, ['ဆ', 'ရာ', '\n'])]
+first_prob:  -4.1075915061395 , remain_prob:  -5.010681493131443 , [first_word]: ['ာ'] , remain_word:  ['\n']
+Candidates:  [(-9.118272999270943, ['ာ', '\n'])]
+first_prob:  -6.010681493131443 , remain_prob:  0.0 , [first_word]: ['ာ\n'] , remain_word:  []
+Candidates:  [(-9.118272999270943, ['ာ', '\n']), (-6.010681493131443, ['ာ\n'])]
+max(candidates): (-6.010681493131443, ['ာ\n'])
+====================
+first_prob:  -6.010681493131443 , remain_prob:  -6.010681493131443 , [first_word]: ['ဆရ'] , remain_word:  ['ာ\n']
+Candidates:  [(-8.156769711418756, ['ဆ', 'ရာ', '\n']), (-12.021362986262886, ['ဆရ', 'ာ\n'])]
+first_prob:  -5.010681493131443 , remain_prob:  0.0 , [first_word]: ['\n'] , remain_word:  []
+Candidates:  [(-5.010681493131443, ['\n'])]
+max(candidates): (-5.010681493131443, ['\n'])
+====================
+first_prob:  -1.2498821815007257 , remain_prob:  -5.010681493131443 , [first_word]: ['ဆရာ'] , remain_word:  ['\n']
+Candidates:  [(-8.156769711418756, ['ဆ', 'ရာ', '\n']), (-12.021362986262886, ['ဆရ', 'ာ\n']), (-6.260563674632169, ['ဆရာ', '\n'])]
+first_prob:  -8.010681493131443 , remain_prob:  0.0 , [first_word]: ['ဆရာ\n'] , remain_word:  []
+Candidates:  [(-8.156769711418756, ['ဆ', 'ရာ', '\n']), (-12.021362986262886, ['ဆရ', 'ာ\n']), (-6.260563674632169, ['ဆရာ', '\n']), (-8.010681493131443, ['ဆရာ\n'])]
+max(candidates): (-6.260563674632169, ['ဆရာ', '\n'])
+====================
+listString: (-6.260563674632169, ['ဆရာ', '\n'])
+```
 
 ကိုယ့်မှာ manual word segmentation လုပ်ထားပြီးသား corpus က အဆင့်သင့်ရှိတယ်ဆိုရင် myword နဲ့ n-gram dictionary ဆောက်ဖို့အတွက်က အောက်ပါအတိုင်း command ပေးပါ။  
 ဒီနေရာမှာ myword က unigram, bigram အဘိဓာန်တွေကို text file format အနေနဲ့ရော binary file format အနေနဲ့ရော ဆောက်ပေးသွားမှာမို့ အဲဒီ output filename တွေကို ```--unigram_word_txt unigram-word.txt```, ``` --bigram_word_txt bigram-word.txt```,  ```--unigram_word_bin unigram-word.bin```, ``` --bigram_word_bin bigram-word.bin``` ဆိုပြီး ကိုယ်ပေးချင်တဲ့ ဖိုင်နာမည်တွေကို  assign လုပ်သွားလို့ ရပါတယ်။  
