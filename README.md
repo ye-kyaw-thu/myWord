@@ -446,10 +446,15 @@ optional arguments:
 
 ## Introduction to "npmi_train" Option
 
-## Evaluation
+## Evaluation of myWord for "Word Segmentation"
+ 
+လက်ရှိ release မလုပ်ခင် စမ်းနေတဲ့ ngram dictionary တွေနဲ့ evaluation လုပ်ထားတဲ့ ရလဒ်တွေကိုလည်း လေ့လာလို့ ရအောင် README ဖိုင်မှာ တင်ပေးထားလိုက်ပါမယ်။
+(အချိန်ရခဲ့ရင်တော့ ngram အဘိဓာန်တွေကို cleaning ထပ်လုပ်ပြီး တင်ဖို့ ရည်ရွယ်ထားပါတယ်။ အဲဒါဆိုရင် ရလဒ်တွေက လက်ရှိ ထက်တောင် ပိုကောင်းလာနိုင်ပါတယ်)
+ 
 ### Closed Test
 
-Closed-test ဖိုင်က စာကြောင်းရေ စုစုပေါင်း ၁၀၀၀ ပါ။ အသေးစိတ် information က အောက်ပါအတိုင်းပါ။    
+"Closed testing" ဆိုတာက ngram အဘိဓာန်ကို ဆောက်တဲ့အချိန်မှာ သုံးထားတဲ့ corpus ထဲက စာကြောင်းတွေနဲ့ပဲ word segmentation လုပ်ကြည့်ပြီး test လုပ်တာ ဖြစ်ပါတယ်။
+Closed test အတွက် သုံးခဲ့တဲ့ test ဖိုင်က စာကြောင်းရေ စုစုပေါင်း ၁၀၀၀ ပါ။ အသေးစိတ် information က အောက်ပါအတိုင်းပါ။    
  
  - 1000 (no. of sentences)
  - 38451 (no. of words)
@@ -466,7 +471,7 @@ $ wc ./corpus2.1k.word
   1000  40280 479353 ./corpus2.1k.word
 ```
 
-Evaluation result က အောက်ပါအတိုင်းပါ။  
+Closed test အတွက် evaluation result တွေက အောက်ပါအတိုင်းပါ။  
  
 ```
 $ perl ./gradews.pl ./corpus2.1k ./corpus2.1k.word 
@@ -476,7 +481,7 @@ Word Rec: 90.24% (34692/38446)
 F-meas: 88.14%
 Bound Accuracy: 97.50% (141622/145257)
 ```
- 
+
 ### Open Test
  
 ```
@@ -524,7 +529,9 @@ $ head ./corpus2.shuf.open-test.word
 ကျွန်တော် ဘယ် သူ့ ကို မှာ ခဲ့ တာ လဲ
 အထူးခြားဆုံး ကား သူ ၏ မျက်လုံး များ ပင် ။
 ```
- 
+
+Open test အတွက် evaluation result တွေက အောက်ပါအတိုင်းပါ။  
+
 ```
 $ perl ./gradews.pl ./corpus2.shuf.open-test ./corpus2.shuf.open-test.word 
 Sent Accuracy: 33.99% (1912/5626)
@@ -533,6 +540,25 @@ Word Rec: 90.81% (123295/135773)
 F-meas: 88.08%
 Bound Accuracy: 97.60% (531488/544530)
 ```
+
+## Contributors
+ 
+### For Developing myWord Corpus
+
+ - Hlaing Myat Nwe
+ - xxx
+ - xxx
+ - xxx
+ - xxx
+ 
+### Coding and the Project Leader
+ 
+ - Ye Kyaw Thu
+ 
+## To Do
+ 
+- adding sub_word unit for NMT
+- upload Word Segmentation Guideline for Burmese (Myanmar language)
  
 ## Reference
  
