@@ -431,6 +431,7 @@ optional arguments:
   -v, --version         output version information and exit 
 ```
 
+"syllable", "build_dict", "word", "train_phrase", "phrase" and "npmi_train" option တစ်ခုချင်းစီအတွက် help screen ကို [command-line-help-of-myword](https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/command-line-help-of-myword.md) page ကို ဝင်ရောက်ပြီး လေ့လာပါ။  
 
 ## Introduction to "npmi_train" Option
 
