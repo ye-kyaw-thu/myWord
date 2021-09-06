@@ -446,6 +446,35 @@ optional arguments:
 
 ## Introduction to "npmi_train" Option
 
+## Evaluation
+
+Closed-test ဖိုင်က စာကြောင်းရေ စုစုပေါင်း ၁၀၀၀ ပါ။ အသေးစိတ် information က အောက်ပါအတိုင်းပါ။    
+ 
+ - 1000 (no. of sentences)
+ - 38451 (no. of words)
+ - 477524 (no. of characters)
+ 
+```
+$ wc corpus2.1k
+  1000  38451 477524 corpus2.1k
+```
+
+word segmentation လုပ်ပြီး ထွက်လာတဲ့ output ဖိုင်နဲ့ ပတ်သက်တဲ့ စာကြောင်းရေ အရေအတွက်၊ စာလုံးရေအရေအတွက်စတဲ့ information က အောက်ပါအတိုင်းပါ။  
+```
+$ wc ./corpus2.1k.word 
+  1000  40280 479353 ./corpus2.1k.word
+```
+
+Evaluation result က အောက်ပါအတိုင်းပါ။  
+ 
+```
+$ perl ./gradews.pl ./corpus2.1k ./corpus2.1k.word 
+Sent Accuracy: 32.00% (320/1000)
+Word Prec: 86.14% (34692/40275)
+Word Rec: 90.24% (34692/38446)
+F-meas: 88.14%
+Bound Accuracy: 97.50% (141622/145257)
+```
 
 ## Reference
  
