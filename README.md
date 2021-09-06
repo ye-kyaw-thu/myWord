@@ -447,7 +447,7 @@ optional arguments:
 ## Introduction to "npmi_train" Option
 
 ## Evaluation
-### with closed-test set
+### Closed Test
 
 Closed-test ဖိုင်က စာကြောင်းရေ စုစုပေါင်း ၁၀၀၀ ပါ။ အသေးစိတ် information က အောက်ပါအတိုင်းပါ။    
  
@@ -477,10 +477,10 @@ F-meas: 88.14%
 Bound Accuracy: 97.50% (141622/145257)
 ```
  
-### with open test set
+### Open Test
  
 ```
-(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ time python ./myword.py word ./corpus2.shuf.open-test ./corpus2.shuf.open-test.word
+$ time python ./myword.py word ./corpus2.shuf.open-test ./corpus2.shuf.open-test.word
 
 real	6m45.903s
 user	6m45.519s
@@ -488,17 +488,17 @@ sys	0m0.316s
 ```
 
 ```
-(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ wc ./corpus2.shuf.open-test
+$ wc ./corpus2.shuf.open-test
    5626  135810 1775923 ./corpus2.shuf.open-test
 ```
  
 ```
-(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ wc ./corpus2.shuf.open-test.word 
+$ wc ./corpus2.shuf.open-test.word 
    5626  144232 1784344 ./corpus2.shuf.open-test.word
 ```
  
 ```
-(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ head ./corpus2.shuf.open-test
+$ head ./corpus2.shuf.open-test
 ညဉ့်
 ငါ စဉ်းစား သလို စဉ်းစား ပါ ။
 သူ့ ရဲ့ အပျက်အစီး ဘေး ပတ်ဝန်းကျင် မှာ ဒီ လို သာမန် ထက် မြင့်မား တဲ့ radiation level ကို တွေ့ ရ တာ ဒါ ပထမဆုံး အကြိမ် တော့ မ ဟုတ် ပါ ဘူး ။
@@ -512,7 +512,7 @@ sys	0m0.316s
 ```
  
 ```
- (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ head ./corpus2.shuf.open-test.word 
+$ head ./corpus2.shuf.open-test.word 
 ညဉ့်
 ငါ စဉ်းစား သလို စဉ်းစား ပါ ။
 သူ့ ရဲ့ အပျက်အစီး ဘေး ပတ်ဝန်းကျင် မှာ ဒီ လို သာမန် ထက် မြင့်မား တဲ့ radiation level ကို တွေ့ ရ တာ ဒါ ပထမဆုံး အကြိမ် တော့ မ ဟုတ် ပါ ဘူး ။
