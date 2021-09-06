@@ -29,6 +29,7 @@ aThat = r'်'
 BreakPattern = re.compile(r"((?<!" + ssSymbol + r")["+ myConsonant + r"](?![" + aThat + ssSymbol + r"])" + r"|[" + enChar + otherChar + r"])", re.UNICODE)
 ```
 
+### Syllable Segmentation with "myWord"
 
 input file က အောက်ပါအတိုင်းရှိတယ်လို့ ဆိုကြပါစို့...  
 
@@ -107,6 +108,8 @@ max(candidates): (-6.260563674632169, ['ဆရာ', '\n'])
 listString: (-6.260563674632169, ['ဆရာ', '\n'])
 ```
 
+### Word Segmentation with "myWord"
+ 
 ကိုယ့်မှာ manual word segmentation လုပ်ထားပြီးသား corpus က အဆင့်သင့်ရှိတယ်ဆိုရင် myword နဲ့ n-gram dictionary ဆောက်ဖို့အတွက်က အောက်ပါအတိုင်း command ပေးပါ။  
 ဒီနေရာမှာ myword က unigram, bigram အဘိဓာန်တွေကို text file format အနေနဲ့ရော binary file format အနေနဲ့ရော ဆောက်ပေးသွားမှာမို့ အဲဒီ output filename တွေကို ```--unigram_word_txt unigram-word.txt```, ``` --bigram_word_txt bigram-word.txt```,  ```--unigram_word_bin unigram-word.bin```, ``` --bigram_word_bin bigram-word.bin``` ဆိုပြီး ကိုယ်ပေးချင်တဲ့ ဖိုင်နာမည်တွေကို  assign လုပ်သွားလို့ ရပါတယ်။  
 
@@ -232,6 +235,8 @@ def compute_phrase (unigram, bigram, threshold = 0.5):
     
 Threshold တန်ဖိုးက ဂျပန်စာအတွက်က 0.5 ထားပြီး စမ်းခဲ့ပေမဲ့ မြန်မာစာအတွက်က (0.1...0.5) ထားပြီး အမျိုးမျိုး စမ်းကြည့်ခဲ့ပါတယ်။  
 အထက်ပါ algorithm ကို word segmentation လုပ်ထားတဲ့ မြန်မာစာ corpus တစ်ခုလုံးကို pass လုပ်ပြီးသွားတဲ့ အခါမှာ စာလုံးနှစ်လုံးတွဲ စကားစု (two-word phrase) တွေကို ရရှိလာမှာ ဖြစ်ပါတယ်။ တကယ်လို့ ဒုတိယအကြိမ် pass လုပ်ပြီးသွားရင်တော့ စာလုံး နှစ်လုံး ကနေ လေးလုံးအထိ တွဲလျက်ရှိနေတတ်တဲ့ စကားစု (two- to four-word phrase) တွေကို ရရှိလာမှာ ဖြစ်ပါတယ်။ အဲဒါကြောင့် သီအိုရီအရကတော့ passing ကို n pass အထိ လုပ်မယ် ဆိုရင် 2 ကနေ 2^n စာလုံးတွဲ phrase တွေကို ရရှိနိုင်မှာ ဖြစ်ပါတယ်။  
+
+### Phrase Segmentation with "myWord"
 
 လက်နဲ့စာလုံး ဖြတ်ထားတဲ့ (i.e. manual word segmentation) လုပ်ထားတဲ့ စာကြောင်းရေ ၅သိန်းကျော် ရှိတဲ့ မြန်မာစာ corpus ကို သုံးပြီး phrase segmentation experiment တချို့ လုပ်ကြည့်ကြရအောင်။  
 
@@ -393,6 +398,9 @@ $ cat test.space.txt
 ```
 python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phrase_bin ./bigram-phrase.bin ./test2.txt ./test2.phrase
 ```
+
+## Introduction to "npmi_train" Option
+ 
 
 ## Reference
  
