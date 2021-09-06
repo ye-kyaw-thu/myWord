@@ -545,6 +545,35 @@ Bound Accuracy: 97.60% (531488/544530)
 ## Contributors
  
 ### For Developing myWord Corpus
+ 
+<table>
+<tr>
+<th> Good </th>
+<th> Bad </th>
+</tr>
+<tr>
+<td>
+
+```c++
+int foo() {
+    int result = 4;
+    return result;
+}
+```
+
+</td>
+<td>
+
+```c++
+int foo() { 
+    int x = 4;
+    return x;
+}
+```
+
+</td>
+</tr>
+</table>
 
  ul.twocolumns {
     display: inline-block;
