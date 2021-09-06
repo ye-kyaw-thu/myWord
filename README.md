@@ -491,7 +491,7 @@ A clean-up of this: [(http://norvig.com/ngrams/ch14.pdf)](http://norvig.com/ngra
 10. Evaluation perl script for word segmentation: [https://raw.githubusercontent.com/neubig/nlptutorial/master/script/gradews.pl](https://raw.githubusercontent.com/neubig/nlptutorial/master/script/gradews.pl) 
 11. Experiment Note by Assoc. Prof. Daichi Mochihashi: http://chasen.org/~daiti-m/diary/  
 12. Statistically recognize long phrases with Normalized PMI: http://chasen.org/~daiti-m/diary/misc/phraser.py  
-13. https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html  
+13. Vector Semantics: https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html  
 14. https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf  
 15. https://en.wikipedia.org/wiki/Pointwise_mutual_information  
  
