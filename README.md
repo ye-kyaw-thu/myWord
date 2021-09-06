@@ -546,7 +546,7 @@ Bound Accuracy: 97.60% (531488/544530)
  
 ### For Developing myWord Corpus
 
-<div style="float: left; width: 33%;">
+<div style="float: left; width: 30%;">
 <ul>
 <li>Left Item 1</li>
 <li>Left Item 2</li>
@@ -555,7 +555,7 @@ Bound Accuracy: 97.60% (531488/544530)
 <li>Left Item 5</li>
 </ul>
 </div>
-<div style="float: left; width: 33%;">
+<div style="float: left; width: 30%;">
 <ul>
 <li>Middle Item 1</li>
 <li>Middle Item 2</li>
@@ -564,7 +564,7 @@ Bound Accuracy: 97.60% (531488/544530)
 <li>Middle Item 5</li>
 </ul>
 </div>
-<div style="float: right; width: 33%;">
+<div style="float: right; width: 30%;">
 <ul>
 <li>Right Item 1</li>
 <li>Right Item 2</li>
