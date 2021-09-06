@@ -494,4 +494,14 @@ A clean-up of this: [(http://norvig.com/ngrams/ch14.pdf)](http://norvig.com/ngra
 13. Vector Semantics: [https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html](https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html)  
 14. Lecture 17: Vector-space semantics (distributional similarities), Julia Hockenmaier: [https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf](https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf)  
 15. Pointwise_mutual_information: [https://en.wikipedia.org/wiki/Pointwise_mutual_information](https://en.wikipedia.org/wiki/Pointwise_mutual_information)  
+16. Dr. Thein Tun, Acoustic Phonetics and The Phonology of the Myanmar Language
+17. Romanization: https://en.wikipedia.org/wiki/Romanization
+18. Myanmar Unicode: http://unicode.org/charts/PDF/U1000.pdf
+19. Syllable segmentation algorithm of Myanmar text: http://gii2.nagaokaut.ac.jp/gii/media/share/20080901-ZMM%20Presentation.pdf
+20. Zin Maung Maung and Yoshiki Makami,"A rule-based syllable segmentation of Myanmar Text", in Proceeding of the IJCNLP-08 workshop of NLP for Less Privileged Language, January, 2008, Hyderabad, India, pp. 51-58. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/I08-3010.pdf)
+21. Tin Htay Hlaing, "Manually constructed context-free grammar for Myanmar syllable structure", in Proceedings of the Student Research Workshop at the 13th Conference of the European Chapter of the Association for Computational Linguistics (EACL '12), Association for Computational Linguistics, Stroudsburg, PA, USA, pp. 32-37. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/E12-3004.pdf)
+22. Ye Kyaw Thu, Andrew Finch, Yoshinori Sagisaka and Eiichiro Sumita, "A Study of Myanmar Word Segmentation Schemes for Statistical Machine Translation", in Proceedings of the 11th International Conference on Computer Applications (ICCA 2013), February 26~27, 2013, Yangon, Myanmar, pp. 167-179. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/my2Others-CameraReady.pdf)
+23. Ye Kyaw Thu, Andrew Finch, Win Pa Pa, and Eiichiro Sumita, "A Large-scale Study of Statistical Machine Translation Methods for Myanmar Language", in Proceedings of SNLP2016, February 10-12, 2016, Phranakhon Si Ayutthaya, Thailand. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/SNLP-3-A%20Large-scale%20Study%20of%20Statistical%20Machine%20Translation%20Methods%20for%20Myanmar%20Language.pdf)
+24. Regular Expression: https://en.wikipedia.org/wiki/Regular_expression
+25. DebuggexBeter: https://www.debuggex.com/  
  
