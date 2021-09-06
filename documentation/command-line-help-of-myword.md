@@ -30,6 +30,14 @@ optional arguments:
   -v, --version         output version information and exit
 ```
 
+အထက်မှာ မြင်ရတဲ့ အတိုင်းပါပဲ myword.py ကို run မယ်ဆိုရင် command-line ပေးရတဲ့ ပုံစံက အကြမ်းမျဉ်းအားဖြင့် အောက်ပါအတိုင်းပါ။  
+
+```$ python myword.py {positional argument} ... <input-filename> <output-filename>```
+
+ဆိုလိုတာက positional argument နေရာမှာ ကိုယ်လုပ်ချင်တဲ့ အလုပ်နဲ့သက်ဆိုင်တဲ့ argument ကို ပေးပြီး သူနောက်မှာတော့ သက်ဆိုင်ရာ option တွေကို ပေးသွားရတဲ့ ပုံစံဖြစ်ပါတယ်။  
+option တွေရဲ့ နောက်မှာတော့ "input-filename" နဲ့ "output-filename" ကို ပေးကို ပေးရပါတယ်။ ခြွင်းချက် တစ်ခု အနေနဲ့ "npmi_train" option မှာတော့ "output-filename" က ပေးစရာ မလိုပါဘူး။ ပရိုဂရမ်က "pass-time", "threshold", "minimum-frequency" တွေကို အခြေခံပြီး "output-filename" ကို အော်တိုပေးသွားပြီး ဖိုင်အနေနဲ့ သိမ်းပေးသွားမှာ ဖြစ်ပါတယ်။   
+
+
 ## syllable
 
 ```
