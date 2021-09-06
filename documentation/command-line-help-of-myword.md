@@ -37,8 +37,11 @@ optional arguments:
 ဆိုလိုတာက positional argument နေရာမှာ ကိုယ်လုပ်ချင်တဲ့ အလုပ်နဲ့သက်ဆိုင်တဲ့ argument ကို ပေးပြီး သူနောက်မှာတော့ သက်ဆိုင်ရာ option တွေကို ပေးသွားရတဲ့ ပုံစံဖြစ်ပါတယ်။  
 option တွေရဲ့ နောက်မှာတော့ "input-filename" နဲ့ "output-filename" ကို ပေးကို ပေးရပါတယ်။ ခြွင်းချက် တစ်ခု အနေနဲ့ "npmi_train" option မှာတော့ "output-filename" က ပေးစရာ မလိုပါဘူး။ ပရိုဂရမ်က "pass-time", "threshold", "minimum-frequency" တွေကို အခြေခံပြီး "output-filename" ကို အော်တိုပေးသွားပြီး ဖိုင်အနေနဲ့ သိမ်းပေးသွားမှာ ဖြစ်ပါတယ်။   
 
+နောက်တစ်ခု က coding ကို ဝင်ကြည့်ရင် သိနိုင်မှာဖြစ်ပေမဲ့ ... လက်ရှိ python code က Python version 3.0 နဲ့ အထက်နဲ့ run ရပါလိမ့်မယ်။ ဆိုလိုတာက python2.7 လို ဗားရှင်းနဲ့ run ရင် syntax error စတဲ့ minor error တွေ တက်လာပါလိမ့်မယ်။  
 
 ## syllable
+
+မြန်မာ စာလုံးတွေကို syllable segmentation လုပ်ဖို့အတွက် ဆိုရင်တော့ myword.py ရဲ့ နောက်မှာ space ခြားပြီးတော့ "syllable" ဆိုတဲ့ argument ကို ပေးရပါလိမ့်မယ်။  
 
 ```
 $ python myword.py syllable -h
@@ -54,6 +57,16 @@ optional arguments:
                         the delimiter option for syllable unit e.g. using
                         piple "|", the default delimiter is "space"
 ```
+
+README ဖိုင်မှာလည်း example running လုပ်ပြထားသလို syllable segmentation အတွက်က အောက်ပါအတိုင်း command ပေးပါ။  
+
+```
+$ python myword.py syllable input output
+```
+input နေရာမှာ ကိုယ်က syllable ဖြတ်ချင်တဲ့ မြန်မာစာတွေရိုက်ထားတဲ့ text ဖိုင်ရဲ့နာမည် ကို ပေးရမှာ ဖြစ်ပြီးတော့...  
+output နေရာမှာတော့ syllable ဖြတ်ပြီးတော့ ထွက်လာတဲ့ output ဖိုင်ကို သိမ်းစေချင်တဲ့ ဖိုင်နာမည်ကို ရိုက်ထည့်ပေးရမှာ ဖြစ်ပါတယ်။  
+
+**NLP လုပ်နေတဲ့ သူတွေ အများစုကတော့ သိပြီးသားဖြစ်မှာ ဖြစ်ပေမဲ့၊ တချို့ မသိသေးတဲ့ သူတွေလည်း ရှိနိုင်လည်း ဖြည့်စွက်ပြောရရင် input လုပ်တဲ့ ဖိုင်က UTF-8 encoding နဲ့ သိမ်းထားတဲ့ text ဖိုင်ဖြစ်မှ ရပါလိမ့်မယ်။ Microsoft Winword (.docx, doc) ဖိုင်တို့လို့ LibreOffice Writer တို့ရဲ့ (.odt) ဖိုင်တို့ကို ပေးရင် segmentation ကို မှန်မှန်ကန်ကန် လုပ်ပေးမှာ မဟုတ်ပါဘူး။**  
 
 ## build_dict
 
