@@ -546,6 +546,24 @@ Bound Accuracy: 97.60% (531488/544530)
  
 ### For Developing myWord Corpus
 
+ ul.twocolumns {
+    display: inline-block;
+}
+
+ul.twocolumns li {
+    float: left;
+    list-style: outside none none;
+    width: 50%;
+}
+ 
+<ul class="twocolumns">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ul>
+ 
 <div style="float: left; width: 15%;">
 <ul>
 <li>Left Item 1</li>
