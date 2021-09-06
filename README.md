@@ -435,12 +435,12 @@ optional arguments:
 
 ဒီ နေရာမှာ sub_option တစ်ခု ချင်းစီရဲ့ အလုပ်ကို အကြမ်းရှင်းရရင် အောက်ပါအတိုင်းပါ။  
 
-- syllable
-- build_dict
-- word
-- train_phrase
-- phrase
-- npmi_train
+- syllable (syllable segmentation လုပ်ဖို့အတွက် သုံးတဲ့ option ပါ)
+- build_dict (unigram, bigram အဘိဓာန်တွေကို ဆောက်ဖို့အတွက် သုံးတဲ့ option ပါ)
+- word (Viterbi algorithm ကို သုံးပြီ word segmentation လုပ်ဖို့အတွက် သုံးတဲ့ option ပါ)
+- train_phrase (unigram, bigram စာလုံးအဘိဓာန် နှစ်ခုဆောက်ပြီး NPMI နဲ့ စကားလုံးတွဲတွေ သို့မဟုတ် phrase တွေကို ဆွဲထုတ်ဖို့အတွက် သုံးတဲ့ option ပါ)
+- phrase (NPMI algorithm နဲ့ phrase segmentation လုပ်ဖို့အတွက် သုံးတဲ့ option ပါ)
+- npmi_train (ဒီ option က NPMI algorithm နဲ့ training, segmentation ကို တကြိမ်ထက်မက လုပ်ဖို့အတွက် သုံးတဲ့ option ပါ)
  
 "syllable", "build_dict", "word", "train_phrase", "phrase" and "npmi_train" option တစ်ခုချင်းစီအတွက် help screen ကို [command-line-help-of-myword](https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/command-line-help-of-myword.md) page ကို ဝင်ရောက်ပြီး လေ့လာပါ။  
 
