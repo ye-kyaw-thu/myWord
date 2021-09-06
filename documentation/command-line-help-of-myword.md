@@ -197,6 +197,9 @@ myWord Segmentation Tool မှာ လက်ရှိ "-l", "-t", "-f" အတွ
 
 ## phrase
 
+"phrase" positional argument ကတော့ မြန်မာစာလုံးတွေကို phrase အနေနဲ့ ဆွဲထုတ်ဖို့ တနည်းအားဖြင့် phrase segmentation လုပ်ဖို့အတွက် သုံးတာပါ။  
+သူနဲ့အတူ တွဲသုံးရတဲ့ option တွေကို ကြည့်ချင်ရင်တော့ အောက်မှာလည်း ရိုက်ပြထားတဲ့အတိုင်း ```python myword.py phrase -h``` ဆိုတဲ့ command နဲ့ help-screen ခေါ်ကြည့်ပါ။  
+
 ```
 $ python myword.py phrase -h
 usage: myword phrase [-h] [-t THRESHOLD] [-f MINFREQ] [-ub UNIGRAM_PHRASE_BIN]
@@ -221,6 +224,10 @@ optional arguments:
                         set filename of the bigram dictionary for segmentation
                         (binary-file), the default name is "bigram-phrase.bin"
 ```
+
+phrase ဖြတ်ဖို့အတွက်က binary format နဲ့ ဆောက်ထားတဲ့ unigram, bigram အဘိဓာန်တွေ လိုအပ်ပါတယ်။  
+--threshold, --minfreq တို့ကို option အနေနဲ့ မပေးရင် default value တွေဖြစ်တဲ့ --threshold 0.1 နဲ့ --minfreq 3 တို့နဲ့ phrase segmentation လုပ်ပေးပါလိမ့်မယ်။  
+ထိုနည်းလည်းကောင်း --unigram_phrase_bin, --bigram_phrase_bin အဘိဓာန် နာမည်တွေကို ရိုက်မထည့်ပဲ run မယ်ဆိုရင် default dictionary ဖိုင်နာမည်တွေ ဖြစ်တဲ့ "unigram-phrase.bin" တို့ "bigram-phrase.bin" တို့နဲ့ မြန်မာစာလုံးတွဲတွေ (i.e. phrase) ကို ဖြတ်ပေးပါလိမ့်မယ်။  
 
 ## npmi_train
 
