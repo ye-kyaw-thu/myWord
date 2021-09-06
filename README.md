@@ -558,8 +558,8 @@ Bound Accuracy: 97.60% (531488/544530)
  
 ## To Do
  
-- adding sub_word unit for NMT
-- upload Word Segmentation Guideline for Burmese (Myanmar language)
+- [ ] adding sub_word unit for NMT
+- [ ] upload Word Segmentation Guideline for Burmese (Myanmar language)
  
 ## Reference
  
