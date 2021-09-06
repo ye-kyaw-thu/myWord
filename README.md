@@ -636,4 +636,8 @@ A clean-up of this: [(http://norvig.com/ngrams/ch14.pdf)](http://norvig.com/ngra
 23. Ye Kyaw Thu, Andrew Finch, Win Pa Pa, and Eiichiro Sumita, "A Large-scale Study of Statistical Machine Translation Methods for Myanmar Language", in Proceedings of SNLP2016, February 10-12, 2016, Phranakhon Si Ayutthaya, Thailand. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/SNLP-3-A%20Large-scale%20Study%20of%20Statistical%20Machine%20Translation%20Methods%20for%20Myanmar%20Language.pdf)
 24. Regular Expression: https://en.wikipedia.org/wiki/Regular_expression
 25. DebuggexBeter: https://www.debuggex.com/  
+26. Chenchen Ding, Ye Kyaw Thu, Masao Utiyama, Eiichiro Sumita: Word Segmentation for Burmese (Myanmar). ACM Trans. Asian Low Resour. Lang. Inf. Process. 15(4): 22:1-22:10 (2016)
+27. Shaoning Zhang and Cunli Mao and Zhengtao Yu and Hongbin Wang and Z. Li and Jiafu Zhang, Word Segmentation for Burmese Based on Dual-Layer CRFs, ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP), Volume 18, 2019, pp. 1-11 
+28. Burmese word segmentation program using Foma-generated Finite State Automata, Link: [https://github.com/lwinmoe/segment](https://github.com/lwinmoe/segment)  
+
  
