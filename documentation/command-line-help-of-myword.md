@@ -1,5 +1,7 @@
 # Command-line Help of "myWord" Segmentation Tool
 
+## Main Help Screen
+
 ```
 $ python myword.py -h
 usage: myword [-h] [-v]
@@ -28,6 +30,8 @@ optional arguments:
   -v, --version         output version information and exit
 ```
 
+## syllable
+
 ```
 $ python myword.py syllable -h
 usage: myword syllable [-h] [-d DELIMITER] input output
@@ -42,6 +46,8 @@ optional arguments:
                         the delimiter option for syllable unit e.g. using
                         piple "|", the default delimiter is "space"
 ```
+
+## build_dict
 
 ```
 $ python myword.py build_dict -h
@@ -68,6 +74,8 @@ optional arguments:
                         (binary-file), the default name is "bigram-word.bin"
 ```
 
+## word
+
 ```
 $ python myword.py word -h
 usage: myword word [-h] [-d DELIMITER] [-ub UNIGRAM_WORD_BIN]
@@ -92,6 +100,8 @@ optional arguments:
                         segmentation (binary-file), the default name is
                         "bigram-word.bin"
 ```
+
+## train_phrase
 
 ```
 $ python myword.py train_phrase -h
@@ -126,6 +136,8 @@ optional arguments:
                         file), the default name is "bigram-phrase.bin"
 ```
 
+## phrase
+
 ```
 $ python myword.py phrase -h
 usage: myword phrase [-h] [-t THRESHOLD] [-f MINFREQ] [-ub UNIGRAM_PHRASE_BIN]
@@ -150,6 +162,8 @@ optional arguments:
                         set filename of the bigram dictionary for segmentation
                         (binary-file), the default name is "bigram-phrase.bin"
 ```
+
+## npmi_train
 
 ```
 $ python myword.py npmi_train -h
