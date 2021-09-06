@@ -108,6 +108,9 @@ Linux command-line တွေရဲ့ ထုံးစံအတိုင်း op
  
 ## word
 
+unigram, bigram အဘိဓာန်တွေက ရှိပြီးသားအခြေအနေမှာ မြန်မာစာလုံးတွေကို word segmentation လုပ်ဖို့အတွက်ဆိုရင်တော့ "python myword.py" ရဲ့ နောက်မှာ "word" ဆိုတဲ့ option ကို ပေးပြီး run ပါ။  
+word နဲ့ တွဲသုံးတဲ့ တခြား option တွေကို အောက်မှာ ပြထားတဲ့အတိုင်း ```python myword.py word -h``` ဆိုပြီး ခေါ်ကြည့်ရင် help-screen ပြပေးပါလိမ့်မယ်။  
+
 ```
 $ python myword.py word -h
 usage: myword word [-h] [-d DELIMITER] [-ub UNIGRAM_WORD_BIN]
@@ -132,6 +135,7 @@ optional arguments:
                         segmentation (binary-file), the default name is
                         "bigram-word.bin"
 ```
+
 
 ## train_phrase
 
