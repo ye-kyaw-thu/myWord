@@ -402,6 +402,8 @@ python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phr
 ```
 
 ## Command-line Help
+
+```$ python myword.py -h``` ဆိုပြီး command ပေးလိုက်ရင် myWord Segmentation Tool ရဲ့ "main-help screen" ကို မြင်ရမှာ ဖြစ်ပါတယ်။  
  
 ```
 $ python myword.py -h
@@ -431,6 +433,15 @@ optional arguments:
   -v, --version         output version information and exit 
 ```
 
+ဒီ နေရာမှာ sub_option တစ်ခု ချင်းစီရဲ့ အလုပ်ကို အကြမ်းရှင်းရရင် အောက်ပါအတိုင်းပါ။  
+
+- syllable
+- build_dict
+- word
+- train_phrase
+- phrase
+- npmi_train
+ 
 "syllable", "build_dict", "word", "train_phrase", "phrase" and "npmi_train" option တစ်ခုချင်းစီအတွက် help screen ကို [command-line-help-of-myword](https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/command-line-help-of-myword.md) page ကို ဝင်ရောက်ပြီး လေ့လာပါ။  
 
 ## Introduction to "npmi_train" Option
