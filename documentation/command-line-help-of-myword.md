@@ -231,6 +231,9 @@ phrase ဖြတ်ဖို့အတွက်က binary format နဲ့ ဆေ
 
 ## npmi_train
 
+ဒီ "npmi_train" argument ကတော့ advanced user တွေအတွက် ရည်ရွယ်ပါတယ်။  
+တကယ်က train_phrase နဲ့ အခြေခံအားဖြင့်က အတူတူပါပဲ။ မတူတာက တစ်ခေါက်တည်း training လုပ်ဖို့အတွက် မဟုတ်ပဲ iteration, threshold နဲ့ frequency တို့ကို အမျိုးမျိုး အပြောင်းအလဲ လုပ်ပြီးတော့ x-unit segmentation experiment လုပ်နိုင်ဖို့အတွက် ရည်ရွယ်ပါတယ်။  
+
 ```
 $ python myword.py npmi_train -h
 usage: myword npmi_train [-h] [-lr ITERATION_RANGE] [-tr THRESHOLD_RANGE]
@@ -252,3 +255,14 @@ optional arguments:
                         set the minimum frequency value range (e.g. "1,5"),
                         the default is "1,3"
 ```
+
+iteration, threshold နဲ့ minimum-frequency တို့ကို train_phrase တုန်းကလို တစ်ခုချင်းစီ သတ်မှတ်ပြီး run တာမဟုတ်ပဲနဲ့ range ပေးပြီး run ကြရပါလိမ့်မယ်။ option တွေရဲ့ နာမည်တွေလည်း အပြောင်းအလဲ ဖြစ်သွားတာကို ဂရုပြုပါ။ "npmi_train" အတွက်က အောက်ပါအတိုင်း အဓိက option သုံးခု ရှိပါတယ်။  
+
+- -lr သို့မဟုတ် --iteration_range က iteration ကို ဘယ်လောက်က စတင်ပြီး ဘယ်လောက်အထိ တိုးသွားမလဲ ဆိုတာနဲ့ ပတ်သက်ပါတယ်။ ဥပမာ "--iteration_range "1,5" ဆိုရင် pass လုပ်သွားမှာက 1-pass, 2-pass, 3-pass, 4-pass, 5-pass ဆိုပြီး passing အသီးသီး လုပ်သွားမှာ ဖြစ်ပါတယ်။  
+- -tr သို့မဟုတ် --threshold_range ကလည်း threshold value ကို ဘယ်နှစ်မျိုးကစားပြီး training လုပ်မယ် ဆိုတဲ့ range ကို ပြောပေးဖို့ သုံးတဲ့ option ပါ။ ဥပမာ "--threshold value "0.1,0.5" ဆိုရင် 0.1, 0.2, 0.3, 0.4, 0.5 ဆိုပြီး threshold value ကို ၅မျိုး ကစားပြီး training လုပ်ပေးမှာ ဖြစ်ပါတယ်။ ကိုယ့် corpus ရဲ့ အနေအထားပေါ်မူတည်ပြီးတော့ ဒီ threshold value ကလည်း အပြောင်းအလဲ ဖြစ်နိုင်တာမို့ အမျိုးမျိုး ကစားကြည့်ပြီး segmentation output တွေကို ကြည့်ပြီး သင့်တော်တာကို ရှာဖွေရမှာ ဖြစ်ပါတယ်။   
+- -fr သို့မဟုတ် --minfreq_range ကိုလည်း range တစ်ခုပေးပြီး သတ်မှတ် ပေးရပါမယ်။ ဥပမာ "--minfreq_range 1, 3"  
+
+input ဖိုင်ကတော့ training လုပ်မယ့် corpus ဖိုင်ရဲ့ နာမည်ပါ။ x-unit training/segmentation လို့ ပြောရတဲ့ အကြောင်းအရင်းက syllable ဖြတ်ထားတဲ့ input ဖိုင်နဲ့ training လုပ်ရင် syllable တွဲတွေကို phrase ပုံစံအနေနဲ့ ဆွဲထုတ်သွားမှာ ဖြစ်သလို word segmentation ဖြတ်ထားတဲ့ ဖိုင်နဲ့ training လုပ်ရင် word တစ်လုံးထက်မက တွဲနိုင်တာတွေကို တွဲပြီး phrase အနေနဲ့ ဆွဲထုတ် ပေးမှာ ဖြစ်ပါတယ်။ အဲဒါကြောင့် NPMI နဲ့ training အမျိုးမျိုး လုပ်ကြည့်ကြပြီး syllable အတွဲတွေ၊ character တွဲတွေ sub_word unit အတွဲတွေ၊ phrase အတွဲတွေ စသည်ဖြင့် segmentation မျိုးစုံကို study လုပ်လို့ ရမှာ ဖြစ်ပါတယ်။  
+
+output ဖိုင်နာမည်ကို ပေးစရာမလိုပါဘူး။ myWord Segmentation Tool က ပေးလိုက်တဲ့ -lr, -tr, -fr option တွေနဲ့ original input ဖိုင်နာမည်ကို ကြည့်ပြီး training တစ်ခုစီအတွက် ဖိုင်နာမည်တစ်ခုစီ နဲ့ unigram, bigram အဘိဓာန်တွေကို သိမ်းပေးသွားပါလိမ့်မယ်။ ဥပမာ unigram.l2.t0.1f3.txt, unigram.l2.t0.1f3.bin, bigram.l2.t0.1f3.txt, bigram.l2.t0.1f3.bin, ...  
+
