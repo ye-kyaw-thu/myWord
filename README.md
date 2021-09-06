@@ -546,11 +546,33 @@ Bound Accuracy: 97.60% (531488/544530)
  
 ### For Developing myWord Corpus
 
- - Hlaing Myat Nwe
- - xxx
- - xxx
- - xxx
- - xxx
+<div style="float: left; width: 33%;">
+<ul>
+<li>Left Item 1</li>
+<li>Left Item 2</li>
+<li>Left Item 3</li>
+<li>Left Item 4</li>
+<li>Left Item 5</li>
+</ul>
+</div>
+<div style="float: left; width: 33%;">
+<ul>
+<li>Middle Item 1</li>
+<li>Middle Item 2</li>
+<li>Middle Item 3</li>
+<li>Middle Item 4</li>
+<li>Middle Item 5</li>
+</ul>
+</div>
+<div style="float: right; width: 33%;">
+<ul>
+<li>Right Item 1</li>
+<li>Right Item 2</li>
+<li>Right Item 3</li>
+<li>Right Item 4</li>
+<li>Right Item 5</li>
+</ul>
+</div>
  
 ### Coding and the Project Leader
  
