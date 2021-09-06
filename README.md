@@ -451,6 +451,11 @@ optional arguments:
 
 ## Introduction to "npmi_train" Option
 
+## Dictionaries for Word and Phrase Segmentation
+ 
+### Version 1.0
+
+
 ## Evaluation of myWord for "Word Segmentation"
  
 လက်ရှိ release မလုပ်ခင် စမ်းနေတဲ့ ngram dictionary တွေနဲ့ evaluation လုပ်ထားတဲ့ ရလဒ်တွေကိုလည်း လေ့လာလို့ ရအောင် README ဖိုင်မှာ တင်ပေးထားလိုက်ပါမယ်။
