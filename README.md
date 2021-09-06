@@ -489,9 +489,9 @@ A clean-up of this: [(http://norvig.com/ngrams/ch14.pdf)](http://norvig.com/ngra
 8. Python Word Segmentation: [https://github.com/grantjenks/python-wordsegment](https://github.com/grantjenks/python-wordsegment)
 9. Yining Wang, Long Zhou, Jiajun Zhang and Chengqing Zong, Word, Subword or Character? An Empirical Study of Granularity in Chinese-English NMT, CoRR, abs/1711.04457, 2017. [[Paper]](https://arxiv.org/pdf/1711.04457.pdf)
 10. Evaluation perl script for word segmentation: [https://raw.githubusercontent.com/neubig/nlptutorial/master/script/gradews.pl](https://raw.githubusercontent.com/neubig/nlptutorial/master/script/gradews.pl) 
-11. Experiment Note by Assoc. Prof. Daichi Mochihashi: http://chasen.org/~daiti-m/diary/  
-12. Statistically recognize long phrases with Normalized PMI: http://chasen.org/~daiti-m/diary/misc/phraser.py  
-13. Vector Semantics: https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html  
-14. https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf  
-15. https://en.wikipedia.org/wiki/Pointwise_mutual_information  
+11. Experiment Note by Assoc. Prof. Daichi Mochihashi: [http://chasen.org/~daiti-m/diary/](http://chasen.org/~daiti-m/diary/)  
+12. Statistically recognize long phrases with Normalized PMI: [http://chasen.org/~daiti-m/diary/misc/phraser.py](http://chasen.org/~daiti-m/diary/misc/phraser.py)  
+13. Vector Semantics: [https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html](https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html)  
+14. Lecture 17: Vector-space semantics (distributional similarities), Julia Hockenmaier: [https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf](https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf)  
+15. Pointwise_mutual_information: [https://en.wikipedia.org/wiki/Pointwise_mutual_information](https://en.wikipedia.org/wiki/Pointwise_mutual_information)  
  
