@@ -545,59 +545,18 @@ Bound Accuracy: 97.60% (531488/544530)
 ## Contributors
  
 ### For Developing myWord Corpus
- 
-<table border="0">
- <tr>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
- </tr>
-</table>
 
- ul.twocolumns {
-    display: inline-block;
-}
+ <div class="row">
+  <div class="col-md-8" markdown="1">
+  Some text.
+  </div>
+  <div class="col-md-4" markdown="1">
+  <!-- ![Alt Text](../img/folder/blah.jpg) -->
+  <img height="600px" class="center-block" src="../img/folder/blah.jpg">
+  </div>
+</div>
+ 
 
-ul.twocolumns li {
-    float: left;
-    list-style: outside none none;
-    width: 50%;
-}
- 
-<ul class="twocolumns">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-    <li>Item 5</li>
-</ul>
- 
-<div style="float: left; width: 15%;">
-<ul>
-<li>Left Item 1</li>
-<li>Left Item 2</li>
-<li>Left Item 3</li>
-<li>Left Item 4</li>
-<li>Left Item 5</li>
-</ul>
-</div>
-<div style="float: left; width: 15%;">
-<ul>
-<li>Middle Item 1</li>
-<li>Middle Item 2</li>
-<li>Middle Item 3</li>
-<li>Middle Item 4</li>
-<li>Middle Item 5</li>
-</ul>
-</div>
-<div style="float: right; width: 15%;">
-<ul>
-<li>Right Item 1</li>
-<li>Right Item 2</li>
-<li>Right Item 3</li>
-<li>Right Item 4</li>
-<li>Right Item 5</li>
-</ul>
-</div>
  
 ### Coding and the Project Leader
  
