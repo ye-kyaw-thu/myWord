@@ -447,6 +447,7 @@ optional arguments:
 ## Introduction to "npmi_train" Option
 
 ## Evaluation
+### with closed-test set
 
 Closed-test ဖိုင်က စာကြောင်းရေ စုစုပေါင်း ၁၀၀၀ ပါ။ အသေးစိတ် information က အောက်ပါအတိုင်းပါ။    
  
@@ -475,7 +476,64 @@ Word Rec: 90.24% (34692/38446)
 F-meas: 88.14%
 Bound Accuracy: 97.50% (141622/145257)
 ```
+ 
+### with open test set
+ 
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ time python ./myword.py word ./corpus2.shuf.open-test ./corpus2.shuf.open-test.word
 
+real	6m45.903s
+user	6m45.519s
+sys	0m0.316s
+```
+
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ wc ./corpus2.shuf.open-test
+   5626  135810 1775923 ./corpus2.shuf.open-test
+```
+ 
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ wc ./corpus2.shuf.open-test.word 
+   5626  144232 1784344 ./corpus2.shuf.open-test.word
+```
+ 
+```
+(base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ head ./corpus2.shuf.open-test
+ညဉ့်
+ငါ စဉ်းစား သလို စဉ်းစား ပါ ။
+သူ့ ရဲ့ အပျက်အစီး ဘေး ပတ်ဝန်းကျင် မှာ ဒီ လို သာမန် ထက် မြင့်မား တဲ့ radiation level ကို တွေ့ ရ တာ ဒါ ပထမဆုံး အကြိမ် တော့ မ ဟုတ် ပါ ဘူး ။
+ပရီးမီးယား လိဂ် သည် COVID - 19 ကြောင့် မတ် လ နောက်ပိုင်း ပြိုင်ပွဲ ရွှေ့ဆိုင်း ထား ရ သည် ။
+သမိန်ဗြတ်ဇ
+ကျွန်တော် က စိတ်ထား မ ကောင်း ခဲ့ လို့ လား
+တိုက် ချင် လို့ တိုက် နေ တာ မ ဟုတ် ဘူး ကွ မင်း အမေ တွေ မင်း အစ်မ တွေ ကို တိုင်းတစ်ပါးသား တွေ က ဟင်း နော်
+ညနေစာ ဆို ရင် ဂေါ်ဖီ စွပ်ပြုတ် နဲ့ သတ်သတ်လွတ် ဂျုံ ဝက်အူချောင်း နဲ့ ၊ ဟော ညလယ်စာ စား တော့ မယ် ဆို ရင် လည်း ဒီ အတိုင်း ပဲ ။
+ကျွန်တော် ဘယ်သူ့ ကို မှာ ခဲ့ တာ လဲ
+အထူးခြားဆုံး ကား သူ ၏ မျက်လုံး များ ပင် ။
+```
+ 
+```
+ (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release$ head ./corpus2.shuf.open-test.word 
+ညဉ့်
+ငါ စဉ်းစား သလို စဉ်းစား ပါ ။
+သူ့ ရဲ့ အပျက်အစီး ဘေး ပတ်ဝန်းကျင် မှာ ဒီ လို သာမန် ထက် မြင့်မား တဲ့ radiation level ကို တွေ့ ရ တာ ဒါ ပထမဆုံး အကြိမ် တော့ မ ဟုတ် ပါ ဘူး ။
+ပရီးမီးယားလိဂ် သည် COVID-19 ကြောင့် မတ် လ နောက်ပိုင်း ပြိုင်ပွဲ ရွှေ့ဆိုင်း ထား ရ သည် ။
+သမိန်ဗြတ်ဇ
+ကျွန်တော် က စိတ် ထား မ ကောင်း ခဲ့ လို့ လား
+တိုက် ချင် လို့ တိုက် နေ တာ မ ဟုတ် ဘူး ကွ မင်း အမေ တွေ မင်း အစ်မ တွေ ကို တိုင်း တစ် ပါး သား တွေ က ဟင်း နော်
+ည နေ စာ ဆို ရင် ဂေါ်ဖီ စွပ်ပြုတ် နဲ့ သတ်သတ်လွတ် ဂျုံ ဝက်အူချောင်း နဲ့ ၊ ဟော ညလယ်စာ စား တော့ မယ် ဆို ရင် လည်း ဒီ အတိုင်း ပဲ ။
+ကျွန်တော် ဘယ် သူ့ ကို မှာ ခဲ့ တာ လဲ
+အထူးခြားဆုံး ကား သူ ၏ မျက်လုံး များ ပင် ။
+```
+ 
+```
+$ perl ./gradews.pl ./corpus2.shuf.open-test ./corpus2.shuf.open-test.word 
+Sent Accuracy: 33.99% (1912/5626)
+Word Prec: 85.52% (123295/144179)
+Word Rec: 90.81% (123295/135773)
+F-meas: 88.08%
+Bound Accuracy: 97.60% (531488/544530)
+```
+ 
 ## Reference
  
 1. Viterbi, Andrew. Error bounds for convolutional codes and an asymptotically optimum decoding algorithm. <i>IEEE transactions on Information Theory</i>, 13(2):260–269, 1967 [[Paper]](https://ieeexplore.ieee.org/document/1054010)
