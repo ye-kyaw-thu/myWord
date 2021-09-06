@@ -266,3 +266,4 @@ input ဖိုင်ကတော့ training လုပ်မယ့် corpus �
 
 output ဖိုင်နာမည်ကို ပေးစရာမလိုပါဘူး။ myWord Segmentation Tool က ပေးလိုက်တဲ့ -lr, -tr, -fr option တွေနဲ့ original input ဖိုင်နာမည်ကို ကြည့်ပြီး training တစ်ခုစီအတွက် ဖိုင်နာမည်တစ်ခုစီ နဲ့ unigram, bigram အဘိဓာန်တွေကို သိမ်းပေးသွားပါလိမ့်မယ်။ ဥပမာ unigram.l2.t0.1f3.txt, unigram.l2.t0.1f3.bin, bigram.l2.t0.1f3.txt, bigram.l2.t0.1f3.bin, ...  
 
+စိတ်ဝင်စားသူတွေက ဥပမာအနေနဲ့ တင်ပေးထားတဲ့ [NPMI training/segmentation log](https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md) ဖိုင်ကို အသေးစိတ် လေ့လာကြည့်ကြပါ။   
