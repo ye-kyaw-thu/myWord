@@ -574,12 +574,13 @@ Bound Accuracy: 97.60% (531488/544530)
 🌹 မေဖြူခင်
 🌼 မေမြတ်မြတ်ခိုင်
 🌷 လှသစ်ဝေ
-🌸 လှိုင်မြတ်နွယ်
 💐 လှိုင်မေတင်
 🍀 ဝေနှင်းအိန္ဒြာမောင်
 🌺 သီတာစန်း
 🌻 အိဖြူဖြူမွန်
 🌹 အိသန္တာဖြူ
+ 
+🌸 လှိုင်မြတ်နွယ် -- the highest contribution for myWord Corpus (Version 1.0) developing
  
 ### Coding and the Project Leader
  
