@@ -403,6 +403,34 @@ python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phr
 
 ## Command-line Help
  
+```
+$ python myword.py -h
+usage: myword [-h] [-v]
+              {syllable,build_dict,word,train_phrase,phrase,npmi_train} ...
+
+Syllable, Word, Phrase Segmenter for Burmese (Myanmar language)
+
+positional arguments:
+  {syllable,build_dict,word,train_phrase,phrase,npmi_train}
+    syllable            syllable segmentation with Regular Expression
+    build_dict          building n-gram dictionaries for word segmentation
+    word                word segmentation with Vitabi algorithm proposed by
+                        Andrew James Viterbi, 1967
+    train_phrase        training or building n-gram dictionaries for phrase
+                        segmentation
+    phrase              phrase segmentation with NPMI (Normalized Pointwise
+                        Mutual Information) proposed by Bouma Gerlof, 2009
+    npmi_train          training or building n-gram dictionaries with NPMI and
+                        run segmentation experiment for x-unit (e.g.
+                        character, syllable, sub_word, word) with built
+                        dictionaries, the learning x-unit will depends on your
+                        input file segmentation
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         output version information and exit 
+```
+
 
 ## Introduction to "npmi_train" Option
 
