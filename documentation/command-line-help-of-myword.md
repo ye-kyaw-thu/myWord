@@ -147,6 +147,8 @@ optional arguments:
 
 ## train_phrase
 
+train_phrase ဆိုတဲ့ argument ကတော့ phrase segmentation လုပ်ဖို့အတွက် ကြိုတင်ပြင်ဆင်တဲ့ အခါမှာ သုံးတဲ့ option ပါ။ ဒီ option ကို သုံးမယ် ဆိုရင်တော့ ကိုယ့်ဆီမှာ manual word segmentation ဖြတ်ထားတဲ့ corpus က အဆင့်သင့်ရှိနေရမှာဖြစ်ပါတယ်။ အဲဒီလို ရှိတယ်ဆိုရင်တော့ "train_phrase" option ကို သုံးပြီးတော့ NPMI (Normalized Pointwise Mutual Information) algorithm နဲ့ unigram, bigram အဘိဓာန်တွေကိုလည်း pass တစ်ခေါက်တိုင်းမှာ စာလုံးရေအတွဲကို တိုးတိုးဆောက်သွားပြီးတော့ (-l 2 ဆိုရင် training corpus ကို နှစ်ခေါက် pass လုပ်ပြီး၊ စာလုံးတွဲကလည်း နှစ်လုံးကနေ လေးလုံးတွဲအထိ ရှာမှာ) input corpus ကိုပဲ phrase segmentation လုပ်ပေးသွားမှာ ဖြစ်ပါတယ်။  
+
 ```
 $ python myword.py train_phrase -h
 usage: myword train_phrase [-h] [-l ITERATION] [-t THRESHOLD] [-f MINFREQ]
@@ -179,6 +181,10 @@ optional arguments:
                         set output filename of the bigram dictionary (binary-
                         file), the default name is "bigram-phrase.bin"
 ```
+
+အဘိဓာန် ဖိုင်နာမည်တွေနဲ့ ပတ်သက်တဲ့ option တွေကတော့ အထက်မှာ ရှင်းပြခဲ့တဲ့အတိုင်းပါပဲ။ unigram, bigram အဘိဓာန်တွေကို ကိုယ်သိမ်းပေးစေချင်တဲ့ နာမည်တွေကို ပေးဖို့အတွက် သုံးတာ ဖြစ်ပါတယ်။ training လုပ်သွားရင်းနဲ့ အဘိဓာန်တွေကို text ဖိုင်အနေနဲ့ရော binary ဖိုင်အနေနဲ့ရော သိမ်းပေးသွားမှာဖြစ်လို့ အောင်အောင်မြင်မြင်နဲ့ phrase learning လုပ်ပြီးသွားတယ် ဆိုရင် စုစုပေါင်း အဘိဓာန်က လေးဖိုင် အနေနဲ့ output လုပ်ပေးမှာ ဖြစ်ပါတယ်။ text ဖိုင်ကတော့ researcher တွေ developer တွေအနေနဲ့ ngram value တွေ ngram word တွေကို မျက်လုံးနဲ့ ကြည့်ပြီး ပြင်စရာရှိရင် ပြင်နိုင်ဖို့အတွက် ထုတ်ပေးထားတာ ဖြစ်ပါတယ်။ binary file-format နဲ့ ထွက်လာတဲ့ အဘိဓာန် နှစ်ဖိုင် (i.e. unigram, bigram) ကတော့ နောက်ပိုင်းမှာ ဆက်ပြောမယ့် phrase segmentation လုပ်တဲ့အခါမှာ သုံးရတဲ့ option ဖြစ်တဲ့ "phrase" နဲ့ တွဲသုံးဖို့အတွက် ပြင်ဆင်ထားတာ ဖြစ်ပါတယ်။  
+
+**တစ်ခု သိထားစေချင်တာက pass တစ်ခု ပြီးသွားတိုင်းမှာ dictionary လေးခုစလုံးကို overwrite လုပ်သွားမှာ ဖြစ်ပါတယ်။ training လုပ်နေတာမို့ နောက်ဆုံး pass ရဲ့ dictionary တွေကိုပဲ ရလဒ်အနေနဲ့ ရလာမှာ ဖြစ်ပါတယ်။ တကယ်လို့ experiment အနေနဲ့ training အမျိုးမျိုးလုပ်သွားရင်းနဲ့ segmentation လုပ်ပေးတဲ့ output တွေကိုလည်း ကြည့်ချင်တယ်၊ သိမ်းထားချင်တယ် ဆိုရင်တော့ npmi_train ဆိုတဲ့ option နဲ့ run ရမှာ ဖြစ်ပါတယ်။**
 
 ## phrase
 
