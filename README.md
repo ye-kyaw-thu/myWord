@@ -11,7 +11,7 @@ Note: WAT2021 Machine Translation Share Task အလုပ်မှာ word segme
 
 Draft Writing ...  
 
-## Syllable Segmentation with Regular Expression
+## Rule: Syllable Segmentation with Regular Expression
 
 xxx
 
@@ -56,6 +56,10 @@ $ cat ./test.syllable
 ကော ဖီ လည်း ထပ် သောက် ချင် ရင် ပြော ကွာ
 မန္တ လေး မှာ ဒေါ် အောင် ဆန်း စု ကြည် မိန့် ခွန်း ပြော မယ် တဲ့ ။
 ```
+ 
+### For Your Information
+ 
+relating to syllable unit
 
 ## Theory: Word Segmentation with Viterbi Algorithm
 
