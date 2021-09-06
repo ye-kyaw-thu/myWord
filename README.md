@@ -546,21 +546,39 @@ Bound Accuracy: 97.60% (531488/544530)
  
 ### For Developing myWord Corpus
 
-
+💐
+Bouquet
+🌸
+Cherry Blossom
+💮
+White Flower
+🏵️
+Rosette
+🌹
+Rose
+🥀
+Wilted Flower
+🌺
+Hibiscus
+🌻
+Sunflower
+🌼
+Blossom
+🌷
 :octocat: ကျော့ကေခိုင်
 :octocat: ခင်ခန့်ခန့်လှိုင်
-ခန့်ခန့်ဝင်းတင့်
-ချိုဇင်ဦး
-ချိုဝါ
-ခိုင်ဆုဝေ
-ခိုင်ဇာမွန်
-ဇွန်လှိုင်မိုး
-နန်းယုလှိုင်
-နန်းအိန္ဒြေကျော်
-နှင်းယုလှိုင်
-နှင်းအိအိချို
-ပဒုမ္မာ
-ဖြိုးသူထက်
+:octocat: ခန့်ခန့်ဝင်းတင့်
+:octocat: ချိုဇင်ဦး
+:octocat: ချိုဝါ
+:octocat: ခိုင်ဆုဝေ
+:octocat: ခိုင်ဇာမွန်
+:octocat: ဇွန်လှိုင်မိုး
+:octocat: နန်းယုလှိုင်
+:octocat: နန်းအိန္ဒြေကျော်
+:octocat: နှင်းယုလှိုင်
+:octocat: နှင်းအိအိချို
+:octocat: ပဒုမ္မာ
+:octocat: ဖြိုးသူထက်
 ဖြိုးဟေမာဝေ
 
 ဖြူစင်ဌေး
