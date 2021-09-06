@@ -137,6 +137,13 @@ optional arguments:
                         "bigram-word.bin"
 ```
 
+တစ်ခု သိထားစေချင်တာက myWord Segmentation Tool မှာက word segmentation ကို လုပ်တဲ့အခါမှာပဲဖြစ်ဖြစ်၊ phrase segmentation ကို လုပ်တဲ့ အခါမှာပဲဖြစ်ဖြစ် text ဖိုင်နဲ့ ဆောက်ထားတဲ့ unigram, bigram အဘိဓာန်တွေကို မသုံးပါဘူး။ အလုပ်လုပ်ရတာ ပိုမြန်ဆန်အောင် binary file-format နဲ့ သိမ်းထားတဲ့ အဘိဓာန်တွေကိုပဲ သုံးပါလိမ့်မယ်။ အဲဒါကြောင့် word argument နဲ့ တွဲပြီး ပေးရတဲ့ အဘိဓာန်နဲ့ ဆိုင်တဲ့ option တွေက binary အတွက်ပဲ ရှိတာ ဖြစ်ပါတယ်။  
+
+- -ub သို့မဟုတ် --unigram_word_bin ဆိုတဲ့ option နဲ့ unigram binary word dictionary ဖိုင်နာမည်ကို ပေးပါ
+- -bb သို့မဟုတ် --bigram_word_bin ဆိုတဲ့ option နဲ့ bigram binary word dictionary ဖိုင်နာမည်ကို ပေးပါ
+- -d သို့မဟုတ် --delimiter ကတော့ စာလုံးဖြတ်ပေးတဲ့ boundary ကို ကိုယ်သုံးချင်တဲ့ character ကို သုံးဖို့အတွက် သုံးတဲ့ option ပါ
+
+**တစ်ခုရှိတာက binary dictionary ဖိုင်နာမည်တွေကို မပေးရင် myWord Segmentation Tool နဲ့အတူ တွဲပါလာတဲ့ လက်ရှိ binary word dictionary (latest version) ကို အသုံးပြုသွားမှာ ဖြစ်ပါတယ်**
 
 ## train_phrase
 
