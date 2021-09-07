@@ -575,7 +575,7 @@ Bound Accuracy: 97.60% (531488/544530)
 | 💐 အိဖြူဖြူမွန် (UTYCC, Myanmar) | 🌷 အိသန္တာဖြူ (UTYCC, Myanmar) | 🍀 အေးမြတ်သော်တာဦး (NLP Lab., UTYCC, Myanmar) |
 | 🌺 ဥမ္မာထွန်း (Nagaoka Univ., Japan) | | |
 
-🐞 လှိုင်မြတ်နွယ် -- (NLP Lab., UTYCC, Myanmar) the highest contribution for myWord Corpus (Version 1.0) developing
+🐞 လှိုင်မြတ်နွယ် (NLP Lab., UTYCC, Myanmar) the highest contribution for myWord Corpus (Version 1.0) developing
  
 ### Coding and the Project Leader
  
