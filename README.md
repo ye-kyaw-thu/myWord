@@ -523,13 +523,13 @@ $ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat
 မ_မ ဝ ဝ
 ထ ထ က ။
 ```
-
-ဒီတစ်ခါတော့ အနေနဲ့ "l2.t0.1.f2" (i.e. iteration=2, threshold=0.1, minfreq=2) နဲ့ "l2.t0.1.f3" (i.e. iteration=1, threshold=0.1, minfreq=3) တို့နှစ်ခု အကြား NPMI က learn လုပ်ပြီး ရလာတဲ့ segmented output ဖိုင် နှစ်ဖိုင်ကို side-by-side နှိုင်းယှဉ်ကြည့်ကြရအောင်။ "iteration" ကို two pass လုပ်လိုက်တာကြောင့် syllable လေးလုံးတွဲစာလုံးတွေ အထိ ဆွဲထုတ်ယူလာနိုင်တာကို "mama_wawa_poem.txt.l2.t0.1.f2.seg" ဖိုင်ထဲမှာ ထင်ထင်ရှားရှား မြင်ရပါလိမ့်မယ်။ သို့သော် "min-freq" ကို "3" အဖြစ် ထားထားလိုက်တဲ့ အခါမှာတော့ corpus ထဲမှာက သုံးခါ မရှိတာကြောင့် syllable နှစ်လုံးတွဲစာလုံးတွေ (i.e. မ_မ) ကိုပဲ "mama_wawa_poem.txt.l2.t0.1.f3.seg" ဖိုင်ထဲမှာ ပါလာတာကို တွေ့ရပါလိမ့်မယ်။ ပြောရရင်တော့ "npmi_train" argument ကို သုံးတဲ့အခါမှာ option သုံးခုဖြစ်တဲ့ "--iteration_range", "--threshold_range" နဲ့ "--minfreq_range" သုံးခုစလုံးက အရေးကြီးပါတယ်။ အဲဒီ parameter သုံးခုအပေါ်ကို မူတည်ပြီးတော့ ရလာတဲ့ phrase တွေကလည်း အပြောင်းအလဲ ဖြစ်သွားမှာ ဖြစ်ပါတယ်။ Experiment ကို အမျိုးမျိုး လုပ်ကြည့်ကြပါလို့ အကြံပေးချင်ပါတယ်။     
  
 </td>
 </tr>
 </table> 
 
+ဒီတစ်ခါတော့ အနေနဲ့ "l2.t0.1.f2" (i.e. iteration=2, threshold=0.1, minfreq=2) နဲ့ "l2.t0.1.f3" (i.e. iteration=1, threshold=0.1, minfreq=3) တို့နှစ်ခု အကြား NPMI က learn လုပ်ပြီး ရလာတဲ့ segmented output ဖိုင် နှစ်ဖိုင်ကို side-by-side နှိုင်းယှဉ်ကြည့်ကြရအောင်။ "iteration" ကို two pass လုပ်လိုက်တာကြောင့် syllable လေးလုံးတွဲစာလုံးတွေ အထိ ဆွဲထုတ်ယူလာနိုင်တာကို "mama_wawa_poem.txt.l2.t0.1.f2.seg" ဖိုင်ထဲမှာ ထင်ထင်ရှားရှား မြင်ရပါလိမ့်မယ်။ သို့သော် "min-freq" ကို "3" အဖြစ် ထားထားလိုက်တဲ့ အခါမှာတော့ corpus ထဲမှာက သုံးခါ မရှိတာကြောင့် syllable နှစ်လုံးတွဲစာလုံးတွေ (i.e. မ_မ) ကိုပဲ "mama_wawa_poem.txt.l2.t0.1.f3.seg" ဖိုင်ထဲမှာ ပါလာတာကို တွေ့ရပါလိမ့်မယ်။ ပြောရရင်တော့ "npmi_train" argument ကို သုံးတဲ့အခါမှာ option သုံးခုဖြစ်တဲ့ "--iteration_range", "--threshold_range" နဲ့ "--minfreq_range" သုံးခုစလုံးက အရေးကြီးပါတယ်။ အဲဒီ parameter သုံးခုအပေါ်ကို မူတည်ပြီးတော့ ရလာတဲ့ phrase တွေကလည်း အပြောင်းအလဲ ဖြစ်သွားမှာ ဖြစ်ပါတယ်။ Experiment ကို အမျိုးမျိုး လုပ်ကြည့်ကြပါလို့ အကြံပေးချင်ပါတယ်။     
+ 
 <table>
 <tr>
 <th>mama_wawa_poem.txt.l2.t0.1.f2.seg</th>
