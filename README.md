@@ -481,7 +481,7 @@ $ time python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.1" -fr "2,3" ./mama_wa
 corpus ကလည်း တအားသေးတာကြောင့် training လုပ်တဲ့ အချိန်က ၁စက္ကန့်အတွင်းမှာပဲ ပြီးသွားပါလိမ့်မယ်။  
 learning လုပ်ပြီး ရလာတဲ့ စာလုံးတွေဖြတ်ပေးထားတဲ့ (i.e. segmented output file) ဖိုင်တွေကို command-line မှာ ရိုက်ထုတ်ပေးဖို့အတွက် အောက်ပါလိုမျိုး command ပေးလို့ ရပါတယ်။  
  
-```
+```bash
 $ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $i; done;
 ```
 
