@@ -594,6 +594,11 @@ Bound Accuracy: 97.60% (531488/544530)
 </tbody>
 </table>
  
+|:--- |:---- |:----:| ----:|
+|1. Row| is | is | is  |
+|2. Row| left | nicely | right  |
+|3. Row| aligned | centered | aligned  |  
+ 
 🌺 ကျော့ကေခိုင် (UTYCC, Myanmar)
 🌻 ကောင်းထက်စံ (UTYCC, Myanmar)
 🌹ခင်ခန့်ခန့်လှိုင် (UTYCC, Myanmar)
