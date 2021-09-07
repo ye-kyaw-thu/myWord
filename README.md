@@ -577,7 +577,9 @@ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $
 </tr>
 </table> 
  
-
+ဒီ README ဖိုင်မှာ မှတ်မိလွယ်ပြီးတော့ မြင်သာအောင် ရှင်းပြနိုင်ဖို့အတွက် တကယ်လုပ်ခဲ့တဲ့ "မမ ဝဝ" experiment log ဖိုင်ကို လည်းတင်ပေးထားပါတယ်။  
+Link: [https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/mama_wawa-exp1.md](https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/mama_wawa-exp1.md)  
+ 
 စာကြောင်းရေ တစ်ထောင်ရှိတဲ့ corpus နဲ့ စမ်းပြထားတာကိုလည်း လေ့လာနိုင်အောင် တင်ပေးထားပါတယ်။ အောက်ပါ link မှာ ဝင်ကြည့်ပါ။  
 [https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md](https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md)    
 
