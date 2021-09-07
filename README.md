@@ -29,7 +29,7 @@ aThat = r'်'
 BreakPattern = re.compile(r"((?<!" + ssSymbol + r")["+ myConsonant + r"](?![" + aThat + ssSymbol + r"])" + r"|[" + enChar + otherChar + r"])", re.UNICODE)
 ```
 
-မှတ်ချက်။ ။ ဒီနေရာမှာ သတ်မှတ်ထားတဲ့ syllable (မြန်မာလို ဝဏ္ဏ လို့လည်း ခေါ်ပါတယ်) ဆိုတာက ဘာသာဗေဒ အရ ကြည့်မယ်ဆိုရင် မလိုက်နာတဲ့အပိုင်းတစ်ခုရှိပါတယ်။ အဲဒါက "တက္ကသိုလ်" လို ပါဌ်ဆင့် စာလုံးတွေဆိုရင် "တက်" "က" "သိုလ်" ဆိုပြီး မဖြတ်ပဲနဲ့ "တက္က" နဲ့ "သိုလ်" ဆိုပြီး syllable နှစ်လုံးအဖြစ်ပဲ break လုပ်ချသွားတာမျိုးပါ။ အဲဒီလိုလုပ်တာက NLP task တွေအတွက် ပိုပြီးအဆင်ပြေလို့ပါ။ post-editing လို အလုပ်တွေကို စဉ်းစားစရာ မလိုအပ်လို့ ပိုကောင်းတာမို့ပါ။ Downstream application တွေပေါ်ကို မူတည်ပြီးတော့ လက်ရှိ RE Rule ကို ပြင်တာ၊ ဖြည့်စွက်တာမျိုးက RE နားလည်တဲ့သူအတွက်က ကြိုက်သလို လုပ်သွားကြပါ။   
+<span style="color:blue"> မှတ်ချက်။ ။ ဒီနေရာမှာ သတ်မှတ်ထားတဲ့ syllable (မြန်မာလို ဝဏ္ဏ လို့လည်း ခေါ်ပါတယ်) ဆိုတာက ဘာသာဗေဒ အရ ကြည့်မယ်ဆိုရင် မလိုက်နာတဲ့အပိုင်းတစ်ခုရှိပါတယ်။ အဲဒါက "တက္ကသိုလ်" လို ပါဌ်ဆင့် စာလုံးတွေဆိုရင် "တက်" "က" "သိုလ်" ဆိုပြီး မဖြတ်ပဲနဲ့ "တက္က" နဲ့ "သိုလ်" ဆိုပြီး syllable နှစ်လုံးအဖြစ်ပဲ break လုပ်ချသွားတာမျိုးပါ။ အဲဒီလိုလုပ်တာက NLP task တွေအတွက် ပိုပြီးအဆင်ပြေလို့ပါ။ post-editing လို အလုပ်တွေကို စဉ်းစားစရာ မလိုအပ်လို့ ပိုကောင်းတာမို့ပါ။ Downstream application တွေပေါ်ကို မူတည်ပြီးတော့ လက်ရှိ RE Rule ကို ပြင်တာ၊ ဖြည့်စွက်တာမျိုးက RE နားလည်တဲ့သူအတွက်က ကြိုက်သလို လုပ်သွားကြပါ။ </span>   
 
 ### Syllable Segmentation with "myWord" Segmentation Tool
 
@@ -164,7 +164,7 @@ $ cat test.word
 မန္တလေး မှာ ဒေါ်အောင်ဆန်းစုကြည် မိန့်ခွန်း ပြော မယ် တဲ့ ။
 ```
 
- **unigram, bigram dictionary တွေကို ဆောက်တဲ့အခါမှာ text file format အနေနဲ့ရော binary file format အနေနဲ့ရော ဆောက်ပေးသွားပေမဲ့ word segmentation လုပ်တဲ့အခါမှာတော့ binary dictionary နှစ်ခုပဲ လိုအပ်ပါတယ်။ text file format အဘိဓာန်တွေက developer/researcher တွေအနေနဲ့ မျက်လုံးနဲ့ စစ်ကြည့်ပြီး corpus ကို update လုပ်တာ သို့မဟုတ် အဘိဓာန်ကို update လုပ်ပြီး binary အဖြစ် ပြောင်းတာတွေ လုပ်နိုင်အောင်လို့ facility အနေနဲ့ ထည့်ပေးထားတာပါ။**  
+<span style="color:blue">unigram, bigram dictionary တွေကို ဆောက်တဲ့အခါမှာ text file format အနေနဲ့ရော binary file format အနေနဲ့ရော ဆောက်ပေးသွားပေမဲ့ word segmentation လုပ်တဲ့အခါမှာတော့ binary dictionary နှစ်ခုပဲ လိုအပ်ပါတယ်။ text file format အဘိဓာန်တွေက developer/researcher တွေအနေနဲ့ မျက်လုံးနဲ့ စစ်ကြည့်ပြီး corpus ကို update လုပ်တာ သို့မဟုတ် အဘိဓာန်ကို update လုပ်ပြီး binary အဖြစ် ပြောင်းတာတွေ လုပ်နိုင်အောင်လို့ facility အနေနဲ့ ထည့်ပေးထားတာပါ။</span>  
  
  word segmentation လုပ်တဲ့ အခါမှာ unigram, bigram အဘိဓာန်တွေကို assign လုပ်ပြီး ဖြတ်မယ်ဆိုရင်တော့ အောက်ပါအတိုင်း command ပေးပြီး run ပါ။  
  (Word segmentation with unigram, binary n-gram dictionaries)  
