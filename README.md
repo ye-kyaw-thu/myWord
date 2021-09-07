@@ -31,7 +31,7 @@ aThat = r'်'
 #Regular expression pattern for Myanmar syllable breaking
 #*** a consonant not after a subscript symbol AND a consonant is not followed by a-That character or a subscript symbol
 BreakPattern = re.compile(r"((?<!" + ssSymbol + r")["+ myConsonant + r"](?![" + aThat + ssSymbol + r"])" + r"|[" + enChar + otherChar + r"])", re.UNICODE)
-```python
+```
 
 ### Syllable Segmentation with "myWord" Segmentation Tool
 
