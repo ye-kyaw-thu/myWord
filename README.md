@@ -453,6 +453,37 @@ optional arguments:
 
 တကယ်က NPMI unsupervised approach နဲ့ phrase တွေသာ မကပဲ character sequence, syllable, sub_word, word စတဲ့ segmentation unit တွေကိုလည်း learn လုပ်ပြီး ဆွဲထုတ်ပေးနိုင်ပါတယ်။ အဲဒီအတွက် learning/segmentation အလုပ်ကို အမျိုးမျိုး experiment လုပ်နိုင်ဖို့အတွက် "npmi_train" ကို myWord Segmentation Tool ရဲ့ facility တစ်ခုအနေနဲ့ ထည့်ပေးထားတာပါ။   
  
+```
+$ time python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.1" -fr "2,3" ./mama_wawa.txt
+```
+ 
+```
+$ for i in mama_wawa.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $i; done;
+
+mama_wawa.txt.l1.t0.1.f2.seg:
+မ_မ ဝ_ဝ ထ_ထ က
+အ က ပ ထ မ
+က_ပါ က_ပါ မ_မ ရာ ည ည လ သာ သာ
+ည အ ခါ ငါ စာ ရ မ_မ ဝ_ဝ ထ_ထ က
+
+mama_wawa.txt.l1.t0.1.f3.seg:
+မ_မ ဝ ဝ ထ ထ က
+အ က ပ ထ မ
+က ပါ က ပါ မ_မ ရာ ည ည လ သာ သာ
+ည အ ခါ ငါ စာ ရ မ_မ ဝ ဝ ထ ထ က
+
+mama_wawa.txt.l2.t0.1.f2.seg:
+မ_မ ဝ_ဝ_ထ_ထ က
+အ က ပ ထ မ
+က_ပါ က_ပါ မ_မ ရာ ည ည လ သာ သာ
+ည အ ခါ ငါ စာ ရ မ_မ ဝ_ဝ_ထ_ထ က
+
+mama_wawa.txt.l2.t0.1.f3.seg:
+မ_မ ဝ ဝ ထ ထ က
+အ က ပ ထ မ
+က ပါ က ပါ မ_မ ရာ ည ည လ သာ သာ
+ည အ ခါ ငါ စာ ရ မ_မ ဝ ဝ ထ ထ က
+```
 
 စာကြောင်းရေ တစ်ထောင်ရှိတဲ့ corpus နဲ့ စမ်းပြထားတာကိုလည်း လေ့လာနိုင်အောင် တင်ပေးထားပါတယ်။ အောက်ပါ link မှာ ဝင်ကြည့်ပါ။  
 [https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md](https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md)    
