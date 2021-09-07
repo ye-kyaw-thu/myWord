@@ -34,7 +34,7 @@ BreakPattern = re.compile(r"((?<!" + ssSymbol + r")["+ myConsonant + r"](?![" + 
 
 input file က အောက်ပါအတိုင်းရှိတယ်လို့ ဆိုကြပါစို့...  
 
-```console
+```shell
 $ cat test.txt 
 ကျွန်တော်ကသုတေသနသမားပါ။
 နေ့ရောညရောမြန်မာစာနဲ့ကွန်ပျူတာနဲ့ပဲအလုပ် များ ပါ တယ်
