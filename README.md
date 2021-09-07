@@ -58,10 +58,6 @@ $ cat ./test.syllable
 မန္တ လေး မှာ ဒေါ် အောင် ဆန်း စု ကြည် မိန့် ခွန်း ပြော မယ် တဲ့ ။
 ```
  
-### For Your Information
- 
-relating to syllable unit
-
 ## Theory: Word Segmentation with Viterbi Algorithm
 
 myword မှာ သုံးထားတဲ့ Word Segmentation က manual word segmentation လုပ်ထားတဲ့ corpus ကနေ unigram, bigram dictionary တွေကို ကြိုဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့ စာလုံးဖြတ်တဲ့ နည်းလမ်းပါ။    
