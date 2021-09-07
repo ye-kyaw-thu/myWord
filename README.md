@@ -16,10 +16,13 @@ Draft Writing ...
 မြန်မာစာအတွက် syllable segmentation က အရေးကြီးတဲ့ word segmentation unit တစ်ခုပါ။ အထူးသဖြင့် ဒေတာက ကောင်းကောင်းမရှိတာကြောင့်ရော၊ ငြိမ်တဲ့ word segmenter က မရှိတာကြောင့်ရော Machine Translation သုတေသနမှာဆိုရင် syllable segmentation ဖြတ်ပြီးတော့ ဘာသာပြန်တာက word segmentation လုပ်ပြီး training လုပ်တာထက်တောင် ရလဒ်တွေက ပိုကောင်းနိုင်ကြောင်းကို စာတမ်းတွေရေးပြီးလည်း သက်သေပြခဲ့ပြီးပါပြီ။ myWord Segmentation Tool မှာလည်း syllable breaking လုပ်ပေးတဲ့ option ကိုထည့်ထားပါတယ်။  
 
 Syllable breaking ကိုလည်း Finite State Model ဆောက်ပြီးဖြတ်တာမျိုး၊ syllable list အဘိဓာန်ဆောက်ပြီး ဖြတ်တာမျိုး စသည်ဖြင့် approach အမျိုးမျိုးနဲ့ သွားလို့ရပေမဲ့ 2014 လောက်မှာ propose လုပ်ခဲ့တဲ့ sylbreak [(Link: https://github.com/ye-kyaw-thu/sylbreak)](https://github.com/ye-kyaw-thu/sylbreak) ထဲက Regular Expression (RE) ကိုပဲ သုံးထားပါတယ်။ ဘာကြောင့်လဲ Unicode နဲ့ စာရိုက်ထားတဲ့ မြန်မာစာတွေအတွက်က RE တစ်ကြောင်းတည်းနဲ့ လှလှပပ အလုပ်လုပ် ပေးလို့ပါ။ ပြီးတော့ NLP အလုပ်တွေ အများကြီးအတွက်လည်း လက်ရှိ syllable breaking RE သတ်မှတ်ချက်နဲ့တင် အဆင်ပြေလို့ပါ။ Python code နဲ့ပဲ အလွယ်ရှင်းပြရရင်တော့ အောက်ပါအတိုင်း ဗျည်း (က-အ)၊ အင်္ဂလိပ်စာလုံးနဲ့ အင်္ဂလိပ်ဂဏန်း (a-z,A-Z,0-9)၊ တခြားစာလုံး (ဣဤဥဦတို့လို သရတွေ၊ မြန်မာဂဏန်း၊ သင်္ကေတတချို့)၊ ပါဌ်ဆင့် ဆင့်တဲ့ Unicode သင်္ကေတ နဲ့ အသတ်အက္ခရာ စုစုပေါင်း variable ငါးခုကို သတ်မှတ်လိုက်ပြီးရင် ```python
+
 ((?<!" + ssSymbol + r")["+ myConsonant + r"](?![" + aThat + ssSymbol + r"])" + r"|[" + enChar + otherChar + r"])
+
 ```  ဆိုတဲ့ RE ကို pass လုပ်ပေးလိုက်ယုံပါပဲ။  
 
 ```python
+
 myConsonant = r"က-အ"
 enChar = r"a-zA-Z0-9"
 otherChar = r"ဣဤဥဦဧဩဪဿ၌၍၏၀-၉၊။!-/:-@[-`{-~\s"
