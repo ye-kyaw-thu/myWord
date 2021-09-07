@@ -561,43 +561,19 @@ Bound Accuracy: 97.60% (531488/544530)
 |🌺 ကျော့ကေခိုင် (UTYCC, Myanmar)| 🌻 ကောင်းထက်စံ (UTYCC, Myanmar) | 🌹ခင်ခန့်ခန့်လှိုင် (UTYCC, Myanmar) |
 | 🌱 ခင်ဝါဝါထိုက် (CSU, China) | 🌼 ခန့်ခန့်ဝင်းတင့် (UTYCC, Myanmar) | 🌸 ချိုဇင်ဦး (UTYCC, Myanmar) | 
 |💐 ချိုဝါ (UTYCC, Myanmar) | 🌷 ခိုင်ဆုဝေ (UTYCC, Myanmar) | 🍀 ခိုင်ဇာမွန် (UTYCC, Myanmar) |
-🌺 ဇွန်လှိုင်မိုး (UTYCC, Myanmar)
-🌻 ဇာဇာလှိုင် (KMITL, Thailand)
-🌹ထက်ရတနာဦး (UTYCC, Myanmar)
-🌱 နန်းယုလှိုင် (UTYCC, Myanmar)
-🌼 နန်းရွှေစင်ဖူး (UTYCC, Myanmar)
-🌸 နန်းအိန္ဒြေကျော် (UTYCC, Myanmar)
-💐 နှင်းယုလှိုင် (UTYCC, Myanmar)
-🌷 နှင်းအိအိချို (UTYCC, Myanmar)
-🍀 နှင်းအေးသန့် (UTYCC, Myanmar)
-🌺 နော်အလ်ထူးအေး (YEC4Blind, Myanmar)
-🌻 ပဒုမ္မာ (UTYCC, Myanmar)
-🌹 ဖြိုးသူထက် (UTYCC, Myanmar)
-🌱 ဖြိုးဟေမာဝေ (UTYCC, Myanmar)
-🌼 ဖြူစင်ဌေး (UTYCC, Myanmar)
-🌸 မျိုးမာသင်း (UTYCC, Myanmar)
-💐 မြင့်မြင့်ဌေး (UTYCC, Myanmar)
-🌷 မြတ်ငြိမ်းချမ်း (UTYCC, Myanmar)
-🍀 မြအိစံ (SIIT, Thailand)
-🌺 မှုံနံသာကျော် (UTYCC, Myanmar)
-🌻 မေဇင်ထွန်း (UTYCC, Myanmar)
-🌹 မေဖြိုးအောင် (UTYCC, Myanmar)
-🌱 မေဖြူခင် (UTYCC, Myanmar)
-🌼 မေမြတ်မြတ်ခိုင် (UTYCC, Myanmar)
-🌸 ရဲကျော်သိန်း (LU Lab., Myanmar)
-💐 လှလှဌေး (UCSY, Myanmar)
-🌷 လှသစ်ဝေ (UTYCC, Myanmar)
-🍀 လှိုင်မေတင် (UTYCC, Myanmar)
-🌺 ဝင့်သိင်္ဂီ (YTU, Myanmar)
-🌻 ဝင်းသူဇာကျော် (Waseda Univ., Japan)
-🌹 ဝေနှင်းအိန္ဒြာမောင် (UTYCC, Myanmar)
-🌱 သီတာစန်း (UTYCC, Myanmar)
-🌼 ဟေမာန်ထွန်း (UTYCC, Myanmar)
-🌸 ဟေမာဖြိုး (UTYCC, Myanmar)
-💐 အိဖြူဖြူမွန် (UTYCC, Myanmar)
-🌷 အိသန္တာဖြူ (UTYCC, Myanmar)
-🍀 အေးမြတ်သော်တာဦး (UTYCC, Myanmar)
-🌺 ဥမ္မာထွန်း (Nagaoka Univ., Japan)
+| 🌺 ဇွန်လှိုင်မိုး (UTYCC, Myanmar) | 🌻 ဇာဇာလှိုင် (KMITL, Thailand) | 🌹ထက်ရတနာဦး (UTYCC, Myanmar) |
+| 🌱 နန်းယုလှိုင် (UTYCC, Myanmar) | 🌼 နန်းရွှေစင်ဖူး (UTYCC, Myanmar) | 🌸 နန်းအိန္ဒြေကျော် (UTYCC, Myanmar) |
+| 💐 နှင်းယုလှိုင် (UTYCC, Myanmar) | 🌷 နှင်းအိအိချို (UTYCC, Myanmar) | 🍀 နှင်းအေးသန့် (UTYCC, Myanmar) |
+| 🌺 နော်အလ်ထူးအေး (YEC4Blind, Myanmar) | 🌻 ပဒုမ္မာ (UTYCC, Myanmar) | 🌹 ဖြိုးသူထက် (UTYCC, Myanmar) |
+| 🌱 ဖြိုးဟေမာဝေ (UTYCC, Myanmar) | 🌼 ဖြူစင်ဌေး (UTYCC, Myanmar) | 🌸 မျိုးမာသင်း (UTYCC, Myanmar) |
+| 💐 မြင့်မြင့်ဌေး (UTYCC, Myanmar) | 🌷 မြတ်ငြိမ်းချမ်း (UTYCC, Myanmar) | 🍀 မြအိစံ (SIIT, Thailand) |
+| 🌺 မှုံနံသာကျော် (UTYCC, Myanmar) | 🌻 မေဇင်ထွန်း (UTYCC, Myanmar) | 🌹 မေဖြိုးအောင် (UTYCC, Myanmar) |
+| 🌱 မေဖြူခင် (UTYCC, Myanmar) | 🌼 မေမြတ်မြတ်ခိုင် (UTYCC, Myanmar) | 🌸 ရဲကျော်သိန်း (LU Lab., Myanmar) |
+| 💐 လှလှဌေး (UCSY, Myanmar) | 🌷 လှသစ်ဝေ (UTYCC, Myanmar) | 🍀 လှိုင်မေတင် (UTYCC, Myanmar) |
+| 🌺 ဝင့်သိင်္ဂီ (YTU, Myanmar) | 🌻 ဝင်းသူဇာကျော် (Waseda Univ., Japan) | 🌹 ဝေနှင်းအိန္ဒြာမောင် (UTYCC, Myanmar) |
+| 🌱 သီတာစန်း (UTYCC, Myanmar) | 🌼 ဟေမာန်ထွန်း (UTYCC, Myanmar) | 🌸 ဟေမာဖြိုး (UTYCC, Myanmar) |
+| 💐 အိဖြူဖြူမွန် (UTYCC, Myanmar) | 🌷 အိသန္တာဖြူ (UTYCC, Myanmar) | 🍀 အေးမြတ်သော်တာဦး (UTYCC, Myanmar) |
+| 🌺 ဥမ္မာထွန်း (Nagaoka Univ., Japan) | | |
  
 🐞 လှိုင်မြတ်နွယ် -- the highest contribution for myWord Corpus (Version 1.0) developing
  
