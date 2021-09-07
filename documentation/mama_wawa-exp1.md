@@ -177,7 +177,7 @@ mama_wawa.txt.l2.t0.2.f3.seg:
 ည အ ခါ ငါ စာ ရ မ_မ ဝ ဝ ထ ထ က
 ```
 
-===============
+--------------
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release/syl-learning-exp$ time python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.2" -fr "1,2" ./mama_wawa.txt
@@ -299,7 +299,7 @@ mama_wawa.txt.l2.t0.2.f2.seg:
 ည အ ခါ ငါ စာ ရ မ_မ ဝ_ဝ_ထ_ထ က
 ```
 
-===================
+--------------
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release/syl-learning-exp$ time python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.1" -fr "1,2" ./mama_wawa.txt
@@ -367,7 +367,7 @@ mama_wawa.txt.l2.t0.1.f2.seg:
 ည အ ခါ ငါ စာ ရ မ_မ ဝ_ဝ_ထ_ထ က
 ```
 
-================
+--------------
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release/syl-learning-exp$ time python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.1" -fr "2,3" ./mama_wawa.txt
@@ -436,7 +436,7 @@ mama_wawa.txt.l2.t0.1.f3.seg:
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release/syl-learning-exp$
 ```
 
-==============
+--------------
 
 ```
 (base) ye@administrator-HP-Z2-Tower-G4-Workstation:~/tool/word-seg-tool/python-wordsegment/wordsegment/y-test/ref/viterbi/dev4github/4release/syl-learning-exp$ time python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.2" -fr "2,3" ./mama_wawa_poem.txt 
