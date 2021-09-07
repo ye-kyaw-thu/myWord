@@ -554,6 +554,7 @@ $ time python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.1" -fr "2,3" ./mama_wa
 </td>
 </tr>
 </table> 
+ 
 ```
 $ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $i; done;
 
