@@ -556,9 +556,9 @@ Bound Accuracy: 97.60% (531488/544530)
 ### For Developing myWord Corpus
 
  
-||||
+|<!-- -->|<!-- -->|<!-- -->|
 |:--- |:---- |:----:|
-|🌺 ကျော့ကေခိုင် (UTYCC, Myanmar)| 🌻 ကောင်းထက်စံ (UTYCC, Myanmar) | 🌹ခင်ခန့်ခန့်လှိုင် (UTYCC, Myanmar) |
+| 🌺 ကျော့ကေခိုင် (UTYCC, Myanmar)| 🌻 ကောင်းထက်စံ (UTYCC, Myanmar) | 🌹ခင်ခန့်ခန့်လှိုင် (UTYCC, Myanmar) |
 | 🌱 ခင်ဝါဝါထိုက် (CSU, China) | 🌼 ခန့်ခန့်ဝင်းတင့် (UTYCC, Myanmar) | 🌸 ချိုဇင်ဦး (UTYCC, Myanmar) | 
 |💐 ချိုဝါ (UTYCC, Myanmar) | 🌷 ခိုင်ဆုဝေ (UTYCC, Myanmar) | 🍀 ခိုင်ဇာမွန် (UTYCC, Myanmar) |
 | 🌺 ဇွန်လှိုင်မိုး (UTYCC, Myanmar) | 🌻 ဇာဇာလှိုင် (KMITL, Thailand) | 🌹ထက်ရတနာဦး (UTYCC, Myanmar) |
