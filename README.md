@@ -472,15 +472,21 @@ myWord Segmentation Tool ရဲ့ npmi_train option ကို သုံးပ�
 -lr သို့မဟုတ် --iteration_range ကို "1,2" ထားမယ်။ ဆွဲထုတ်မယ့် စာလုံး length က 2 to 4 ဆိုပြီး သတ်မှတ်ပေးလိုက်တာပါ။  
 -tr သို့မဟုတ် --threshold_range ကိုတော့ "0.1,0.1" ဆိုပြီး ထားလိုက်မယ်။ ဆိုလိုတာက corpus ကလည်း စာကြောင်းရေ ၁၀ကြောင်းပဲ ရှိပြီး အရမ်းသေးတာကြောင့် threshold value ကိုတော့ မကစားတော့ဘူး။  
 -fr သို့မဟုတ် --minfreq_range ကိုတော့ "2,3" ဆိုပြီး သတ်မှတ်လိုက်မယ်။ corpus ထဲမှာ အနည်းဆုံး နှစ်ခါ ကနေ သုံးခါကြား ပါမှပဲ phrase အဖြစ်သတ်မှတ်ဖို့ ထည့်သွင်းစဉ်းစားပါ လို့ setting လုပ်တာပါ။ ဒီနေရာမှာတော့ phrase ဆိုတာက syllable တွဲတွေ ပဲဖြစ်လာမှာပါ။ ဘာကြောင့်လဲ ဆိုတော့ input လုပ်မယ့် training corpus ထဲမှာ ဖြတ်ထားတာက အထက်မှာ ပြခဲ့သလို syllable breaking လုပ်ထားတာကြောင့်ပါ။  
- 
+
+တကယ်တမ်း run တဲ့အခါမှာတော့ အောက်ပါ အတိုင်း command ပေးပြီးတော့ myword.py ကို run ကြည့်ပါ။  
 ```
 $ time python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.1" -fr "2,3" ./mama_wawa_poem.txt 
 ```
 
+corpus ကလည်း တအားသေးတာကြောင့် training လုပ်တဲ့ အချိန်က ၁စက္ကန့်အတွင်းမှာပဲ ပြီးသွားပါလိမ့်မယ်။  
+learning လုပ်ပြီး ရလာတဲ့ စာလုံးတွေဖြတ်ပေးထားတဲ့ (i.e. segmented output file) ဖိုင်တွေကို command-line မှာ ရိုက်ထုတ်ပေးဖို့အတွက် အောက်ပါလိုမျိုး command ပေးလို့ ရပါတယ်။  
+ 
 ```
 $ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $i; done;
 ```
 
+ပထမဆုံး အနေနဲ့ "l1.t0.1.f2" (i.e. iteration=1, threshold=0.1, minfreq=2) နဲ့ "l1.t0.1.f3" (i.e. iteration=1, threshold=0.1, minfreq=3) တို့နှစ်ခု အကြား ရလာတဲ့ segmented output ဖိုင် နှစ်ဖိုင်ကို side-by-side နှိုင်းယှဉ်ကြည့်ကြရအောင်။ frequency=3 အဖြစ် တိုးလိုက်တဲ့အခါမှာ ဆွဲထုတ်နိုင်တဲ့ စာလုံးအရေအတွက်က နည်းသွားတာကို မြင်တွေ့ရပါလိမ့်မယ်။ အဲဒါကြောင့် npmi_train ကို သုံးပြီး phrase တွေကို ဆွဲထုတ်တဲ့ အခါမှာ frequency ဆိုတဲ့ setting ကလည်း ကိုယ့် corpus ရဲ့ ပမာဏအပေါ်ကို မူတည်ပြီး ချိန်ဆပြီးမှ သတ်မှတ်ပါ။  
+ 
 <table>
 <tr>
 <th>mama_wawa_poem.txt.l1.t0.1.f2.seg</th>
