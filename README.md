@@ -34,7 +34,7 @@ BreakPattern = re.compile(r"((?<!" + ssSymbol + r")["+ myConsonant + r"](?![" + 
 
 input file က အောက်ပါအတိုင်းရှိတယ်လို့ ဆိုကြပါစို့...  
 
-```
+```console
 $ cat test.txt 
 ကျွန်တော်ကသုတေသနသမားပါ။
 နေ့ရောညရောမြန်မာစာနဲ့ကွန်ပျူတာနဲ့ပဲအလုပ် များ ပါ တယ်
@@ -46,7 +46,7 @@ $ cat test.txt
 
 syllable segmentation လုပ်ဖို့အတွက်က command line argument ကို syllable လို့ ပေးပြီးနောက် <input-file> နဲ့ <output-file> တွေရဲ့ နာမည်တွေကို ရိုက်ထည့်ပေးလိုက်ယုံပါပဲ။  
  
-```
+```console
 $ python ./myword.py syllable ./test.txt ./test.syllable
 $ cat ./test.syllable 
 ကျွန် တော် က သု တေ သ န သ မား ပါ ။
