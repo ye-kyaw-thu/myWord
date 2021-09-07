@@ -500,6 +500,7 @@ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $
 </tr>
 <tr>
 <td>
+ 
 ```
 မ_မ ဝ_ဝ
 ထ_ထ က
@@ -512,6 +513,7 @@ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $
 မ_မ ဝ_ဝ
 ထ_ထ က ။
 ```
+ 
 </td>
 <td>
 
@@ -541,7 +543,7 @@ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $
 </tr>
 <tr>
 <td>
-<pre>
+
 ```
 မ_မ_ဝ_ဝ
 ထ_ထ_က
@@ -554,7 +556,7 @@ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $
 မ_မ_ဝ_ဝ
 ထ_ထ_က ။
 ```
-</pre>
+
 </td>
 <td>
 
