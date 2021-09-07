@@ -139,7 +139,7 @@ Word n-gram dictionary building with default filenames:
  Word segmentation with default n-gram dictionaries:  
  
  ```console
- python ./myword.py word ./test.txt ./test.word
+ $ python ./myword.py word ./test.txt ./test.word
  ```
 
 input ဖိုင်က အောက်ပါအတိုင်း သုံးထားပါတယ်။  
