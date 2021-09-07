@@ -485,7 +485,7 @@ learning လုပ်ပြီး ရလာတဲ့ စာလုံးတွေ
 $ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $i; done;
 ```
 
-ပထမဆုံး အနေနဲ့ "l1.t0.1.f2" (i.e. iteration=1, threshold=0.1, minfreq=2) နဲ့ "l1.t0.1.f3" (i.e. iteration=1, threshold=0.1, minfreq=3) တို့နှစ်ခု အကြား ရလာတဲ့ segmented output ဖိုင် နှစ်ဖိုင်ကို side-by-side နှိုင်းယှဉ်ကြည့်ကြရအောင်။ frequency=3 အဖြစ် တိုးလိုက်တဲ့အခါမှာ ဆွဲထုတ်နိုင်တဲ့ စာလုံးအရေအတွက်က နည်းသွားတာကို မြင်တွေ့ရပါလိမ့်မယ်။ အဲဒါကြောင့် npmi_train ကို သုံးပြီး phrase တွေကို ဆွဲထုတ်တဲ့ အခါမှာ frequency ဆိုတဲ့ setting ကလည်း ကိုယ့် corpus ရဲ့ ပမာဏအပေါ်ကို မူတည်ပြီး ချိန်ဆပြီးမှ သတ်မှတ်ပါ။  
+ပထမဆုံး အနေနဲ့ "l1.t0.1.f2" (i.e. iteration=1, threshold=0.1, minfreq=2) နဲ့ "l1.t0.1.f3" (i.e. iteration=1, threshold=0.1, minfreq=3) တို့နှစ်ခု အကြား ရလာတဲ့ segmented output ဖိုင် နှစ်ဖိုင်ကို side-by-side နှိုင်းယှဉ်ကြည့်ကြရအောင်။ Underscore "_" နဲ့ တွဲပေးထားတာက NPMI algorithm နဲ့ learn လုပ်ပြီး ရလာတဲ့ စာလုံးတွဲတွေပါ။ frequency=3 အဖြစ် တိုးလိုက်တဲ့အခါမှာ ဆွဲထုတ်နိုင်တဲ့ စာလုံးအရေအတွက်က နည်းသွားတာကို မြင်တွေ့ရပါလိမ့်မယ်။ အဲဒါကြောင့် "npmi_train" ကို သုံးပြီး phrase တွေကို ဆွဲထုတ်တဲ့ အခါမှာ frequency ဆိုတဲ့ setting ကလည်း ကိုယ့် corpus ရဲ့ ပမာဏအပေါ်ကို မူတည်ပြီး ချိန်ဆပြီးမှ သတ်မှတ်ပါ။  
  
 <table>
 <tr>
@@ -524,6 +524,8 @@ $ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat
 ထ ထ က ။
 ```
 
+ဒီတစ်ခါတော့ အနေနဲ့ "l2.t0.1.f2" (i.e. iteration=2, threshold=0.1, minfreq=2) နဲ့ "l2.t0.1.f3" (i.e. iteration=1, threshold=0.1, minfreq=3) တို့နှစ်ခု အကြား NPMI က learn လုပ်ပြီး ရလာတဲ့ segmented output ဖိုင် နှစ်ဖိုင်ကို side-by-side နှိုင်းယှဉ်ကြည့်ကြရအောင်။ "iteration" ကို two pass လုပ်လိုက်တာကြောင့် syllable လေးလုံးတွဲစာလုံးတွေ အထိ ဆွဲထုတ်ယူလာနိုင်တာကို "mama_wawa_poem.txt.l2.t0.1.f2.seg" ဖိုင်ထဲမှာ ထင်ထင်ရှားရှား မြင်ရပါလိမ့်မယ်။ သို့သော် "min-freq" ကို "3" အဖြစ် ထားထားလိုက်တဲ့ အခါမှာတော့ corpus ထဲမှာက သုံးခါ မရှိတာကြောင့် syllable နှစ်လုံးတွဲစာလုံးတွေ (i.e. မ_မ) ကိုပဲ "mama_wawa_poem.txt.l2.t0.1.f3.seg" ဖိုင်ထဲမှာ ပါလာတာကို တွေ့ရပါလိမ့်မယ်။ ပြောရရင်တော့ "npmi_train" argument ကို သုံးတဲ့အခါမှာ option သုံးခုဖြစ်တဲ့ "--iteration_range", "--threshold_range" နဲ့ "--minfreq_range" သုံးခုစလုံးက အရေးကြီးပါတယ်။ အဲဒီ parameter သုံးခုအပေါ်ကို မူတည်ပြီးတော့ ရလာတဲ့ phrase တွေကလည်း အပြောင်းအလဲ ဖြစ်သွားမှာ ဖြစ်ပါတယ်။ Experiment ကို အမျိုးမျိုး လုပ်ကြည့်ကြပါလို့ အကြံပေးချင်ပါတယ်။     
+ 
 </td>
 </tr>
 </table> 
@@ -569,7 +571,6 @@ $ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat
 </tr>
 </table> 
  
-
 
 စာကြောင်းရေ တစ်ထောင်ရှိတဲ့ corpus နဲ့ စမ်းပြထားတာကိုလည်း လေ့လာနိုင်အောင် တင်ပေးထားပါတယ်။ အောက်ပါ link မှာ ဝင်ကြည့်ပါ။  
 [https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md](https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md)    
