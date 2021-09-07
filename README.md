@@ -500,7 +500,6 @@ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $
 </tr>
 <tr>
 <td>
-<pre>
 ```
 မ_မ ဝ_ဝ
 ထ_ထ က
@@ -513,7 +512,6 @@ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $
 မ_မ ဝ_ဝ
 ထ_ထ က ။
 ```
-</pre>
 </td>
 <td>
 
