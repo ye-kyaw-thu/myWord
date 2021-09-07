@@ -454,7 +454,8 @@ optional arguments:
 တကယ်က NPMI unsupervised approach နဲ့ phrase တွေသာ မကပဲ character sequence, syllable, sub_word, word စတဲ့ segmentation unit တွေကိုလည်း learn လုပ်ပြီး ဆွဲထုတ်ပေးနိုင်ပါတယ်။ အဲဒီအတွက် learning/segmentation အလုပ်ကို အမျိုးမျိုး experiment လုပ်နိုင်ဖို့အတွက် "npmi_train" ကို myWord Segmentation Tool ရဲ့ facility တစ်ခုအနေနဲ့ ထည့်ပေးထားတာပါ။   
  
 
-
+စာကြောင်းရေ တစ်ထောင်ရှိတဲ့ corpus နဲ့ စမ်းပြထားတာကိုလည်း လေ့လာနိုင်အောင် တင်ပေးထားပါတယ်။ အောက်ပါ link မှာ ဝင်ကြည့်ပါ။  
+[https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md](https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md)    
 
  
  
