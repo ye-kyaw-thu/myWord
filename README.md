@@ -501,6 +501,8 @@ real	6m45.903s
 user	6m45.519s
 sys	0m0.316s
 ```
+ 
+open test ဒေတာက စာကြောင်းရေ စုစုပေါင်း 5,626 ကြောင်းရှိပြီးတော့ စာလုံးအရေအတွက်က 135,810 (တစ်သိန်း သုံးသောင်း ငါးထောင် ကျော်) ရှိပါတယ်။  
 
 ```
 $ wc ./corpus2.shuf.open-test
@@ -511,6 +513,8 @@ $ wc ./corpus2.shuf.open-test
 $ wc ./corpus2.shuf.open-test.word 
    5626  144232 1784344 ./corpus2.shuf.open-test.word
 ```
+
+input ဖိုင်ရဲ့ စာကြောင်းတချို့ကို ဥပမာအနနဲ့ ကြည့်နိုင်ဖို့အတွက် head command နဲ့ print လုပ်ထားပါတယ်။
  
 ```
 $ head ./corpus2.shuf.open-test
@@ -525,6 +529,8 @@ $ head ./corpus2.shuf.open-test
 ကျွန်တော် ဘယ်သူ့ ကို မှာ ခဲ့ တာ လဲ
 အထူးခြားဆုံး ကား သူ ၏ မျက်လုံး များ ပင် ။
 ```
+
+myword segmentation tool က စာလုံးဖြတ်ပေးပြီးတော့ ထွက်လာတဲ့ oputput ဖိုင်ရဲ့ စာကြောင်း တစ်ချို့ကိုလည်း input လုပ်ခဲ့တဲ့ဖိုင်နဲ့ နှိုင်းယှဉ်ပြီး လေ့လာနိုင်အောင်လို့ head command သုံးပြီ။ print လုပေးထားပါတယ်။  
  
 ```
 $ head ./corpus2.shuf.open-test.word 
