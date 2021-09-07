@@ -513,7 +513,47 @@ $ time python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.1" -fr "2,3" ./mama_wa
 </td>
 </tr>
 </table> 
- 
+
+<table>
+<tr>
+<th>mama_wawa_poem.txt.l2.t0.1.f2.seg</th>
+<th>mama_wawa_poem.txt.l2.t0.1.f3.seg</th>
+</tr>
+<tr>
+<td>
+<pre>
+```
+မ_မ_ဝ_ဝ
+ထ_ထ_က
+အ က ပ ထ မ ။
+က_ပါ က_ပါ
+မ_မ ရာ
+ည ည လ သာ သာ
+ည အ ခါ
+ငါ စာ ရ
+မ_မ_ဝ_ဝ
+ထ_ထ_က ။
+```
+</pre>
+</td>
+<td>
+
+```
+မ_မ ဝ ဝ
+ထ ထ က
+အ က ပ ထ မ ။
+က ပါ က ပါ
+မ_မ ရာ
+ည ည လ သာ သာ
+ည အ ခါ
+ငါ စာ ရ
+မ_မ ဝ ဝ
+ထ ထ က ။ 
+```
+
+</td>
+</tr>
+</table> 
 ```
 $ for i in mama_wawa_poem.txt.l{1..2}.t0.1.f{2..3}.seg;do echo -e "\n"$i":"; cat $i; done;
 
