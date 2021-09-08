@@ -65,7 +65,7 @@ $ cat ./test.syllable
 xxx draft theory explanation  
  
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/sayar-graph-fst.png" alt="drawing" width="500"/>  
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/sayar-graph-fst.quality.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
   Fig. Word segmentation as graph   
@@ -74,7 +74,7 @@ xxx draft theory explanation
 <br />
  
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/shortestpath-fst.png" alt="drawing" width="500"/>  
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/shortestpath-fst.quality.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
   Fig. Shortest path for the character sequence "ဆ", "ရ" and "ာ"
