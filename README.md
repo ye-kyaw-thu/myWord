@@ -63,6 +63,8 @@ $ cat ./test.syllable
 လက်ရှိ ဗားရှင်း myWord ရဲ့ word segmentation လုပ်ပုံကတော့ လက်နဲ့ စာလုံးတစ်လုံးချင်းစီ သေသေချာချာ ဖြတ်ထားတဲ့ စာကြောင်းရေ ၅သိန်းကျော်၊ စာလုံးရေ ၁၂သန်းကျော်ရှိတဲ့ training corpus ကနေ ပထမဆုံး ngram အဘိဓာန်နှစ်ခု (unigram, bigram) ကို ကြိုတင်တည်ဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့  decoding လုပ်တဲ့ approach ကို အသုံးပြုထားပါတယ်။ နည်းနည်း အသေးစိတ် ဖြည့်ပြောရရင် input ဝင်လာတဲ့ စာကြောင်းရဲ့ character တစ်လုံးချင်းစီကို unigram, bigram မော်ဒယ်နှစ်ခုနဲ့ score လုပ်သွားပြီးတော့၊ အဖြစ်နိုင်ဆုံး စာလုံးတွဲ ကို Viterbi algorithm ကိုသုံးပြီးတော့ ရွေးတဲ့ နည်းလမ်းပါ။ 
 
 xxx draft theory explanation  
+
+[Viterbi Algorithm](https://en.wikipedia.org/wiki/Viterbi_algorithm) က 1967 မှာ [Andrew J. Viterbi](https://en.wikipedia.org/wiki/Andrew_Viterbi) ဆိုတဲ့ အင်ဂျင်နီယာက propose လုပ်ခဲ့တဲ့ algorithm ပါ။ ဒီ algorithm က Dynamic Programming Algorithm အုပ်စုထဲမှာ ပါပြီးတော့ Automatic Speech Recognition (ASR), Data recording, Part-Of-Speech tagging, DNA sequencing, Space Communication စသည်ဖြင့် ဧရိယာမျိုးစုံမှာ အသုံးပြုနေကြပါတယ်။ ကျွန်တော်တို့ နေ့စဉ် အသုံးပြုနေတဲ့ မိုဘိုင်းဖုန်းဆက်သွယ်မှုတွေမှာလည်း Viterbi algorithm ကို သုံးထားပါတယ်။ အဲဒါကြောင့် လွန်ခဲ့တဲ့ နှစ်ပေါင်း ၅၀အတွင်းမှာ တကယ်ကို ထင်ရှားပြီး အသုံးဝင်တာမို့ ကွန်ပျူတာသမားတွေ၊ အင်ဂျင်နီယာတွေအနေနဲ့က မသိမဖြစ်လို့ကို ပြောရပါလိမ့်မယ်။  
  
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/sayar-graph-fst.quality.png" alt="drawing" width="500"/>  
