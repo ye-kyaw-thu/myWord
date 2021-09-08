@@ -95,60 +95,32 @@ def viterbi(text, prev='<S>', maxlen=20):
         #pdb.set_trace()
         first_prob = math.log10(conditionalProb(first_word, prev))
         remain_prob, remain_word = viterbi(remain_word, first_word)
-
+ 
         candidates.append((first_prob + remain_prob, [first_word] + remain_word))
-        #print("first_prob: ", str(first_prob), ", remain_prob: ", remain_prob, ", [first_word]:", [first_word], ", remain_word: ", remain_word)
-        #print("Candidates: ", candidates)
+        print("Candidates: ", candidates)
         
-    #print("max(candidates): " + str(max(candidates)))
-    #print("====================")
+    print("max(candidates): " + str(max(candidates)))
+    print("====================")
     return max(candidates)
 ```
  
 ```consloe
-first_prob:  -5.010681493131443 , remain_prob:  0.0 , [first_word]: ['\n'] , remain_word:  []
-Candidates:  [(-5.010681493131443, ['\n'])]
-max(candidates): (-5.010681493131443, ['\n'])
+$ python ./myword.py word ./one_line.txt ./one_line.word 
+Candidates:  [(-4.1075915061395, ['ာ'])]
+max(candidates): (-4.1075915061395, ['ာ'])
 ====================
-first_prob:  -4.1075915061395 , remain_prob:  -5.010681493131443 , [first_word]: ['ာ'] , remain_word:  ['\n']
-Candidates:  [(-9.118272999270943, ['ာ', '\n'])]
-first_prob:  -6.010681493131443 , remain_prob:  0.0 , [first_word]: ['ာ\n'] , remain_word:  []
-Candidates:  [(-9.118272999270943, ['ာ', '\n']), (-6.010681493131443, ['ာ\n'])]
-max(candidates): (-6.010681493131443, ['ာ\n'])
+Candidates:  [(-3.9539082451705405, ['ရ', 'ာ'])]
+Candidates:  [(-3.9539082451705405, ['ရ', 'ာ']), (-0.7926188753050689, ['ရာ'])]
+max(candidates): (-0.7926188753050689, ['ရာ'])
 ====================
-first_prob:  0.1586284272686064 , remain_prob:  -6.010681493131443 , [first_word]: ['ရ'] , remain_word:  ['ာ\n']
-Candidates:  [(-5.852053065862837, ['ရ', 'ာ\n'])]
-first_prob:  -5.010681493131443 , remain_prob:  0.0 , [first_word]: ['\n'] , remain_word:  []
-Candidates:  [(-5.010681493131443, ['\n'])]
-max(candidates): (-5.010681493131443, ['\n'])
+Candidates:  [(-3.1608358481943912, ['ဆ', 'ရာ'])]
+Candidates:  [(-4.1075915061395, ['ာ'])]
+max(candidates): (-4.1075915061395, ['ာ'])
 ====================
-first_prob:  -0.7876530661591914 , remain_prob:  -5.010681493131443 , [first_word]: ['ရာ'] , remain_word:  ['\n']
-Candidates:  [(-5.852053065862837, ['ရ', 'ာ\n']), (-5.798334559290635, ['ရာ', '\n'])]
-first_prob:  -7.010681493131443 , remain_prob:  0.0 , [first_word]: ['ရာ\n'] , remain_word:  []
-Candidates:  [(-5.852053065862837, ['ရ', 'ာ\n']), (-5.798334559290635, ['ရာ', '\n']), (-7.010681493131443, ['ရာ\n'])]
-max(candidates): (-5.798334559290635, ['ရာ', '\n'])
+Candidates:  [(-3.1608358481943912, ['ဆ', 'ရာ']), (-10.118272999270943, ['ဆရ', 'ာ'])]
+Candidates:  [(-3.1608358481943912, ['ဆ', 'ရာ']), (-10.118272999270943, ['ဆရ', 'ာ']), (-1.2541214501247606, ['ဆရာ'])]
+max(candidates): (-1.2541214501247606, ['ဆရာ'])
 ====================
-first_prob:  -2.3584351521281204 , remain_prob:  -5.798334559290635 , [first_word]: ['ဆ'] , remain_word:  ['ရာ', '\n']
-Candidates:  [(-8.156769711418756, ['ဆ', 'ရာ', '\n'])]
-first_prob:  -4.1075915061395 , remain_prob:  -5.010681493131443 , [first_word]: ['ာ'] , remain_word:  ['\n']
-Candidates:  [(-9.118272999270943, ['ာ', '\n'])]
-first_prob:  -6.010681493131443 , remain_prob:  0.0 , [first_word]: ['ာ\n'] , remain_word:  []
-Candidates:  [(-9.118272999270943, ['ာ', '\n']), (-6.010681493131443, ['ာ\n'])]
-max(candidates): (-6.010681493131443, ['ာ\n'])
-====================
-first_prob:  -6.010681493131443 , remain_prob:  -6.010681493131443 , [first_word]: ['ဆရ'] , remain_word:  ['ာ\n']
-Candidates:  [(-8.156769711418756, ['ဆ', 'ရာ', '\n']), (-12.021362986262886, ['ဆရ', 'ာ\n'])]
-first_prob:  -5.010681493131443 , remain_prob:  0.0 , [first_word]: ['\n'] , remain_word:  []
-Candidates:  [(-5.010681493131443, ['\n'])]
-max(candidates): (-5.010681493131443, ['\n'])
-====================
-first_prob:  -1.2498821815007257 , remain_prob:  -5.010681493131443 , [first_word]: ['ဆရာ'] , remain_word:  ['\n']
-Candidates:  [(-8.156769711418756, ['ဆ', 'ရာ', '\n']), (-12.021362986262886, ['ဆရ', 'ာ\n']), (-6.260563674632169, ['ဆရာ', '\n'])]
-first_prob:  -8.010681493131443 , remain_prob:  0.0 , [first_word]: ['ဆရာ\n'] , remain_word:  []
-Candidates:  [(-8.156769711418756, ['ဆ', 'ရာ', '\n']), (-12.021362986262886, ['ဆရ', 'ာ\n']), (-6.260563674632169, ['ဆရာ', '\n']), (-8.010681493131443, ['ဆရာ\n'])]
-max(candidates): (-6.260563674632169, ['ဆရာ', '\n'])
-====================
-listString: (-6.260563674632169, ['ဆရာ', '\n'])
 ```
 
 ### Building Unigram, Bigram Dictionaries for Word Unit
