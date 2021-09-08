@@ -66,8 +66,9 @@ xxx draft theory explanation
 
 [Viterbi Algorithm](https://en.wikipedia.org/wiki/Viterbi_algorithm) က 1967 မှာ [Andrew J. Viterbi](https://en.wikipedia.org/wiki/Andrew_Viterbi) ဆိုတဲ့ အင်ဂျင်နီယာက propose လုပ်ခဲ့တဲ့ algorithm ပါ။ ဒီ algorithm က Dynamic Programming Algorithm အုပ်စုထဲမှာ ပါပြီးတော့ Automatic Speech Recognition (ASR), Data recording, Part-Of-Speech tagging, DNA sequencing, Space Communication စသည်ဖြင့် ဧရိယာမျိုးစုံမှာ အသုံးပြုနေကြပါတယ်။ ကျွန်တော်တို့ နေ့စဉ် အသုံးပြုနေတဲ့ မိုဘိုင်းဖုန်းဆက်သွယ်မှုတွေမှာလည်း Viterbi algorithm ကို သုံးထားပါတယ်။ အဲဒါကြောင့် လွန်ခဲ့တဲ့ နှစ်ပေါင်း ၅၀အတွင်းမှာ တကယ်ကို ထင်ရှားပြီး အသုံးဝင်တာမို့ ကွန်ပျူတာသမားတွေ၊ အင်ဂျင်နီယာတွေအနေနဲ့က မသိမဖြစ်လို့ကို ပြောရပါလိမ့်မယ်။ တကယ်တည်း အသေးစိတ် လေ့လာချင်တဲ့ သူတွေက သူနဲ့ ဆက်စပ်နေတဲ့ Markov Process, Markov Property, Markov Chain, Hidden Markov Model (HMM) တို့ကို အရင်လေ့လာပါလို့ အကြံပေးချင်ပါတယ်။ ဥပမာ တစ်ခုအနေနဲ့ Viterbi ရဲ့ အလုပ်လုပ်ပုံကို ပြောရရင် ဆိုကြပါစို့ ကျွန်တော်တို့မှာ HMM POS tagging လုပ်ပေးမဲ့ HMM မော်ဒယ်က ဆောက်ထားပြီးသားဆိုရင် စာကြောင်း အသစ်တစ်ကြောင်းကို အဲဒီ HMM မော်ဒယ်ကို pass လုပ်ပြီးတော့ POS tagging လုပ်ခိုင်းတဲ့အခါမှာ စာကြောင်း ထဲမှာ ပါတဲ့ စာလုံး အရေအတွက်ပေါ်ကို မူတည်ပြီးတော့ ဖြစ်နိုင်ချေရှိတဲ့ tag sequence တွေက အများကြီးမို့လို့ အဖြစ်နိုင်ဆုံးသော POS tag sequence ကို မော်ဒယ်က predict လုပ်တဲ့ အခါမျိုးမှာ Viterbi ကို သုံးပြီး best path ကို ရှာလို့ ရပါတယ်။ အဲဒီလို မလုပ်ပဲ brute force searching နဲ့ ရှိသမျှ path အကုန်ကိုသာ တွက်မယ်ဆိုပြီး စဉ်းစားရင် ကွန်ပျူတာ memory က မနိုင်ပါဘူး။ ဘာကြောင့်လဲ ဆိုတော့ HMM မှာက Observed state နဲ့ Hidden state ဆိုပြီး နှစ်ပိုင်းပါတာကြောင့် ကျွန်တော်တို့က transition probability (POS-tag တစ်ခုနဲ့ တစ်ခုအကြား) ရော emmission probability ရော (POS-tag နဲ့ word အကြား) ကို တွက်ကြရမှာမို့ စာလုံးအရေအတွက်က များလာတာနဲ့ အမျှ operation က exponentially တိုးလာမှာမို့ပါ။ ကွန်ပျူတာသမားတွေ အများစု သိထားကြတဲ့ Computational Complexity အနေနဲ့ ကြည့်မယ်ဆိုရင် Brute Force algorithm က ```O(S^T)``` ဖြစ်ပြီးတော့ Viterbi algorithm က ```O(T*S^2)``` လို့ ဖော်ပြလို့ ရပါတယ်။ ဒီနေရာမှာ ပြောနေတဲ့ "S" က HMM network ထဲမှာ ရှိနေတဲ့ state အရေအတွက် (i.e. the number of states) ကို ကိုယ်စားပြုပြီးတော့၊ "T" ကတော့ စာကြောင်း တစ်ကြောင်းမှာ ရှိတဲ့ စာလုံးအရေအတွက် (i.e. the length of the data sequence) ကို ကိုယ်စားပြုတာကြောင့် Viterbi Algorithm က computational cost က အများကြီး လျော့သွားစေပါတယ်။  
 
+Word segmentation အလုပ်ကိုလည်း 
  
- အဲဒါ ထိုနည်းလည်းကောင်း word segmentation မှာလည်း 
+
  
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/sayar-graph-fst.quality.png" alt="drawing" width="500"/>  
@@ -93,6 +94,9 @@ xxx draft theory explanation
 </div> 
 
 <br />
+
+မြန်မာစာအတွက် Word Segmentation tool ကို implementation လုပ်ဖို့ စဉ်းစားတဲ့အခါမှာလည်း ဒေတာသာ ရှိမယ်ဆိုရင် လွယ်လွယ်ကူကူနဲ့ training လုပ်ပြီး ရိုးရှင်းပြီး powerful ဖြစ်တဲ့ algorithm နဲ့ စာလုံးတွေကို ဖြတ်ပေးဖို့ စဉ်းစားတဲ့အခါမှာ Viterbi algorithm ကိုပဲ သုံးဖို့ ဆုံးဖြတ်ခဲ့ပါတယ်။ ရှေ့က ဆရာတွေဖြစ်တဲ့ Dr. Peter Norvig က ရေးသားထားတဲ့ Beautiful Data စာအုပ်ရဲ့ Chapter 14: Natural Language Corpus Data ရဲ့ အခန်းမှာသုံးထားတဲ့ ngram အဘိဓာန်ဆောက်ပြီးတော့ Viterbi table ဆောက်ပြီး စာလုံးဖြတ်ထားတာကို မှီငြမ်းထားပါတယ်။ Coding ကလည်း updated version ဖြစ်တဲ့ [https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6](https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6) ကို မှီငြမ်းထားပါတယ်။ ngram အဘိဓာန်ကို ဆောက်တဲ့ အပိုင်းနဲ့ plain text ဖိုင် ngram အဘိဓာန်တွေအစား၊ binary အဘိဓာန်တွေကို သုံးတဲ့ အပိုင်းတွေကို ဖြည့်စွက် coding လုပ်ခဲ့ပါတယ်။ Recursion limit ကိုလည်း ```sys.setrecursionlimit(10**6)```python ထည့်ခဲ့ပါတယ်။  
+ 
  
 ```python
 def viterbi(text, prev='<S>', maxlen=20):
