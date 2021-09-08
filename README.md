@@ -64,6 +64,24 @@ $ cat ./test.syllable
 
 xxx draft theory explanation  
  
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/sayar-graph-fst.png" alt="drawing" width="300"/>  
+</p>  
+<div align="center">
+  Fig. Word segmentation as graph   
+</div> 
+
+<br />
+ 
+<p align="center">
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/shortestpath-fst.png" alt="drawing" width="300"/>  
+</p>  
+<div align="center">
+  Fig. Shortest path for the character sequence "ဆ", "ရ" and "ာ"
+</div> 
+
+<br />
+ 
 ```python
 def viterbi(text, prev='<S>', maxlen=20):
     if not text:
