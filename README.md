@@ -94,7 +94,7 @@ log(P( ဆ )) + - log(P( ရာ )) = 1.4 + 2.3 = 3.7
   Fig.2 an example path for the character sequence "ဆ" and "ရာ" 
 </div> 
  
-တကယ့် လက်တွေ့မှာက 
+တကယ့် လက်တွေ့မှာက ဆရာနဲ့ စတဲ့ မြန်မာစာလုံးတွေက corpus ထဲမှာ အများကြီးရှိမှာမို့ ဒေတာများများနဲ့ ngram အဘိဓာန်ကို ဆောက်ထားရင် ဆောက်ထားသလို word boundary ကို ခန့်မှန်းဖို့အတွက်က ကွန်ပျူတာက တွက်ရမယ့် path တွေက သန်းနဲ့ချီရှိသွားမှာ ဖြစ်ပါတယ်။ Fig.3 က မြင်သာအောင် "ဆရာ" နဲ့ စတဲ့ မြန်မာစာလုံးတချို့ကို graph အနေနဲ့ ပြသထားတာ ဖြစ်ပါတယ်။  
  
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/lexicon.png" alt="drawing"/>  
