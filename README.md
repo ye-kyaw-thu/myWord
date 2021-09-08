@@ -60,9 +60,32 @@ $ cat ./test.syllable
  
 ## Theory: Word Segmentation with Viterbi Algorithm
 
-လက်ရှိ ဗားရှင်း myWord ရဲ့ word segmentation လုပ်ပုံကတော့ လက်နဲ့ စာလုံးတစ်လုံးချင်းစီ သေသေချာချာ ဖြတ်ထားတဲ့ စာကြောင်းရေ ၅သိန်းကျော်ရှိတဲ့ training corpus ကနေ ပထမဆုံး ngram အဘိဓာန်နှစ်ခု (unigram, bigram) ကို ကြိုတင်တည်ဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့  decoding လုပ်တဲ့ approach ကို အသုံးပြုထားပါတယ်။ နည်းနည်း အသေးစိတ် ဖြည့်ပြောရရင် input ဝင်လာတဲ့ စာကြောင်းရဲ့ character တစ်လုံးချင်းစီကို unigram, bigram မော်ဒယ်နှစ်ခုနဲ့ score လုပ်သွားပြီးတော့၊ အဖြစ်နိုင်ဆုံး စာလုံးတွဲ ကို Viterbi algorithm ကိုသုံးပြီးတော့ ရွေးတဲ့ နည်းလမ်းပါ။ 
+လက်ရှိ ဗားရှင်း myWord ရဲ့ word segmentation လုပ်ပုံကတော့ လက်နဲ့ စာလုံးတစ်လုံးချင်းစီ သေသေချာချာ ဖြတ်ထားတဲ့ စာကြောင်းရေ ၅သိန်းကျော်၊ စာလုံးရေ ၁၂သန်းကျော်ရှိတဲ့ training corpus ကနေ ပထမဆုံး ngram အဘိဓာန်နှစ်ခု (unigram, bigram) ကို ကြိုတင်တည်ဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့  decoding လုပ်တဲ့ approach ကို အသုံးပြုထားပါတယ်။ နည်းနည်း အသေးစိတ် ဖြည့်ပြောရရင် input ဝင်လာတဲ့ စာကြောင်းရဲ့ character တစ်လုံးချင်းစီကို unigram, bigram မော်ဒယ်နှစ်ခုနဲ့ score လုပ်သွားပြီးတော့၊ အဖြစ်နိုင်ဆုံး စာလုံးတွဲ ကို Viterbi algorithm ကိုသုံးပြီးတော့ ရွေးတဲ့ နည်းလမ်းပါ။ 
 
 xxx draft theory explanation  
+ 
+```python
+def viterbi(text, prev='<S>', maxlen=20):
+    if not text:
+        return 0.0, []
+
+    textlen = min(len(text), maxlen)
+    splits = [(text[:i + 1], text[i + 1:]) for i in range(textlen)]
+
+    candidates = []
+    for first_word, remain_word in splits:
+        #pdb.set_trace()
+        first_prob = math.log10(conditionalProb(first_word, prev))
+        remain_prob, remain_word = viterbi(remain_word, first_word)
+
+        candidates.append((first_prob + remain_prob, [first_word] + remain_word))
+        #print("first_prob: ", str(first_prob), ", remain_prob: ", remain_prob, ", [first_word]:", [first_word], ", remain_word: ", remain_word)
+        #print("Candidates: ", candidates)
+        
+    #print("max(candidates): " + str(max(candidates)))
+    #print("====================")
+    return max(candidates)
+```
  
 ```consloe
 first_prob:  -5.010681493131443 , remain_prob:  0.0 , [first_word]: ['\n'] , remain_word:  []
