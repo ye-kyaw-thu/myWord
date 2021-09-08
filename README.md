@@ -85,7 +85,7 @@ Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ 
  - "ဆ | ရာ"
  - "ဆရာ"
  
- 
+log(P( ဆ )) + - log(P( ရာ )) = 1.4 + 2.3 = 3.7 
  
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/shortestpath-fst.quality.png" alt="drawing" width="340"/>  
@@ -93,6 +93,8 @@ Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ 
 <div align="center">
   Fig.2 an example path for the character sequence "ဆ" and "ရာ" 
 </div> 
+ 
+တကယ့် လက်တွေ့မှာက 
  
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/lexicon.png" alt="drawing"/>  
