@@ -121,9 +121,11 @@ def viterbi(text, prev='<S>', maxlen=20):
     for first_word, remain_word in splits:
         #pdb.set_trace()
         first_prob = math.log10(conditionalProb(first_word, prev))
+        print("first_prob:  condProb(first_word, prev)", first_prob, ", first_word: ", first_word, ", prev: ", prev )
         remain_prob, remain_word = viterbi(remain_word, first_word)
- 
+        print("remain_prob: ", remain_prob, ", remain_word: ", remain_word)
         candidates.append((first_prob + remain_prob, [first_word] + remain_word))
+        #print("first_prob: ", str(first_prob), ", remain_prob: ", remain_prob, ", [first_word]:", [first_word], ", remain_word: ", remain_word)
         print("Candidates: ", candidates)
         
     print("max(candidates): " + str(max(candidates)))
@@ -133,58 +135,58 @@ def viterbi(text, prev='<S>', maxlen=20):
  
 ```consloe
 $ python ./myword.py word ./one_line.txt ./one_line.word 
-first_prob:  -2.3682169728893223 , first_word:  ဆ , prev:  <S>
-first_prob:  0.15368326096895993 , first_word:  ရ , prev:  ဆ
-first_prob:  -4.1075915061395 , first_word:  ာ , prev:  ရ
-first_prob:  0.39394528587814026 , first_word:  က , prev:  ာ
+first_prob:  condProb(first_word, prev) -2.3682169728893223 , first_word:  ဆ , prev:  <S>
+first_prob:  condProb(first_word, prev) 0.15368326096895993 , first_word:  ရ , prev:  ဆ
+first_prob:  condProb(first_word, prev) -4.1075915061395 , first_word:  ာ , prev:  ရ
+first_prob:  condProb(first_word, prev) 0.39394528587814026 , first_word:  က , prev:  ာ
 remain_prob:  0.0 , remain_word:  []
 Candidates:  [(0.39394528587814026, ['က'])]
 max(candidates): (0.39394528587814026, ['က'])
 ====================
 remain_prob:  0.39394528587814026 , remain_word:  ['က']
 Candidates:  [(-3.71364622026136, ['ာ', 'က'])]
-first_prob:  -6.010681493131443 , first_word:  ာက , prev:  ရ
+first_prob:  condProb(first_word, prev) -6.010681493131443 , first_word:  ာက , prev:  ရ
 remain_prob:  0.0 , remain_word:  []
 Candidates:  [(-3.71364622026136, ['ာ', 'က']), (-6.010681493131443, ['ာက'])]
 max(candidates): (-3.71364622026136, ['ာ', 'က'])
 ====================
 remain_prob:  -3.71364622026136 , remain_word:  ['ာ', 'က']
 Candidates:  [(-3.5599629592924003, ['ရ', 'ာ', 'က'])]
-first_prob:  -0.7926188753050689 , first_word:  ရာ , prev:  ဆ
-first_prob:  0.39394528587814026 , first_word:  က , prev:  ရာ
+first_prob:  condProb(first_word, prev) -0.7926188753050689 , first_word:  ရာ , prev:  ဆ
+first_prob:  condProb(first_word, prev) 0.39394528587814026 , first_word:  က , prev:  ရာ
 remain_prob:  0.0 , remain_word:  []
 Candidates:  [(0.39394528587814026, ['က'])]
 max(candidates): (0.39394528587814026, ['က'])
 ====================
 remain_prob:  0.39394528587814026 , remain_word:  ['က']
 Candidates:  [(-3.5599629592924003, ['ရ', 'ာ', 'က']), (-0.39867358942692865, ['ရာ', 'က'])]
-first_prob:  -7.010681493131443 , first_word:  ရာက , prev:  ဆ
+first_prob:  condProb(first_word, prev) -7.010681493131443 , first_word:  ရာက , prev:  ဆ
 remain_prob:  0.0 , remain_word:  []
 Candidates:  [(-3.5599629592924003, ['ရ', 'ာ', 'က']), (-0.39867358942692865, ['ရာ', 'က']), (-7.010681493131443, ['ရာက'])]
 max(candidates): (-0.39867358942692865, ['ရာ', 'က'])
 ====================
 remain_prob:  -0.39867358942692865 , remain_word:  ['ရာ', 'က']
 Candidates:  [(-2.766890562316251, ['ဆ', 'ရာ', 'က'])]
-first_prob:  -6.010681493131443 , first_word:  ဆရ , prev:  <S>
-first_prob:  -4.1075915061395 , first_word:  ာ , prev:  ဆရ
+first_prob:  condProb(first_word, prev) -6.010681493131443 , first_word:  ဆရ , prev:  <S>
+first_prob:  condProb(first_word, prev) -4.1075915061395 , first_word:  ာ , prev:  ဆရ
 remain_prob:  0.39394528587814026 , remain_word:  ['က']
 Candidates:  [(-3.71364622026136, ['ာ', 'က'])]
-first_prob:  -6.010681493131443 , first_word:  ာက , prev:  ဆရ
+first_prob:  condProb(first_word, prev) -6.010681493131443 , first_word:  ာက , prev:  ဆရ
 remain_prob:  0.0 , remain_word:  []
 Candidates:  [(-3.71364622026136, ['ာ', 'က']), (-6.010681493131443, ['ာက'])]
 max(candidates): (-3.71364622026136, ['ာ', 'က'])
 ====================
 remain_prob:  -3.71364622026136 , remain_word:  ['ာ', 'က']
 Candidates:  [(-2.766890562316251, ['ဆ', 'ရာ', 'က']), (-9.724327713392803, ['ဆရ', 'ာ', 'က'])]
-first_prob:  -1.2541214501247606 , first_word:  ဆရာ , prev:  <S>
-first_prob:  0.39394528587814026 , first_word:  က , prev:  ဆရာ
+first_prob:  condProb(first_word, prev) -1.2541214501247606 , first_word:  ဆရာ , prev:  <S>
+first_prob:  condProb(first_word, prev) 0.39394528587814026 , first_word:  က , prev:  ဆရာ
 remain_prob:  0.0 , remain_word:  []
 Candidates:  [(0.39394528587814026, ['က'])]
 max(candidates): (0.39394528587814026, ['က'])
 ====================
 remain_prob:  0.39394528587814026 , remain_word:  ['က']
 Candidates:  [(-2.766890562316251, ['ဆ', 'ရာ', 'က']), (-9.724327713392803, ['ဆရ', 'ာ', 'က']), (-0.8601761642466204, ['ဆရာ', 'က'])]
-first_prob:  -4.709651497467462 , first_word:  ဆရာက , prev:  <S>
+first_prob:  condProb(first_word, prev) -4.709651497467462 , first_word:  ဆရာက , prev:  <S>
 remain_prob:  0.0 , remain_word:  []
 Candidates:  [(-2.766890562316251, ['ဆ', 'ရာ', 'က']), (-9.724327713392803, ['ဆရ', 'ာ', 'က']), (-0.8601761642466204, ['ဆရာ', 'က']), (-4.709651497467462, ['ဆရာက'])]
 max(candidates): (-0.8601761642466204, ['ဆရာ', 'က'])
