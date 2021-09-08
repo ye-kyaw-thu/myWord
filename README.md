@@ -133,34 +133,63 @@ def viterbi(text, prev='<S>', maxlen=20):
  
 ```consloe
 $ python ./myword.py word ./one_line.txt ./one_line.word 
+first_word:  ဆ first_prob:  -2.3682169728893223
+first_word:  ရ first_prob:  0.15368326096895993
+first_word:  ာ first_prob:  -4.1075915061395
+first_word:  က first_prob:  0.39394528587814026
+remain_word:  [] remain_prob:  0.0
 Candidates:  [(0.39394528587814026, ['က'])]
 max(candidates): (0.39394528587814026, ['က'])
 ====================
+remain_word:  ['က'] remain_prob:  0.39394528587814026
 Candidates:  [(-3.71364622026136, ['ာ', 'က'])]
+first_word:  ာက first_prob:  -6.010681493131443
+remain_word:  [] remain_prob:  0.0
 Candidates:  [(-3.71364622026136, ['ာ', 'က']), (-6.010681493131443, ['ာက'])]
 max(candidates): (-3.71364622026136, ['ာ', 'က'])
 ====================
+remain_word:  ['ာ', 'က'] remain_prob:  -3.71364622026136
 Candidates:  [(-3.5599629592924003, ['ရ', 'ာ', 'က'])]
+first_word:  ရာ first_prob:  -0.7926188753050689
+first_word:  က first_prob:  0.39394528587814026
+remain_word:  [] remain_prob:  0.0
 Candidates:  [(0.39394528587814026, ['က'])]
 max(candidates): (0.39394528587814026, ['က'])
 ====================
+remain_word:  ['က'] remain_prob:  0.39394528587814026
 Candidates:  [(-3.5599629592924003, ['ရ', 'ာ', 'က']), (-0.39867358942692865, ['ရာ', 'က'])]
+first_word:  ရာက first_prob:  -7.010681493131443
+remain_word:  [] remain_prob:  0.0
 Candidates:  [(-3.5599629592924003, ['ရ', 'ာ', 'က']), (-0.39867358942692865, ['ရာ', 'က']), (-7.010681493131443, ['ရာက'])]
 max(candidates): (-0.39867358942692865, ['ရာ', 'က'])
 ====================
+remain_word:  ['ရာ', 'က'] remain_prob:  -0.39867358942692865
 Candidates:  [(-2.766890562316251, ['ဆ', 'ရာ', 'က'])]
+first_word:  ဆရ first_prob:  -6.010681493131443
+first_word:  ာ first_prob:  -4.1075915061395
+remain_word:  ['က'] remain_prob:  0.39394528587814026
 Candidates:  [(-3.71364622026136, ['ာ', 'က'])]
+first_word:  ာက first_prob:  -6.010681493131443
+remain_word:  [] remain_prob:  0.0
 Candidates:  [(-3.71364622026136, ['ာ', 'က']), (-6.010681493131443, ['ာက'])]
 max(candidates): (-3.71364622026136, ['ာ', 'က'])
 ====================
+remain_word:  ['ာ', 'က'] remain_prob:  -3.71364622026136
 Candidates:  [(-2.766890562316251, ['ဆ', 'ရာ', 'က']), (-9.724327713392803, ['ဆရ', 'ာ', 'က'])]
+first_word:  ဆရာ first_prob:  -1.2541214501247606
+first_word:  က first_prob:  0.39394528587814026
+remain_word:  [] remain_prob:  0.0
 Candidates:  [(0.39394528587814026, ['က'])]
 max(candidates): (0.39394528587814026, ['က'])
 ====================
+remain_word:  ['က'] remain_prob:  0.39394528587814026
 Candidates:  [(-2.766890562316251, ['ဆ', 'ရာ', 'က']), (-9.724327713392803, ['ဆရ', 'ာ', 'က']), (-0.8601761642466204, ['ဆရာ', 'က'])]
+first_word:  ဆရာက first_prob:  -4.709651497467462
+remain_word:  [] remain_prob:  0.0
 Candidates:  [(-2.766890562316251, ['ဆ', 'ရာ', 'က']), (-9.724327713392803, ['ဆရ', 'ာ', 'က']), (-0.8601761642466204, ['ဆရာ', 'က']), (-4.709651497467462, ['ဆရာက'])]
 max(candidates): (-0.8601761642466204, ['ဆရာ', 'က'])
 ====================
+
 ```
 
 ### Building Unigram, Bigram Dictionaries for Word Unit
