@@ -68,6 +68,7 @@ xxx draft theory explanation
 
 Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ မြင်ကြည့်ပြီး စဉ်းစားကြည့်ကြရအောင်။ ရှင်းပြရတာ လွယ်ကူအောင်လို့ input စာကြောင်းကို မြန်မာစာလုံး "ဆရာ" ဆိုတဲ့ စာလုံး တစ်လုံးကိုပဲ ဥပမာသုံးပြီးတော့ ရှင်းပြပါမယ်။ ဝင်လာတဲ့ စာကြောင်းကို character တစ်လုံးချင်းစီ ဖြတ်ပြီးတော့ node တစ်ခုချင်းစီအတွက် probability တွေကို တွက်ပြီး break point ကို စဉ်းစားတဲ့ နေရာမှာ Brute force နဲ့သာဆိုရင် node အကုန်ကို တွက်ပြီးမှ final word boundary ကို ဆုံးဖြတ်နိုင်မှာ ဖြစ်ပါတယ်။ သို့သော် Viterbi algorithm ရဲ့ အလုပ်လုပ်ပုံကတော့ memory မှာ ရှေ့က တွက်ခဲ့တဲ့ probability distribution ကို မှတ်သားထားပြီးတော့ လမ်းတဝက်က node တနေရာရာမှာ လက်ရှိ အချိန်အထိ တွက်ခဲ့တဲ့ ရလဒ်တွေကနေ မလိုအပ်တော့တဲ့ path တွေကို ဖြုတ်ချထားခဲ့ပြီး ဖြစ်နိုင်ချေအရှိဆုံး best path ကိုပဲ ဦးတည်တွက်သွားတဲ့ ပုံစံပါ။ အတိအကျ ပြောရရင်တော့ forward order နဲ့ backward order ဆိုပြီးတော့ နှစ်ပိုင်းပါဝင်ပြီး၊ forward မှာက node တစ်ခုချင်းစီအတွက် best path တွေကို တွက်သွားပါတယ်။ Backward order အပိုင်းမှာ ကတော့ စာကြောင်း အစကနေ အဆုံးအထိ best path ကို ဖောက်သွားတဲ့ ပုံစံပါ။ Fig.1 မှာ ပြထားသလိုပါပဲ path တစ်ခုချင်းစီက စာကြောင်းကို segmentation လုပ်သွားမယ့် လမ်းကြောင်းတွေ ဖြစ်ပါတယ်။ Path တစ်ခုစီမှာ ဥပမာအနေနဲ့ ရေးပြထားတဲ့ path weith တွေက လက်ရှိ အလုပ်လုပ်နေတဲ့ စာကြောင်းရဲ့  unigram negative log property ပါ။
 
+ Fig.1, Fig.2 ပုံကို ပြင်ဆွဲရန်!!!
  
 <p align="center">
 <img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/sayar-graph-fst.quality.png" alt="drawing" width="500"/>  
