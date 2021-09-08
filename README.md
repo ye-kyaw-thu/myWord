@@ -81,7 +81,7 @@ xxx draft theory explanation
 </div> 
  
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/lexicon.png" alt="drawing" width="800"/>  
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/lexicon.png" alt="drawing"/>  
 </p> 
 <div align="center">
   Fig. Some word examples starting with the character sequence "ဆ", "ရ" and "ာ"
