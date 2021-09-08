@@ -74,7 +74,7 @@ xxx draft theory explanation
 <br />
  
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/shortestpath-fst.quality.png" alt="drawing" width="500"/>  
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/shortestpath-fst.quality.png" alt="drawing" width="400"/>  
 </p>  
 <div align="center">
   Fig. Shortest path for the character sequence "ဆ", "ရ" and "ာ"
