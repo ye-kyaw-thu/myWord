@@ -95,7 +95,7 @@ Word segmentation အလုပ်ကိုလည်း
 
 <br />
 
-မြန်မာစာအတွက် Word Segmentation tool ကို implementation လုပ်ဖို့ စဉ်းစားတဲ့အခါမှာလည်း ဒေတာသာ ရှိမယ်ဆိုရင် လွယ်လွယ်ကူကူနဲ့ training လုပ်ပြီး ရိုးရှင်းပြီး powerful ဖြစ်တဲ့ algorithm နဲ့ စာလုံးတွေကို ဖြတ်ပေးဖို့ စဉ်းစားတဲ့အခါမှာ Viterbi algorithm ကိုပဲ သုံးဖို့ ဆုံးဖြတ်ခဲ့ပါတယ်။ ရှေ့က ဆရာတွေဖြစ်တဲ့ [Dr. Peter Norvig](https://en.wikipedia.org/wiki/Peter_Norvig) က ရေးသားထားတဲ့ Beautiful Data စာအုပ်ရဲ့ Chapter 14: Natural Language Corpus Data ရဲ့ အခန်းမှာသုံးထားတဲ့ ngram အဘိဓာန်ဆောက်ပြီးတော့ Viterbi table ဆောက်ပြီး စာလုံးဖြတ်ထားတာကို မှီငြမ်းထားပါတယ်။ Coding ကလည်း updated version ဖြစ်တဲ့ [https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6](https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6) ကို မှီငြမ်းထားပါတယ်။ ngram အဘိဓာန်ကို ဆောက်တဲ့ အပိုင်းနဲ့ plain text ဖိုင် ngram အဘိဓာန်တွေအစား၊ binary အဘိဓာန်တွေကို သုံးတဲ့ အပိုင်းတွေကို ဖြည့်စွက် coding လုပ်ခဲ့ပါတယ်။ Recursion limit ကိုလည်း ```sys.setrecursionlimit(10**6)```python ထည့်ခဲ့ပါတယ်။  
+မြန်မာစာအတွက် Word Segmentation tool ကို implementation လုပ်ဖို့ စဉ်းစားတဲ့အခါမှာလည်း ဒေတာသာ ရှိမယ်ဆိုရင် လွယ်လွယ်ကူကူနဲ့ training လုပ်ပြီး ရိုးရှင်းပြီး powerful ဖြစ်တဲ့ algorithm နဲ့ စာလုံးတွေကို ဖြတ်ပေးဖို့ စဉ်းစားတဲ့အခါမှာ Viterbi algorithm ကိုပဲ သုံးဖို့ ဆုံးဖြတ်ခဲ့ပါတယ်။ ရှေ့က ဆရာတွေဖြစ်တဲ့ [Dr. Peter Norvig](https://en.wikipedia.org/wiki/Peter_Norvig) က ရေးသားထားတဲ့ [Beautiful Data](https://github.com/jhulick/bookstuff/blob/master/Oreilly%20-%20Beautiful%20Data.pdf) စာအုပ်ရဲ့ Chapter 14: Natural Language Corpus Data ရဲ့ အခန်းမှာသုံးထားတဲ့ ngram အဘိဓာန်ဆောက်ပြီးတော့ Viterbi table ဆောက်ပြီး စာလုံးဖြတ်ထားတာကို မှီငြမ်းထားပါတယ်။ Coding ကလည်း updated version ဖြစ်တဲ့ [https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6](https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6) ကို မှီငြမ်းထားပါတယ်။ ngram အဘိဓာန်ကို ဆောက်တဲ့ အပိုင်းနဲ့ plain text ဖိုင် ngram အဘိဓာန်တွေအစား၊ binary အဘိဓာန်တွေကို သုံးတဲ့ အပိုင်းတွေကို ဖြည့်စွက် coding လုပ်ခဲ့ပါတယ်။ Recursion limit ကိုလည်း ```sys.setrecursionlimit(10**6)```python ထည့်ခဲ့ပါတယ်။  
  
  
 ```python
@@ -799,5 +799,8 @@ A clean-up of this: [(http://norvig.com/ngrams/ch14.pdf)](http://norvig.com/ngra
 26. Chenchen Ding, Ye Kyaw Thu, Masao Utiyama, Eiichiro Sumita: Word Segmentation for Burmese (Myanmar). ACM Trans. Asian Low Resour. Lang. Inf. Process. 15(4): 22:1-22:10 (2016)
 27. Shaoning Zhang and Cunli Mao and Zhengtao Yu and Hongbin Wang and Z. Li and Jiafu Zhang, Word Segmentation for Burmese Based on Dual-Layer CRFs, ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP), Volume 18, 2019, pp. 1-11 
 28. Burmese word segmentation program using Foma-generated Finite State Automata, Link: [https://github.com/lwinmoe/segment](https://github.com/lwinmoe/segment)  
+29. Beautiful Data, The Stories Behind Elegant Data Solutions, Toby Segaran, Jeff Hammerbacher, O'Reilly, 2009, Link: [https://github.com/jhulick/bookstuff/blob/master/Oreilly%20-%20Beautiful%20Data.pdf](https://github.com/jhulick/bookstuff/blob/master/Oreilly%20-%20Beautiful%20Data.pdf)
 
- 
+
+
+
