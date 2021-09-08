@@ -91,7 +91,7 @@ Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ 
 <img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/shortestpath-fst.quality.png" alt="drawing" width="340"/>  
 </p>  
 <div align="center">
-  Fig.2 an example path for the character sequence "ဆ", "ရ" and "ာ"
+  Fig.2 an example path for the character sequence "ဆ" and "ရာ" 
 </div> 
  
 <p align="center">
