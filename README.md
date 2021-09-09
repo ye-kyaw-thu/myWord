@@ -844,28 +844,30 @@ myWord: Syllable, Word and Phrase Segmenter for Burmese, Ye Kyaw Thu, Sept 2021,
 7. Python implementation of Viterbi algorithm for word segmentation
 A clean-up of this: [(http://norvig.com/ngrams/ch14.pdf)](http://norvig.com/ngrams/ch14.pdf), [https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6](https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6)
 8. Python Word Segmentation: [https://github.com/grantjenks/python-wordsegment](https://github.com/grantjenks/python-wordsegment)
-9. Yining Wang, Long Zhou, Jiajun Zhang and Chengqing Zong, Word, Subword or Character? An Empirical Study of Granularity in Chinese-English NMT, CoRR, abs/1711.04457, 2017. [[Paper]](https://arxiv.org/pdf/1711.04457.pdf)
-10. Evaluation perl script for word segmentation: [https://raw.githubusercontent.com/neubig/nlptutorial/master/script/gradews.pl](https://raw.githubusercontent.com/neubig/nlptutorial/master/script/gradews.pl) 
-11. Experiment Note by Assoc. Prof. Daichi Mochihashi: [http://chasen.org/~daiti-m/diary/](http://chasen.org/~daiti-m/diary/)  
-12. Statistically recognize long phrases with Normalized PMI: [http://chasen.org/~daiti-m/diary/misc/phraser.py](http://chasen.org/~daiti-m/diary/misc/phraser.py)  
-13. Vector Semantics: [https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html](https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html)  
-14. Lecture 17: Vector-space semantics (distributional similarities), Julia Hockenmaier: [https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf](https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf)  
-15. Pointwise_mutual_information: [https://en.wikipedia.org/wiki/Pointwise_mutual_information](https://en.wikipedia.org/wiki/Pointwise_mutual_information)  
-16. Dr. Thein Tun, Acoustic Phonetics and The Phonology of the Myanmar Language
-17. Romanization: https://en.wikipedia.org/wiki/Romanization
-18. Myanmar Unicode: http://unicode.org/charts/PDF/U1000.pdf
-19. Syllable segmentation algorithm of Myanmar text: http://gii2.nagaokaut.ac.jp/gii/media/share/20080901-ZMM%20Presentation.pdf
-20. Zin Maung Maung and Yoshiki Makami,"A rule-based syllable segmentation of Myanmar Text", in Proceeding of the IJCNLP-08 workshop of NLP for Less Privileged Language, January, 2008, Hyderabad, India, pp. 51-58. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/I08-3010.pdf)
-21. Tin Htay Hlaing, "Manually constructed context-free grammar for Myanmar syllable structure", in Proceedings of the Student Research Workshop at the 13th Conference of the European Chapter of the Association for Computational Linguistics (EACL '12), Association for Computational Linguistics, Stroudsburg, PA, USA, pp. 32-37. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/E12-3004.pdf)
-22. Ye Kyaw Thu, Andrew Finch, Yoshinori Sagisaka and Eiichiro Sumita, "A Study of Myanmar Word Segmentation Schemes for Statistical Machine Translation", in Proceedings of the 11th International Conference on Computer Applications (ICCA 2013), February 26~27, 2013, Yangon, Myanmar, pp. 167-179. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/my2Others-CameraReady.pdf)
-23. Ye Kyaw Thu, Andrew Finch, Win Pa Pa, and Eiichiro Sumita, "A Large-scale Study of Statistical Machine Translation Methods for Myanmar Language", in Proceedings of SNLP2016, February 10-12, 2016, Phranakhon Si Ayutthaya, Thailand. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/SNLP-3-A%20Large-scale%20Study%20of%20Statistical%20Machine%20Translation%20Methods%20for%20Myanmar%20Language.pdf)
-24. Regular Expression: https://en.wikipedia.org/wiki/Regular_expression
+9. Beautiful Data, The Stories Behind Elegant Data Solutions, Toby Segaran, Jeff Hammerbacher, O'Reilly, 2009, Link: [https://github.com/jhulick/bookstuff/blob/master/Oreilly%20-%20Beautiful%20Data.pdf](https://github.com/jhulick/bookstuff/blob/master/Oreilly%20-%20Beautiful%20Data.pdf)
+10. Viterbi Algorithm for HMM Decoding, Link:[https://www.cl.cam.ac.uk/teaching/1718/MLRD/slides/slides9.pdf](https://www.cl.cam.ac.uk/teaching/1718/MLRD/slides/slides9.pdf)  
+11. Implement Viterbi Algorithm in Hidden Markov Model using Python and R Link: [http://www.adeveloperdiary.com/data-science/machine-learning/implement-viterbi-algorithm-in-hidden-markov-model-using-python-and-r/](http://www.adeveloperdiary.com/data-science/machine-learning/implement-viterbi-algorithm-in-hidden-markov-model-using-python-and-r/)
+12. Yining Wang, Long Zhou, Jiajun Zhang and Chengqing Zong, Word, Subword or Character? An Empirical Study of Granularity in Chinese-English NMT, CoRR, abs/1711.04457, 2017. [[Paper]](https://arxiv.org/pdf/1711.04457.pdf)
+13. Evaluation perl script for word segmentation: [https://raw.githubusercontent.com/neubig/nlptutorial/master/script/gradews.pl](https://raw.githubusercontent.com/neubig/nlptutorial/master/script/gradews.pl) 
+14. Experiment Note by Assoc. Prof. Daichi Mochihashi: [http://chasen.org/~daiti-m/diary/](http://chasen.org/~daiti-m/diary/)  
+15. Statistically recognize long phrases with Normalized PMI: [http://chasen.org/~daiti-m/diary/misc/phraser.py](http://chasen.org/~daiti-m/diary/misc/phraser.py)  
+16. Vector Semantics: [https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html](https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html)  
+17. Lecture 17: Vector-space semantics (distributional similarities), Julia Hockenmaier: [https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf](https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf)  
+18. Pointwise_mutual_information: [https://en.wikipedia.org/wiki/Pointwise_mutual_information](https://en.wikipedia.org/wiki/Pointwise_mutual_information)  
+19. Dr. Thein Tun, Acoustic Phonetics and The Phonology of the Myanmar Language
+20. Romanization: https://en.wikipedia.org/wiki/Romanization
+21. Myanmar Unicode: http://unicode.org/charts/PDF/U1000.pdf
+22. Syllable segmentation algorithm of Myanmar text: http://gii2.nagaokaut.ac.jp/gii/media/share/20080901-ZMM%20Presentation.pdf
+23. Zin Maung Maung and Yoshiki Makami,"A rule-based syllable segmentation of Myanmar Text", in Proceeding of the IJCNLP-08 workshop of NLP for Less Privileged Language, January, 2008, Hyderabad, India, pp. 51-58. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/I08-3010.pdf)
+24. Tin Htay Hlaing, "Manually constructed context-free grammar for Myanmar syllable structure", in Proceedings of the Student Research Workshop at the 13th Conference of the European Chapter of the Association for Computational Linguistics (EACL '12), Association for Computational Linguistics, Stroudsburg, PA, USA, pp. 32-37. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/E12-3004.pdf)
+25. Ye Kyaw Thu, Andrew Finch, Yoshinori Sagisaka and Eiichiro Sumita, "A Study of Myanmar Word Segmentation Schemes for Statistical Machine Translation", in Proceedings of the 11th International Conference on Computer Applications (ICCA 2013), February 26~27, 2013, Yangon, Myanmar, pp. 167-179. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/my2Others-CameraReady.pdf)
+26. Ye Kyaw Thu, Andrew Finch, Win Pa Pa, and Eiichiro Sumita, "A Large-scale Study of Statistical Machine Translation Methods for Myanmar Language", in Proceedings of SNLP2016, February 10-12, 2016, Phranakhon Si Ayutthaya, Thailand. [Paper](https://github.com/ye-kyaw-thu/sylbreak/blob/master/reference/SNLP-3-A%20Large-scale%20Study%20of%20Statistical%20Machine%20Translation%20Methods%20for%20Myanmar%20Language.pdf)
+27. Regular Expression: https://en.wikipedia.org/wiki/Regular_expression
 25. DebuggexBeter: https://www.debuggex.com/  
-26. Chenchen Ding, Ye Kyaw Thu, Masao Utiyama, Eiichiro Sumita: Word Segmentation for Burmese (Myanmar). ACM Trans. Asian Low Resour. Lang. Inf. Process. 15(4): 22:1-22:10 (2016)
+28. Chenchen Ding, Ye Kyaw Thu, Masao Utiyama, Eiichiro Sumita: Word Segmentation for Burmese (Myanmar). ACM Trans. Asian Low Resour. Lang. Inf. Process. 15(4): 22:1-22:10 (2016)
 27. Shaoning Zhang and Cunli Mao and Zhengtao Yu and Hongbin Wang and Z. Li and Jiafu Zhang, Word Segmentation for Burmese Based on Dual-Layer CRFs, ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP), Volume 18, 2019, pp. 1-11 
-28. Burmese word segmentation program using Foma-generated Finite State Automata, Link: [https://github.com/lwinmoe/segment](https://github.com/lwinmoe/segment)  
-29. Beautiful Data, The Stories Behind Elegant Data Solutions, Toby Segaran, Jeff Hammerbacher, O'Reilly, 2009, Link: [https://github.com/jhulick/bookstuff/blob/master/Oreilly%20-%20Beautiful%20Data.pdf](https://github.com/jhulick/bookstuff/blob/master/Oreilly%20-%20Beautiful%20Data.pdf)
-30. [Viterbi Algorithm for HMM Decoding](https://www.cl.cam.ac.uk/teaching/1718/MLRD/slides/slides9.pdf)  
+29. Burmese word segmentation program using Foma-generated Finite State Automata, Link: [https://github.com/lwinmoe/segment](https://github.com/lwinmoe/segment)  
+
 
 
 
