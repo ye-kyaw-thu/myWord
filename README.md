@@ -728,7 +728,8 @@ Word အတွက်ရော Phrase အတွက်ရော default ဆော�
  - bigram-phrase.txt
 
 ⚠️ Segmentation လုပ်ဖို့အတွက်က Binary dictionary တွေကိုပဲ myWord Segmentation Tool က သုံးပါတယ်။  
- 
+☝ myWord Segmentation Tool ကို ကိုယ့်စက်ထဲမှာ download လုပ်ပြီးလို့ run မလုပ်ခင်မှာ combine-all-splitted-files.sh ကို အရင် run ဖို့ မမေ့ပါနဲ့။  
+  
 ## Evaluation of myWord for "Word Segmentation"
  
 လက်ရှိ release မလုပ်ခင် စမ်းနေတဲ့ ngram dictionary တွေနဲ့ evaluation လုပ်ထားတဲ့ ရလဒ်တွေကိုလည်း လေ့လာလို့ ရအောင် README ဖိုင်မှာ တင်ပေးထားလိုက်ပါမယ်။
