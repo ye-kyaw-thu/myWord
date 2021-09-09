@@ -36,7 +36,7 @@ myWord Segmentation Tool ကို သုံးပြီးတော့ မြ�
 
 myWord Segmentation Tool က အဓိက လုပ်ပေးနိုင်တဲ့ အချက်တွေကိုတော့ အင်္ဂလိပ်လိုပဲ ချရေးပေးလိုက်တယ်။  
 
-- Written with Python programming
+- Written with Python programming (so... you can hack easily)  
 - Used unigram, bigram dictionaries built with manually segmented twelve million words training corpus (myWord Corpus Ver. 1.0)
 - Yes, myWord supports "syllable", "sub_word", "word" and "phrase" segmentation
 - Of course, you can train or build unigram, bigram dictionaries with your segmented corpus
