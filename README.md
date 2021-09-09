@@ -103,7 +103,7 @@ Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ 
 
 <br />
  
-တကယ့် လက်တွေ့မှာက ဆရာနဲ့ စတဲ့ မြန်မာစာလုံးတွေက corpus ထဲမှာ အများကြီးရှိမှာမို့ ဒေတာများများနဲ့ ngram အဘိဓာန်ကို ဆောက်ထားရင် ဆောက်ထားသလို word boundary ကို ခန့်မှန်းဖို့အတွက်က ကွန်ပျူတာက တွက်ရမယ့် path တွေက သန်းနဲ့ချီရှိသွားမှာ ဖြစ်ပါတယ်။  
+တကယ့် လက်တွေ့မှာက ဆရာနဲ့ စတဲ့ မြန်မာစာလုံးတွေက corpus ထဲမှာ အများကြီးရှိမှာမို့ ဒေတာများများနဲ့ ngram အဘိဓာန်ကို ဆောက်ထားရင် ဆောက်ထားသလို စာကြောင်း ရှည်ရင် ရှည်သလို word boundary ကို ခန့်မှန်းဖို့အတွက်က ကွန်ပျူတာက တွက်ရမယ့် path တွေက သန်းနဲ့ချီပြီး ရှိသွားနိုင်ပါတယ်။ အဲဒါကြောင့် HMM လိုမော်ဒယ်တွေရဲ့ decoding မှာ Viterbi algorithm ကို သုံးကြတာဖြစ်ပါတယ်။   
  
 မြန်မာစာအတွက် Word Segmentation tool ကို implementation လုပ်ဖို့ စဉ်းစားတဲ့အခါမှာလည်း ဒေတာသာ ရှိမယ်ဆိုရင် လွယ်လွယ်ကူကူနဲ့ training လုပ်ပြီး ရိုးရှင်းပြီး powerful ဖြစ်တဲ့ algorithm နဲ့ စာလုံးတွေကို ဖြတ်ပေးဖို့ စဉ်းစားတဲ့အခါမှာ Viterbi algorithm ကိုပဲ သုံးဖို့ ဆုံးဖြတ်ခဲ့ပါတယ်။ ရှေ့က ဆရာတွေဖြစ်တဲ့ [Dr. Peter Norvig](https://en.wikipedia.org/wiki/Peter_Norvig) က ရေးသားထားတဲ့ [Beautiful Data](https://github.com/jhulick/bookstuff/blob/master/Oreilly%20-%20Beautiful%20Data.pdf) စာအုပ်ရဲ့ Chapter 14: Natural Language Corpus Data ရဲ့ အခန်းမှာသုံးထားတဲ့ ngram အဘိဓာန်ဆောက်ပြီးတော့ Viterbi table ဆောက်ပြီး စာလုံးဖြတ်ထားတာကို မှီငြမ်းထားပါတယ်။ Coding ကလည်း [updated version code, Mark Dong](https://gist.github.com/markdtw/e2a4e2ee7cef8ea6aed33bb47a97fba6) ကို မှီငြမ်းထားပါတယ်။ ကိုယ့် corpus နဲ့ ngram အဘိဓာန်ကို ဆောက်နိုင်အောင် ရေးတဲ့အပိုင်းနဲ့ plain text ဖိုင် ngram အဘိဓာန်တွေအစား binary အဘိဓာန်တွေကို သုံးတဲ့ အပိုင်းတွေကို ဖြည့်စွက် coding လုပ်ခဲ့ပါတယ်။ Recursion limit ကိုလည်း ```sys.setrecursionlimit(10**6)``` ထည့်ခဲ့ပါတယ်။  
  
