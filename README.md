@@ -27,9 +27,6 @@ syllable, word and phrase segmenter for Burmese (Myanmar language)
 
 myWord Segmentation Tool ကို သုံးပြီးတော့ မြန်မာစာကြောင်းတွေကို "syllable unit", "word unit", "phrase unit" တွေ အဖြစ် ဖြတ်ပေးတဲ့ ပရိုဂရမ်ပါ။ NLP preprocessing/post-editing အလုပ်တွေ၊ မြန်မာစာနဲ့ ပတ်သက်တဲ့ ဒေတာတွေကို စာလုံးဖြတ်ပြီး model ဆောက်ဖို့အတွက် အသုံးဝင်ပါလိမ့်မယ်။  
 
-
-Draft Writing ...  
-
 ## Rule: Syllable Segmentation with Regular Expression
 
 မြန်မာစာအတွက် syllable segmentation က အရေးကြီးတဲ့ word segmentation unit တစ်ခုပါ။ အထူးသဖြင့် ဒေတာက ကောင်းကောင်းမရှိတာကြောင့်ရော၊ ငြိမ်တဲ့ word segmenter က မရှိတာကြောင့်ရော Machine Translation သုတေသနမှာဆိုရင် syllable segmentation ဖြတ်ပြီးတော့ ဘာသာပြန်တာက word segmentation လုပ်ပြီး training လုပ်တာထက်တောင် ရလဒ်တွေက ပိုကောင်းနိုင်ကြောင်းကို စာတမ်းတွေရေးပြီးလည်း သက်သေပြခဲ့ပြီးပါပြီ။ myWord Segmentation Tool မှာလည်း syllable breaking လုပ်ပေးတဲ့ option ကိုထည့်ထားပါတယ်။  
@@ -697,9 +694,24 @@ Link: [https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/mama_wawa-e
  
 ## Dictionaries for Word and Phrase Segmentation
  
-### Version 1.0
+Current Version: Version 1.0  
+ 
+Word အတွက်ရော Phrase အတွက်ရော default ဆောက်ပေးထားတဲ့ ngram dictionary တွေက ./dict_ver1/ ဆိုတဲ့ folder အောက်မှာ ရှိနေပါလိမ့်မယ်။  
 
+### for Word Segmentation
+ - unigram-word.bin
+ - unigram-word.txt
+ - bigram-word.bin
+ - bigram-word.txt
 
+### for Phrase Segmentation
+ - unigram-phrase.bin
+ - unigram-phrase.txt
+ - bigram-phrase.bin
+ - bigram-phrase.txt
+
+⚠️ Segmentation လုပ်ဖို့အတွက်က Binary dictionary တွေကိုပဲ myWord Segmentation Tool က သုံးပါတယ်။  
+ 
 ## Evaluation of myWord for "Word Segmentation"
  
 လက်ရှိ release မလုပ်ခင် စမ်းနေတဲ့ ngram dictionary တွေနဲ့ evaluation လုပ်ထားတဲ့ ရလဒ်တွေကိုလည်း လေ့လာလို့ ရအောင် README ဖိုင်မှာ တင်ပေးထားလိုက်ပါမယ်။
