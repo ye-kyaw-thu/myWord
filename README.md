@@ -791,7 +791,7 @@ Bound Accuracy: 97.60% (531488/544530)
  
  - $ python myword.py syllable -h
  - $ python myword.py syllable one_line.txt one_line.syllable
- - $ $ python myword.py syllable -d "|" one_line.txt one_line.syllable
+ - $ python myword.py syllable -d "|" one_line.txt one_line.syllable
  
  <ins> **Word segmentation** </ins>  
  
@@ -802,6 +802,15 @@ Bound Accuracy: 97.60% (531488/544530)
  
  <ins> **Phrase segmentation** </ins>  
  
+ - $ python ./myword.py phrase -h
+ - $ python ./myword.py phrase ./one_line.txt  ./one_line.phrase
+ - $ python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phrase_bin ./bigram-phrase.bin ./one_line.txt  ./one_line.phrase
+ 
+ <ins> **ngram dictionary building for word segmentation** </ins>
+ 
+ <ins> **training for phrase segmentation** </ins>
+ 
+ <ins> **Unsupervised segmentation experiment with npmi_train option** </ins>
  
  
 ## Contributors
