@@ -1,4 +1,4 @@
-# myWord Segmentation Tool
+# 𝗆𝔂𝕎◐ℝ𝘿 Segmentation Tool
 syllable, word and phrase segmenter for Burmese (Myanmar language)  
 (Plan to release soon & please wait...)   
 
