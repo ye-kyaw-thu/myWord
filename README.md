@@ -783,6 +783,15 @@ F-meas: 88.08%
 Bound Accuracy: 97.60% (531488/544530)
 ```
 
+## Getting Started
+ 
+အထက်မှာ syllable, word, phrase segmentation တွေနဲ့ ပတ်သက်ပြီး အသေးစိတ် ရှင်းပြခဲ့ပြီးသား ဖြစ်ပေမဲ့ ရုတ်တရက် ကောက်သုံးတဲ့အခါမှာ အဆင်ပြေနိုင်စေဖို့အတွက် အသုံးများတဲ့ command တွေကိုပဲ ဒီနေရာမှာ ချရေးပေးထားပါတယ်။  
+ 
+ <u> Syllable segmentation </u>
+ 
+ <u> Word segmentation </u>
+ <u> Phrase segmentation </u>
+ 
 ## Contributors
  
 ### For Developing myWord Corpus
