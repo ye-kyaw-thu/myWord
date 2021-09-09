@@ -74,7 +74,7 @@ Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ 
  - shortest path 
  
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/sayarka.png" alt="drawing" width="500"/>  
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/sayarka.png" alt="drawing"/>  
 </p>  
 <div align="center">
   Fig.1 Word segmentation as graph   
