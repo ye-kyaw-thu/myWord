@@ -3,7 +3,7 @@ syllable, word and phrase segmenter for Burmese (Myanmar language)
 (Plan to release soon & please wait...)   
 
 [Introduction](#Introduction)  
-[Rule: Syllable Segmentation with Regular Expression](#Rule: Syllable Segmentation with Regular Expression)  
+[Rule: Syllable Segmentation with Regular Expression](#Rule:\ Syllable Segmentation with Regular Expression)  
 
 ## Introduction
 
