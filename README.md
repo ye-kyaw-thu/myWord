@@ -1,5 +1,5 @@
 # 𝗆𝔂𝕎◐ℝ𝗗 Segmentation Tool
-syllable, word and phrase segmenter for Burmese (Myanmar language)  
+syllable, word, sub_word and phrase segmenter for Burmese (Myanmar language)  
 (Plan to release soon & please wait...)   
 
 - [Introduction](#Introduction)  
@@ -29,7 +29,18 @@ syllable, word and phrase segmenter for Burmese (Myanmar language)
 
 မြန်မာစာ စာလုံးတွေကို ပေါ့ပေါ့ပါးပါးနဲ့ မြန်မြန်ဆန်ဆန် ဖြတ်ပေးနိုင်ပြီး၊ library တွေ အများကြီးကိုလည်း မှီမနေပဲ Developer တွေက လွယ်လွယ်ကူကူ embeding လုပ်နိုင်ပြီးတော့ ကိုယ့်ဒေတာနဲ့ကိုယ်လည်း extend လုပ်နိုင်တဲ့ word segmentation tool က ဒီနေ့အထိ မရှိသေးဘူးလို့ နားလည်ထားတယ်။ အဲဒီ ကွက်လပ်ကိုဖြည့်နိုင်ဖို့ရည်ရွယ်ပြီးတော့ myWord ကို R&D လုပ်ခဲ့ပြီး release လုပ်ပေးလိုက်ပါတယ်။  
 
-myWord Segmentation Tool ကို သုံးပြီးတော့ မြန်မာစာကြောင်းတွေကို "syllable unit", "word unit", "phrase unit" တွေ အဖြစ် ဖြတ်ပေးတဲ့ ပရိုဂရမ်ပါ။ NLP preprocessing/post-editing အလုပ်တွေ၊ မြန်မာစာနဲ့ ပတ်သက်တဲ့ ဒေတာတွေကို စာလုံးဖြတ်ပြီး model ဆောက်ဖို့အတွက် အသုံးဝင်ပါလိမ့်မယ်။  
+myWord Segmentation Tool ကို သုံးပြီးတော့ မြန်မာစာကြောင်းတွေကို "syllable unit", "sub_word", "word unit", "phrase unit" တွေ အဖြစ် ဖြတ်ပေးတဲ့ ပရိုဂရမ်ပါ။ NLP preprocessing/post-editing အလုပ်တွေ၊ မြန်မာစာနဲ့ ပတ်သက်တဲ့ ဒေတာတွေကို စာလုံးဖြတ်ပြီး model ဆောက်ဖို့အတွက် အသုံးဝင်ပါလိမ့်မယ်။  
+
+### Features:
+
+myWord Segmentation Tool က အဓိက လုပ်ပေးနိုင်တဲ့ အချက်တွေကိုတော့ အင်္ဂလိပ်လိုပဲ ချရေးပေးလိုက်တယ်။  
+
+- Written with Python programming
+- Used unigram, bigram dictionaries built with manually segmented twelve million words training corpus (myWord Corpus Ver. 1.0)
+- Yes, myWord supports "syllable", "sub_word", "word" and "phrase" segmentation
+- Of course, you can train or build unigram, bigram dictionaries with your segmented corpus
+- By default, running word segmentation with Viterbi Algorithm
+- By default, running phrase segmentation with NPMI (Normalized Pointwise Mutual Information) Algorithm
 
 ## Rule: Syllable Segmentation with Regular Expression
 
@@ -90,7 +101,7 @@ Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ 
 
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/sayarka.png" alt="drawing" width="800"/>  
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/sayarka.png" alt="word segmentation as graph" width="800"/>  
 </p>  
 <div align="center">
   Fig.1 Word segmentation as graph for the input sentence "ဆရာက"  
@@ -115,7 +126,7 @@ Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ 
 အထက်က Fig.1 မှာ ပြခဲ့တဲ့ "ဆရာက" ဆိုတဲ့ input စာကြောင်းအတွက် စာလုံး ဖြတ်လို့ရတဲ့ လမ်းကြောင်းတွေ အမျိုးမျိုးရှိတဲ့အထဲကနေ shortest path ကို graph အနေနဲ့ ဆွဲပြရရင်တော့ အောက်ပါလို ပုံမျိုး (Fig. 2) ကို ဆွဲလို့ ရပါလိမ့်မယ်။  
  
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/segment2.png" alt="drawing" width="340"/>  
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/segment2.png" alt="shortest path" width="340"/>  
 </p>  
 <div align="center">
   Fig.2 the shortest path for the input sentence "ဆရာက" 
@@ -320,9 +331,8 @@ Wrod2Vec နဲ့ ပတ်သက်တဲ့ နာမည်ကြီး စ�
 ပထမစာတမ်းရဲ့ test set မှာ single token word တွေပဲ သုံးထားကြောင်း ဖော်ပြထားပါတယ်။ ဆိုလိုတာက "New York", "ice cream", "high school", "hot dog", "living room", "full moon", "up to date", "part-time work", "state of the art" တို့လို စာလုံး နှစ်လုံးနဲ့ အထက်တွဲနေတဲ့ စကားလုံးတွေ (word) တွေကို word2vec အနေနဲ့ train လုပ်မယ်ဆိုရင် အရင်ဆုံး အမြဲတမ်း တွဲပြီးသုံးနေတဲ့ စာလုံးတွဲတွေ တနည်းအားဖြင့် phrase တွေကို ငါတို့က ကြိုသိဖို့ လိုအပ်ပါတယ်။ အဲဒီလို သိပြီးမှသာ word2vec ကို train မလုပ်ခင်မှာ preprocessing အနေနဲ့ ဥပမာ "new_york", "ice_cream", ..., "up_to_date", "part_time_work", "state_of_the_art" အဖြစ် underscore နဲ့ တွဲတာမျိုး လုပ်ပြီး စာလုံးတစ်လုံးအနေနဲ့ training corpus ထဲမှာ ကြိုပြင်ထားဖို့ လိုအပ်ပါလိမ့်မယ်။ အဲဒီ လိုမျိုး NLP task အတွက်က supervised approach နဲ့ ဆိုရင် NER (Name Entity Recognition) model နဲ့ လုပ်လို့ ရပေမဲ့ NER model ဆောက်ဖို့အတွက်က NER corpus က ရှိနေမှ ဖြစ်ပါလိမ့်မယ်။ အဲဒါကြောင့် NER corpus ကို မသုံးပဲနဲ့ unsupervised approach အနေနဲ့ သွားမယ်ဆိုရင် ဘယ်လို လုပ်လို့ ရနိုင်တယ် ဆိုတာကို Word2Vec ရဲ့ဒုတိယစာတမ်းလို့ ပြောလို့ရတဲ့ [Distributed Representations of Words and Phrases and their Compositionality, (Mikolov et al., 2013)](https://arxiv.org/pdf/1310.4546.pdf) စာတမ်းရဲ့ Section 4. Learning Phrases မှာ Formula No. 6 အနေနဲ့ အောက်ပါအတိုင်း ဖော်ပြထားတာကို တွေ့ရပါလိမ့်မယ်။  
 
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/formula-6.png" width="350"/>
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/formula-6.png" alt="formula no.6 of Word2Vec Paper" width="350"/>
 </p>
-  </br>
   
 ဒီနေရာမှာ ပြောနေတဲ့ n (v, w), n (v), n (w) တွေက bigram နဲ့ unigram frequency တွေ ဖြစ်ပြီးတော့ δ က frequency နိမ့်တဲ့ စကားလုံးတွဲတွေက ထိပ်ပိုင်းကို ရောက်မလာဖို့အတွက် ထိန်းညှိတဲ့ discount factor ပါ။ Phrase တွေကို ဆွဲထုတ်နိုင်ဖို့အတွက်က threshold တစ်ခု သတ်မှတ်ထားပြီး အဲဒီ threshold value အထက်မှာ ရှိတဲ့ bigram စကားလုံးတွဲတွေကို ရွေးယူလိုက်ယုံပါပဲ။ Threshold value အထက် ဆိုတာကို probability အနေနဲ့ စဉ်းစားကြည့်ရင် p (v, w) = n (v, w) / N, p (v) = n (v) / N, p (w) = n ဆိုပြီး ဖော်မြူလာအနေနဲ့ ရေးလို့ ရပါတယ်။ ဒီနေရာမှာ "N" ဆိုတာက unigram စုစုပေါင်းတန်ဖိုးပါ။ δ ကို ဖယ်ပြီးတော့ score တွက်ဖို့အတွက် စဉ်းစားရင် အောက်ပါအတိုင်း ရေးလို့ ရပါတယ်
 
