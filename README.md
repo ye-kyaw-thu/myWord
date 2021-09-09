@@ -127,7 +127,7 @@ def viterbi(text, prev='<S>', maxlen=20):
     for first_word, remain_word in splits:
         #pdb.set_trace()
         first_prob = math.log10(conditionalProb(first_word, prev))
-        print("first_prob:  condProb(", first_word, ", ", prev, ")", first_prob )
+        print("first_prob of condProb(", first_word, ", ", prev, "): ", first_prob )
         remain_prob, remain_word = viterbi(remain_word, first_word)
         print("remain_prob: ", remain_prob, ", remain_word: ", remain_word)
         candidates.append((first_prob + remain_prob, [first_word] + remain_word))
