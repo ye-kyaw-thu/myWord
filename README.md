@@ -74,7 +74,7 @@ Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ 
  - shortest path 
  
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/sayar-graph-fst.quality.png" alt="drawing" width="500"/>  
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/sayarka.png" alt="drawing" width="500"/>  
 </p>  
 <div align="center">
   Fig.1 Word segmentation as graph   
@@ -95,7 +95,7 @@ Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ 
 -log(P( ဆရာ )) + -log(P( က )) = 1.2 + 1.0 = 2.2 
  
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/shortestpath-fst.quality.png" alt="drawing" width="340"/>  
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/segment-shortest.png" alt="drawing" width="340"/>  
 </p>  
 <div align="center">
   Fig.2 an example path for the character sequence "ဆ" and "ရာ" 
