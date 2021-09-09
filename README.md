@@ -928,7 +928,7 @@ myWord Corpus ကို သေသေချာချာ develop လုပ်ဖ�
 
 ## License
 
-myWord is MIT-licensed. The license applies to the pre-build unigram, bigram dictionaries as well.  
+myWord is MIT-licensed. The license applies to the pre-built unigram, bigram dictionaries as well.  
  
 ## Citation
  
