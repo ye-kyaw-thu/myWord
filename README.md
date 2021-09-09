@@ -42,6 +42,7 @@ myWord Segmentation Tool က အဓိက လုပ်ပေးနိုင်�
 - Of course, you can train or build unigram, bigram dictionaries with your segmented corpus
 - By default, running word segmentation with Viterbi Algorithm
 - By default, running phrase segmentation with NPMI (Normalized Pointwise Mutual Information) Algorithm
+- Shared Burmese unigram, bigram dictionaries with MIT License
 
 ## Rule: Syllable Segmentation with Regular Expression
 
