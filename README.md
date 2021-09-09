@@ -805,9 +805,9 @@ myWord Corpus ကို သေသေချာချာ develop လုပ်ဖ�
 | 🌱 မေဖြူခင် (UTYCC, Myanmar) | 🌼 မေမြတ်မြတ်ခိုင် (UTYCC, Myanmar) | 🌸 ရဲကျော်သိန်း (LU Lab., Myanmar) |
 | 💐 လှလှဌေး (UCSY, Myanmar) | 🌷 လှသစ်ဝေ (NLP Lab., UTYCC, Myanmar) | 🍀 လှိုင်မေတင် (UTYCC, Myanmar) |
 | 🌺 ဝင့်သိင်္ဂီ (YTU, Myanmar) | 🌻 ဝင်းသူဇာကျော် (Waseda Univ., Japan) | 🌹 ဝေနှင်းအိန္ဒြာမောင် (UTYCC, Myanmar) |
-| 🌱 သီတာစန်း (UTYCC, Myanmar) | 🌼 ဟေမာန်ထွန်း (UTYCC, Myanmar) | 🌸 ဟေမာဖြိုး (NLP Lab., UTYCC, Myanmar) |
-| 💐 အိဖြူဖြူမွန် (UTYCC, Myanmar) | 🌷 အိသန္တာဖြူ (UTYCC, Myanmar) | 🍀 အေးမြတ်သော်တာဦး (NLP Lab., UTYCC, Myanmar) |
-| 🌺 ဥမ္မာထွန်း (Nagaoka Univ., Japan) | | |
+| 🌱 သဇင်မြင့်ဦး (UCSY, Myanmar) | 🌼 သီတာစန်း (UTYCC, Myanmar) | 🌸 ဟေမာန်ထွန်း (UTYCC, Myanmar) | 
+| 💐 ဟေမာဖြိုး (NLP Lab., UTYCC, Myanmar) | 🌷 အိဖြူဖြူမွန် (UTYCC, Myanmar) | 🍀 အိသန္တာဖြူ (UTYCC, Myanmar) | 
+| 🌺 အေးမြတ်သော်တာဦး (NLP Lab., UTYCC, Myanmar) | 🌻 ဥမ္မာထွန်း (Nagaoka Univ., Japan) | |
 
 🐞 လှိုင်မြတ်နွယ် (NLP Lab., UTYCC, Myanmar) the highest contribution for myWord Corpus (Version 1.0) developing
  
