@@ -1,6 +1,6 @@
 # 𝗆𝔂𝕎◐ℝ𝗗 Segmentation Tool
+
 syllable, word, sub_word and phrase segmenter for Burmese (Myanmar language)  
-(Plan to release soon & please wait...)   
 
 - [Introduction](#Introduction)  
   - [Features](#Features)   
