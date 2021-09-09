@@ -813,7 +813,7 @@ myWord Corpus ကို သေသေချာချာ develop လုပ်ဖ�
  
 ### Coding and the Project Leader
  
- 🐝 Ye Kyaw Thu
+ 🐝 Ye Kyaw Thu (Visiting Professor, LST, NECTEC, Thailand)  
  
 ## To Do
  
