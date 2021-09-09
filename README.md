@@ -783,17 +783,21 @@ F-meas: 88.08%
 Bound Accuracy: 97.60% (531488/544530)
 ```
 
-## Getting Started
+## Commands myWord Segmentation Tool
  
-အထက်မှာ syllable, word, phrase segmentation တွေနဲ့ ပတ်သက်ပြီး အသေးစိတ် ရှင်းပြခဲ့ပြီးသား ဖြစ်ပေမဲ့ ရုတ်တရက် ကောက်သုံးတဲ့အခါမှာ အဆင်ပြေနိုင်စေဖို့အတွက် output တွေ ပြပေးမနေတော့ပဲ run ရမယ့် command တွေကိုပဲ ဒီနေရာမှ ချရေးပေးထားပါတယ်။  
+အထက်မှာ syllable, word, phrase segmentation တွေနဲ့ ပတ်သက်ပြီး အသေးစိတ် ရှင်းပြခဲ့ပြီးသား ဖြစ်ပေမဲ့ advanced user တွေ၊ သုံးဖူးပြီးသားသူတွေက ရုတ်တရက် ကောက်သုံးတဲ့အခါမှာ အဆင်ပြေနိုင်စေဖို့အတွက် output တွေ ပြပေးမနေတော့ပဲ run ရမယ့် command တွေကိုပဲ ဒီနေရာမှ စုပြီးချရေးပေးထားပါတယ်။    
  
  <ins> **Syllable segmentation** </ins>  
+ 
+ Syllable segmentation နဲ့ ဆိုင်တဲ့ command များ  
  
  - $ python myword.py syllable -h
  - $ python myword.py syllable one_line.txt one_line.syllable
  - $ python myword.py syllable -d "|" one_line.txt one_line.syllable
  
  <ins> **Word segmentation** </ins>  
+ 
+ Word segmentation နဲ့ ဆိုင်တဲ့ command များ  
  
  - $ python myword.py word -h
  - $ python myword.py word one_line.txt one_line.word
@@ -802,24 +806,32 @@ Bound Accuracy: 97.60% (531488/544530)
  
  <ins> **Phrase segmentation** </ins>  
  
+ Phrase segmentation အလုပ်နဲ့ ဆိုင်တဲ့ command များ  
+ 
  - $ python ./myword.py phrase -h
  - $ python ./myword.py phrase ./one_line.txt  ./one_line.phrase
  - $ python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phrase_bin ./bigram-phrase.bin ./one_line.txt  ./one_line.phrase
  
  <ins> **ngram dictionary building for word segmentation** </ins>
  
+ ကိုယ့်မှာ ရှိတဲ့ corpus နဲ့ ngram အဘိဓာန်တွေ ဆောက်ပြီး word segmentation လုပ်မယ့် သူများအတွက်  
+ 
  - $ python myword.py build_dict -h
  - $ python ./myword.py build_dict ./corpus2.1k
-- $ python ./myword.py build_dict --unigram_word_txt unigram-word.txt --bigram_word_txt bigram-word.txt --unigram_word_bin unigram-word.bin --bigram_word_bin bigram-word.bin ./corpus2.1k
+ - $ python ./myword.py build_dict --unigram_word_txt unigram-word.txt --bigram_word_txt bigram-word.txt --unigram_word_bin unigram-word.bin --bigram_word_bin bigram-word.bin ./corpus2.1k
 
  <ins> **training for phrase segmentation** </ins>
 
+ ကိုယ့်ဒေတာနဲ့ ကိုယ် word segmentation လုပ်ထားတဲ့ corpus သုံးပြီးတော့ ngram အဘိဓာန်တွေဆောက်မယ်၊ phrase တွေကို ဆွဲထုတ်ကြည့်ချင်တဲ့ သူများအတွက်   
+ 
  - $ python myword.py train_phrase -h
  - $ python ./myword.py train_phrase -l 2 -t 0.1 -f 3 --unigram_phrase_txt unigram.l2.t0.1f3.txt --bigram_phrase_txt bigram.l2.t0.1f3.txt --unigram_phrase_bin unigram.l2.t0.1f3.bin --bigram_phrase_bin bigram.l2.t0.1f3.bin ./corpus.txt ./corpus.l2t0.1f3.phrase
  - $ python ./myword.py train_phrase -l 2 -t 0.1 -f 2  ./corpus2.1k ./corpus2.1k.l2t0.1f2.phrase
  
  <ins> **Unsupervised segmentation experiment with npmi_train option** </ins>
 
+ ကိုယ်လက်ထဲမှာ ရှိတဲ့ Corpus တစ်ခုခုကို သုံးပြီးတော့ training, x-unit segmentation နဲ့ ပတ်သက်တဲ့ experiment တွေကို လုပ်ကြည့်ချင်တဲ့ သူများအတွက်  
+ 
  - $ python myword.py npmi_train -h
  - $ python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.1" -fr "2,3" ./mama_wawa_poem.txt
 
