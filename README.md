@@ -867,6 +867,7 @@ A clean-up of this: [(http://norvig.com/ngrams/ch14.pdf)](http://norvig.com/ngra
 27. Shaoning Zhang and Cunli Mao and Zhengtao Yu and Hongbin Wang and Z. Li and Jiafu Zhang, Word Segmentation for Burmese Based on Dual-Layer CRFs, ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP), Volume 18, 2019, pp. 1-11 
 28. Burmese word segmentation program using Foma-generated Finite State Automata, Link: [https://github.com/lwinmoe/segment](https://github.com/lwinmoe/segment)  
 29. Beautiful Data, The Stories Behind Elegant Data Solutions, Toby Segaran, Jeff Hammerbacher, O'Reilly, 2009, Link: [https://github.com/jhulick/bookstuff/blob/master/Oreilly%20-%20Beautiful%20Data.pdf](https://github.com/jhulick/bookstuff/blob/master/Oreilly%20-%20Beautiful%20Data.pdf)
+30. [Viterbi Algorithm for HMM Decoding](https://www.cl.cam.ac.uk/teaching/1718/MLRD/slides/slides9.pdf)  
 
 
 
