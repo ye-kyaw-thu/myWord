@@ -874,6 +874,7 @@ myWord Corpus ကို သေသေချာချာ develop လုပ်ဖ�
 - [ ] upload Word Segmentation Guideline for Burmese (Myanmar language)
 - [ ] automatic spelling checking running on myWord corpus
 - [ ] adding Beam decoding
+- [ ] evaluation score for npmi_train
 
 ## License
 
