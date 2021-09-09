@@ -75,7 +75,7 @@ def parse_write (file, phrases, output):
     return output
 
 
-# for Myanmar language, default threshold=0.2 and default minfreq=5 is best with "corpus2" training corpus
+# for Myanmar language, default threshold=0.2 and default minfreq=3 is best with "corpus2" training corpus
 # for Japanese language, threshold=0.1 and minfreq=1 set by researcher Daichi Mochihashi.
 def compute_phrase (unigram, bigram, threshold, minfreq):
     N = sum (list(unigram.values()))
