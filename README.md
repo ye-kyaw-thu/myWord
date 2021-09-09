@@ -789,8 +789,8 @@ Bound Accuracy: 97.60% (531488/544530)
  
  <ins> Syllable segmentation </ins>
  
- <ins> Word segmentation </ins>
- <ins> Phrase segmentation </ins>
+ <ins> Word segmentation </ins>  
+ \__Phrase segmentation__
  
 ## Contributors
  
