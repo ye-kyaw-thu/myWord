@@ -828,9 +828,9 @@ Bound Accuracy: 97.60% (531488/544530)
  - $ python ./myword.py train_phrase -l 2 -t 0.1 -f 3 --unigram_phrase_txt unigram.l2.t0.1f3.txt --bigram_phrase_txt bigram.l2.t0.1f3.txt --unigram_phrase_bin unigram.l2.t0.1f3.bin --bigram_phrase_bin bigram.l2.t0.1f3.bin ./corpus.txt ./corpus.l2t0.1f3.phrase
  - $ python ./myword.py train_phrase -l 2 -t 0.1 -f 2  ./corpus2.1k ./corpus2.1k.l2t0.1f2.phrase
  
- <ins> **Unsupervised segmentation experiment with npmi_train option** </ins>
+ <ins> **Unsupervised segmentation experiment with NPMI** </ins>
 
- ကိုယ်လက်ထဲမှာ ရှိတဲ့ Corpus တစ်ခုခုကို သုံးပြီးတော့ training, x-unit segmentation နဲ့ ပတ်သက်တဲ့ experiment တွေကို လုပ်ကြည့်ချင်တဲ့ သူများအတွက်  
+ ကိုယ်လက်ထဲမှာ ရှိတဲ့ Corpus တစ်ခုခုကို သုံးပြီးတော့ NPMI training, x-unit segmentation နဲ့ ပတ်သက်တဲ့ experiment တွေကို လုပ်ကြည့်ချင်တဲ့ သူများအတွက်  
  
  - $ python myword.py npmi_train -h
  - $ python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.1" -fr "2,3" ./mama_wawa_poem.txt
