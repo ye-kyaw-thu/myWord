@@ -820,7 +820,7 @@ Bound Accuracy: 97.60% (531488/544530)
  - $ python myword.py word -h
  - $ python myword.py word one_line.txt one_line.word
  - $ python myword.py word -d "|" one_line.txt one_line.word
- - $ python myword.py word --unigram_word_bin ./unigram-word.bin --bigram_word_bin ./bigram-word.bin -d "/" one_line.txt one_line.word
+ - $ python myword.py word --unigram_word_bin ./dict_ver1/unigram-word.bin --bigram_word_bin ./dict_ver1/bigram-word.bin -d "/" one_line.txt one_line.word
  
  <ins> **Phrase segmentation** </ins>  
  
@@ -828,7 +828,7 @@ Bound Accuracy: 97.60% (531488/544530)
  
  - $ python ./myword.py phrase -h
  - $ python ./myword.py phrase ./one_line.txt  ./one_line.phrase
- - $ python ./myword.py phrase --unigram_phrase_bin ./unigram-phrase.bin --bigram_phrase_bin ./bigram-phrase.bin ./one_line.txt  ./one_line.phrase
+ - $ python ./myword.py phrase --unigram_phrase_bin ./dict_ver1/unigram-phrase.bin --bigram_phrase_bin ./dict_ver1/bigram-phrase.bin ./one_line.txt  ./one_line.phrase
  
  <ins> **ngram dictionary building for word segmentation** </ins>
  
@@ -836,11 +836,11 @@ Bound Accuracy: 97.60% (531488/544530)
  
  - $ python myword.py build_dict -h
  - $ python ./myword.py build_dict ./corpus2.1k
- - $ python ./myword.py build_dict --unigram_word_txt unigram-word.txt --bigram_word_txt bigram-word.txt --unigram_word_bin unigram-word.bin --bigram_word_bin bigram-word.bin ./corpus2.1k
+ - $ python ./myword.py build_dict --unigram_word_txt ./unigram-word.txt --bigram_word_txt ./bigram-word.txt --unigram_word_bin ./unigram-word.bin --bigram_word_bin ./bigram-word.bin ./corpus2.1k
 
  <ins> **training for phrase segmentation** </ins>
 
- ကိုယ့်ဒေတာနဲ့ ကိုယ် word segmentation လုပ်ထားတဲ့ corpus သုံးပြီးတော့ ngram အဘိဓာန်တွေဆောက်မယ်၊ phrase တွေကို ဆွဲထုတ်ကြည့်ချင်တဲ့ သူများအတွက်   
+ ကိုယ့်ဒေတာနဲ့ ကိုယ် manual word segmentation လုပ်ထားတဲ့ corpus သုံးပြီးတော့ ngram အဘိဓာန်တွေဆောက်မယ်၊ phrase တွေကို ဆွဲထုတ်ကြည့်ချင်တဲ့ သူများအတွက်   
  
  - $ python myword.py train_phrase -h
  - $ python ./myword.py train_phrase -l 2 -t 0.1 -f 3 --unigram_phrase_txt unigram.l2.t0.1f3.txt --bigram_phrase_txt bigram.l2.t0.1f3.txt --unigram_phrase_bin unigram.l2.t0.1f3.bin --bigram_phrase_bin bigram.l2.t0.1f3.bin ./corpus.txt ./corpus.l2t0.1f3.phrase
