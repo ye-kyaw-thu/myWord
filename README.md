@@ -4,6 +4,7 @@ syllable, word and phrase segmenter for Burmese (Myanmar language)
 
 [Introduction](#Introduction)  
 [Rule: Syllable Segmentation with Regular Expression](#Rule-Syllable-Segmentation-with-Regular-Expression)  
+[Syllable Segmentation with "myWord" Segmentation Tool](#Syllable-Segmentation-with-myWord-Segmentation-Tool)  
 
 ## Introduction
 
