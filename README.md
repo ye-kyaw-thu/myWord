@@ -95,7 +95,7 @@ Word segmentation အလုပ်ကိုလည်း graph အနေနဲ့ 
 အထက်က Fig.1 မှာ ပြခဲ့တဲ့ "ဆရာက" ဆိုတဲ့ input စာကြောင်းအတွက် စာလုံး ဖြတ်လို့ရတဲ့ လမ်းကြောင်းတွေ အမျိုးမျိုးရှိတဲ့အထဲကနေ shortest path ကို graph အနေနဲ့ ဆွဲပြရရင်တော့ အောက်ပါလို ပုံမျိုး (Fig. 2) ကို ဆွဲလို့ ရပါလိမ့်မယ်။  
  
 <p align="center">
-<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/segment-shortest.png" alt="drawing" width="340"/>  
+<img src="https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/fig/segment2.png" alt="drawing" width="340"/>  
 </p>  
 <div align="center">
   Fig.2 an example path for the character sequence "ဆ" and "ရာ" 
