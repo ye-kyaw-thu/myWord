@@ -785,12 +785,24 @@ Bound Accuracy: 97.60% (531488/544530)
 
 ## Getting Started
  
-အထက်မှာ syllable, word, phrase segmentation တွေနဲ့ ပတ်သက်ပြီး အသေးစိတ် ရှင်းပြခဲ့ပြီးသား ဖြစ်ပေမဲ့ ရုတ်တရက် ကောက်သုံးတဲ့အခါမှာ အဆင်ပြေနိုင်စေဖို့အတွက် အသုံးများတဲ့ command တွေကိုပဲ ဒီနေရာမှာ ချရေးပေးထားပါတယ်။  
+အထက်မှာ syllable, word, phrase segmentation တွေနဲ့ ပတ်သက်ပြီး အသေးစိတ် ရှင်းပြခဲ့ပြီးသား ဖြစ်ပေမဲ့ ရုတ်တရက် ကောက်သုံးတဲ့အခါမှာ အဆင်ပြေနိုင်စေဖို့အတွက် output တွေ ပြပေးမနေတော့ပဲ run ရမယ့် command တွေကိုပဲ ဒီနေရာမှ ချရေးပေးထားပါတယ်။  
  
- <ins> Syllable segmentation </ins>
+ <ins> **Syllable segmentation** </ins>  
  
- <ins> Word segmentation </ins>  
- <ins> **Phrase segmentation** </ins>
+ - $ python myword.py syllable -h
+ - $ python myword.py syllable one_line.txt one_line.syllable
+ - $ $ python myword.py syllable -d "|" one_line.txt one_line.syllable
+ 
+ <ins> **Word segmentation** </ins>  
+ 
+ - $ python myword.py word -h
+ - $ python myword.py word one_line.txt one_line.word
+ - $ python myword.py word -d "|" one_line.txt one_line.word
+ - $ python myword.py word --unigram_word_bin ./unigram-word.bin --bigram_word_bin ./bigram-word.bin -d "/" one_line.txt one_line.word
+ 
+ <ins> **Phrase segmentation** </ins>  
+ 
+ 
  
 ## Contributors
  
