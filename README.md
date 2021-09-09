@@ -820,6 +820,7 @@ myWord Corpus ကို သေသေချာချာ develop လုပ်ဖ�
 - [ ] adding sub_word unit for NMT
 - [ ] upload Word Segmentation Guideline for Burmese (Myanmar language)
 - [ ] automatic spelling checking running on myWord corpus
+- [ ] adding Beam decoding
 
 ## License
 
