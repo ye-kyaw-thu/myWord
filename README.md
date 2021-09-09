@@ -904,6 +904,7 @@ myWord Corpus ကို သေသေချာချာ develop လုပ်ဖ�
  
 ## To Do
  
+- [ ] writing brief English README file
 - [ ] adding sub_word unit for NMT
 - [ ] upload Word Segmentation Guideline for Burmese (Myanmar language)
 - [ ] automatic spelling checking running on myWord corpus
