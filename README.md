@@ -60,7 +60,7 @@ $ cat ./test.syllable
  
 ## Theory: Word Segmentation with Viterbi Algorithm
 
-လက်ရှိ ဗားရှင်း myWord ရဲ့ word segmentation လုပ်ပုံကတော့ လက်နဲ့ စာလုံးတစ်လုံးချင်းစီ သေသေချာချာ ဖြတ်ထားတဲ့ စာကြောင်းရေ ၅သိန်းကျော်၊ စာလုံးရေ ၁၂သန်းကျော်ရှိတဲ့ training corpus ကနေ ပထမဆုံး ngram အဘိဓာန်နှစ်ခု (unigram, bigram) ကို ကြိုတင်တည်ဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့  decoding လုပ်တဲ့ approach ကို အသုံးပြုထားပါတယ်။ နည်းနည်း အသေးစိတ် ဖြည့်ပြောရရင် input ဝင်လာတဲ့ စာကြောင်းရဲ့ character တစ်လုံးချင်းစီကို unigram, bigram မော်ဒယ်နှစ်ခုနဲ့ score လုပ်သွားပြီးတော့၊ အဖြစ်နိုင်ဆုံး စာလုံးတွဲ ကို Viterbi algorithm ကိုသုံးပြီးတော့ ရွေးတဲ့ နည်းလမ်းပါ။ 
+လက်ရှိ ဗားရှင်း myWord ရဲ့ word segmentation လုပ်ပုံကတော့ လက်နဲ့ စာလုံးတစ်လုံးချင်းစီ သေသေချာချာ ဖြတ်ထားတဲ့ စာကြောင်းရေ ၅သိန်းကျော်၊ စာလုံးရေ ၁၂သန်းကျော်ရှိတဲ့ training corpus ကနေ ပထမဆုံး ngram အဘိဓာန်နှစ်ခု (unigram, bigram) ကို ကြိုတင်တည်ဆောက်ထားပြီးတော့ Viterbi algorithm နဲ့  decoding လုပ်တဲ့ approach ကို အသုံးပြုထားပါတယ်။ နည်းနည်း အသေးစိတ် ဖြည့်ပြောရရင် input ဝင်လာတဲ့ စာကြောင်းရဲ့ character တစ်လုံးချင်းစီကို bigram, unigram မော်ဒယ်နှစ်ခုနဲ့ score လုပ်သွားပြီးတော့၊ အဖြစ်နိုင်ဆုံး စာလုံးတွဲ ကို Viterbi algorithm ကိုသုံးပြီးတော့ ရွေးတဲ့ နည်းလမ်းပါ။ Score လုပ်တဲ့အခါမှာ အရင်ဆုံး bigram အဘိဓာန်မှာ ရှိရင် အဲဒီ Probability ကို ယူပြီးတော့၊ bigram အဘိဓာန်မှာ အဲဒီ စာလုံးတွဲက ရှာမတွေ့ရင်တော့ unigram အဘိဓာန်က probability ကို ယူပါတယ်။ 
 
 xxx draft theory explanation  
 
