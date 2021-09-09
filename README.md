@@ -3,6 +3,7 @@ syllable, word, sub_word and phrase segmenter for Burmese (Myanmar language)
 (Plan to release soon & please wait...)   
 
 - [Introduction](#Introduction)  
+  - [Features](#Features)   
 - [Rule: Syllable Segmentation with Regular Expression](#Rule-Syllable-Segmentation-with-Regular-Expression)  
 - [Syllable Segmentation with "myWord" Segmentation Tool](#Syllable-Segmentation-with-myWord-Segmentation-Tool)  
 - [Theory: Word Segmentation with Viterbi Algorithm](#Theory-Word-Segmentation-with-Viterbi-Algorithm)  
