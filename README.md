@@ -808,10 +808,21 @@ Bound Accuracy: 97.60% (531488/544530)
  
  <ins> **ngram dictionary building for word segmentation** </ins>
  
+ - $ python myword.py build_dict -h
+ - $ python ./myword.py build_dict ./corpus2.1k
+- $ python ./myword.py build_dict --unigram_word_txt unigram-word.txt --bigram_word_txt bigram-word.txt --unigram_word_bin unigram-word.bin --bigram_word_bin bigram-word.bin ./corpus2.1k
+
  <ins> **training for phrase segmentation** </ins>
+
+ - $ python myword.py train_phrase -h
+ - $ python ./myword.py train_phrase -l 2 -t 0.1 -f 3 --unigram_phrase_txt unigram.l2.t0.1f3.txt --bigram_phrase_txt bigram.l2.t0.1f3.txt --unigram_phrase_bin unigram.l2.t0.1f3.bin --bigram_phrase_bin bigram.l2.t0.1f3.bin ./corpus.txt ./corpus.l2t0.1f3.phrase
+ - $ python ./myword.py train_phrase -l 2 -t 0.1 -f 2  ./corpus2.1k ./corpus2.1k.l2t0.1f2.phrase
  
  <ins> **Unsupervised segmentation experiment with npmi_train option** </ins>
- 
+
+ - $ python myword.py npmi_train -h
+ - $ python ./myword.py npmi_train -lr "1,2" -tr "0.1,0.1" -fr "2,3" ./mama_wawa_poem.txt
+
  
 ## Contributors
  
