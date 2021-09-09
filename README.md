@@ -2,12 +2,15 @@
 syllable, word and phrase segmenter for Burmese (Myanmar language)  
 (Plan to release soon & please wait...)   
 
-ဗမာစာ စာလုံးတွေကို ပေါ့ပေါ့ပါးပါးနဲ့ ဖြတ်ပေးနိုင်ပြီး developer တွေက လွယ်လွယ်ကူကူ ယူသုံးနိုင်တဲ့ ပြီးတော့လည်း မြန်မြန်ဆန်ဆန်နဲ့ ကိုယ့်စက်ထဲမှာ extend လုပ်နိုင်တဲ့ "syllable, word, phrase segmentation" လုပ်ပေးနိုင်တဲ့ segmentation tool က ဒီနေ့အထိ မရှိသေးဘူးလို့ နားလည်ထားတယ်။ အဲဒီ ကွက်လပ်ကိုဖြည့်နိုင်ဖို့ရည်ရွယ်ပြီးတော့ myWord ကို R&D လုပ်ခဲ့ပါတယ်။  
+[Introduction](#Introduction)
+[Rule: Syllable Segmentation with Regular Expression](#Rule: Syllable Segmentation with Regular Expression)
 
-<del> အားလုံး ပြီးစီးနေပေမဲ့ coding မှာ comment တွေ လိုက်ဖြည့်ဖို့နဲ့ final evaluation လုပ်ဖို့ကျန်နေသေးတာနဲ့ ပြီးတော့တခြား အလုပ်တွေနဲ့မအားတာနဲ့ မတင်ပေးနိုင်သေးဘူး ဖြစ်နေတယ်...  </del>
-ဒီတရက် နှစ်ရက်အတွင်း တင်ပေးနိုင်ပါလိမ့်မယ်....
+## Introduction
 
-Note: WAT2021 Machine Translation Share Task အလုပ်မှာ word segmentation လုပ်ဖို့အတွက် myWord ကိုသုံးထားတဲ့အတွက် စာတမ်းထဲမှာ link ထည့်ပေးလိုက်နိုင်ဖို့အတွက် repository ကို အရင်ဆောက်ထားလိုက်တာ။ ဒီလထဲမှာ release လုပ်ပေးနိုင်အောင် အချိန်လုမယ်...
+မြန်မာစာ စာလုံးတွေကို ပေါ့ပေါ့ပါးပါးနဲ့ မြန်မြန်ဆန်ဆန် ဖြတ်ပေးနိုင်ပြီး၊ library တွေ အများကြီးကိုလည်း မှီမနေပဲ Developer တွေက လွယ်လွယ်ကူကူ embeding လုပ်နိုင်ပြီးတော့ ကိုယ့်ဒေတာနဲ့ကိုယ်လည်း extend လုပ်နိုင်တဲ့ word segmentation tool က ဒီနေ့အထိ မရှိသေးဘူးလို့ နားလည်ထားတယ်။ အဲဒီ ကွက်လပ်ကိုဖြည့်နိုင်ဖို့ရည်ရွယ်ပြီးတော့ myWord ကို R&D လုပ်ခဲ့ပြီး release လုပ်ပေးလိုက်ပါတယ်။  
+
+myWord Segmentation Tool ကို သုံးပြီးတော့ မြန်မာစာကြောင်းတွေကို "syllable unit", "word unit", "phrase unit" တွေ အဖြစ် ဖြတ်ပေးတဲ့ ပရိုဂရမ်ပါ။ NLP preprocessing/post-editing အလုပ်တွေ၊ မြန်မာစာနဲ့ ပတ်သက်တဲ့ ဒေတာတွေကို စာလုံးဖြတ်ပြီး model ဆောက်ဖို့အတွက် အသုံးဝင်ပါလိမ့်မယ်။  
+
 
 Draft Writing ...  
 
