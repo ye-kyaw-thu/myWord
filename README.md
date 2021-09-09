@@ -7,6 +7,19 @@ syllable, word and phrase segmenter for Burmese (Myanmar language)
 - [Syllable Segmentation with "myWord" Segmentation Tool](#Syllable-Segmentation-with-myWord-Segmentation-Tool)  
 - [Theory: Word Segmentation with Viterbi Algorithm](#Theory-Word-Segmentation-with-Viterbi-Algorithm)  
 - [Building Unigram, Bigram Dictionaries for Word Unit](#Building-Unigram-Bigram-Dictionaries-for-Word-Unit)  
+- [Word Segmentation with "myWord" Segmentation Tool](#Word-Segmentation-with-myWord-Segmentation-Tool)  
+- [Theory: Unsupervised Phrase Segmentation with NPMI](#Theory-Unsupervised Phrase-Segmentation-with-NPMI)  
+- [Phrase Segmentation with "myWord" Segmentation Tool](#Phrase Segmentation with "myWord" Segmentation Tool)  
+- [Command-line Help](#Command-line-Help)  
+- [Introduction to "npmi_train" Option](#Introduction-to-npmi_train-Option)  
+- [Dictionaries for Word and Phrase Segmentation](#Dictionaries-for-Word-and-Phrase-Segmentation)  
+- [Evaluation of myWord for "Word Segmentation"](#Evaluation-of-myWord-for-Word Segmentation)  
+- [Commands of myWord Segmentation Tool](#Commands-of-myWord-Segmentation-Tool)  
+- [Contributors](#Contributors)  
+- [To Do](#To-Do)  
+- [License](#License)  
+- [Citation](#Citation)  
+- [Reference](#Reference)  
 
 ## Introduction
 
@@ -682,7 +695,6 @@ Link: [https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/mama_wawa-e
 [https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md](https://github.com/ye-kyaw-thu/myWord/blob/main/documentation/npmi_train-option-test-with-1k-corpus.md)    
 
  
- 
 ## Dictionaries for Word and Phrase Segmentation
  
 ### Version 1.0
@@ -789,7 +801,7 @@ F-meas: 88.08%
 Bound Accuracy: 97.60% (531488/544530)
 ```
 
-## Commands myWord Segmentation Tool
+## Commands of myWord Segmentation Tool
  
 အထက်မှာ syllable, word, phrase segmentation တွေနဲ့ ပတ်သက်ပြီး အသေးစိတ် ရှင်းပြခဲ့ပြီးသား ဖြစ်ပေမဲ့ advanced user တွေ၊ သုံးဖူးပြီးသားသူတွေက ရုတ်တရက် ကောက်သုံးတဲ့အခါမှာ အဆင်ပြေနိုင်စေဖို့အတွက် output တွေ ပြပေးမနေတော့ပဲ run ရမယ့် command တွေကိုပဲ ဒီနေရာမှ စုပြီးချရေးပေးထားပါတယ်။    
  
