@@ -42,14 +42,16 @@ $bash ./combine-all-splitted-files.sh လိုမျိုး run ပြီး�
 
 ## Do This
 
-Just run this shell script.
+And thus, after you downloaded or git clone...  
+Just run this shell script.  
+```
 $ ./combine-all-splitted-files.sh 
+```
 
-You will get the combined ngram dictionaries:
+You will get the combined ngram dictionaries:  
+
+```
 $ ls
 bigram-phrase.bin  bigram-phrase.txt  bigram-word.bin  bigram-word.txt
-
-
-
-
+```
 
