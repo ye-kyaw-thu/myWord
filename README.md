@@ -16,6 +16,7 @@ syllable, word, sub_word and phrase segmenter for Burmese (Myanmar language)
 - [Dictionaries for Word and Phrase Segmentation](#Dictionaries-for-Word-and-Phrase-Segmentation)  
   - [for Word Segmentation](#for-Word-Segmentation) 
   - [for Phrase Segmentation](#for-Phrase-Segmentation)
+- [Files and Folder Information](#Files-and-Folder-Information)
 - [Evaluation of myWord for "Word Segmentation"](#Evaluation-of-myWord-for-Word-Segmentation)  
   - [Closed Test](#Closed-Test)  
   - [Open Test](#Open-Test)  
@@ -730,11 +731,6 @@ Word အတွက်ရော Phrase အတွက်ရော default ဆော�
 ⚠️ Segmentation လုပ်ဖို့အတွက်က Binary dictionary တွေကိုပဲ myWord Segmentation Tool က သုံးပါတယ်။  
 ☝ myWord Segmentation Tool ကို ကိုယ့်စက်ထဲမှာ download လုပ်ပြီးလို့ run မလုပ်ခင်မှာ combine-all-splitted-files.sh ကို အရင် run ဖို့ မမေ့ပါနဲ့။  
   
-## Evaluation of myWord for "Word Segmentation"
- 
-လက်ရှိ release မလုပ်ခင် စမ်းနေတဲ့ ngram dictionary တွေနဲ့ evaluation လုပ်ထားတဲ့ ရလဒ်တွေကိုလည်း လေ့လာလို့ ရအောင် README ဖိုင်မှာ တင်ပေးထားလိုက်ပါမယ်။
-(အချိန်ရခဲ့ရင်တော့ ngram အဘိဓာန်တွေကို cleaning ထပ်လုပ်ပြီး တင်ဖို့ ရည်ရွယ်ထားပါတယ်။ အဲဒါဆိုရင် ရလဒ်တွေက လက်ရှိ ထက်တောင် ပိုကောင်းလာနိုင်ပါတယ်)
-  
 ## Files and Folder Information
 
 Coding ကို ဝင်ပြင်ချင်တဲ့ သူများအတွက်က...  
@@ -749,6 +745,11 @@ Coding ကို ဝင်ပြင်ချင်တဲ့ သူများ�
   
   - dict_ver1/ (myWord corpus ကို သုံးပြီးတော့ ဆောက်ထားတဲ့ ngram dictionary version.1.0 ကို သိမ်းထားတဲ့ folder)
   - documentation/ (README ဖိုင်မှာ သုံးထားတဲ့ figures တွေ, experiment/running log files တချို့)
+  
+## Evaluation of myWord for "Word Segmentation"
+ 
+လက်ရှိ release မလုပ်ခင် စမ်းနေတဲ့ ngram dictionary တွေနဲ့ evaluation လုပ်ထားတဲ့ ရလဒ်တွေကိုလည်း လေ့လာလို့ ရအောင် README ဖိုင်မှာ တင်ပေးထားလိုက်ပါမယ်။
+(အချိန်ရခဲ့ရင်တော့ ngram အဘိဓာန်တွေကို cleaning ထပ်လုပ်ပြီး တင်ဖို့ ရည်ရွယ်ထားပါတယ်။ အဲဒါဆိုရင် ရလဒ်တွေက လက်ရှိ ထက်တောင် ပိုကောင်းလာနိုင်ပါတယ်)
   
  
 ### Closed Test
