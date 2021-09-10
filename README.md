@@ -730,6 +730,7 @@ Word အတွက်ရော Phrase အတွက်ရော default ဆော�
 
 ⚠️ Segmentation လုပ်ဖို့အတွက်က Binary dictionary တွေကိုပဲ myWord Segmentation Tool က သုံးပါတယ်။  
 ☝ myWord Segmentation Tool ကို ကိုယ့်စက်ထဲမှာ download လုပ်ပြီးလို့ run မလုပ်ခင်မှာ combine-all-splitted-files.sh ကို အရင် run ဖို့ မမေ့ပါနဲ့။  
+  (split-lt-24mb.sh က ဖိုင်တွေကို small ဖိုင်တွေအဖြစ်ခွဲဖို့အတွက် run ခဲ့တဲ့ script, ဒီ ဖိုင်က run စရာ မလိုဘူး)  
   
 ## Files and Folder Information
 
