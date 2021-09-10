@@ -734,6 +734,22 @@ Word အတွက်ရော Phrase အတွက်ရော default ဆော�
  
 လက်ရှိ release မလုပ်ခင် စမ်းနေတဲ့ ngram dictionary တွေနဲ့ evaluation လုပ်ထားတဲ့ ရလဒ်တွေကိုလည်း လေ့လာလို့ ရအောင် README ဖိုင်မှာ တင်ပေးထားလိုက်ပါမယ်။
 (အချိန်ရခဲ့ရင်တော့ ngram အဘိဓာန်တွေကို cleaning ထပ်လုပ်ပြီး တင်ဖို့ ရည်ရွယ်ထားပါတယ်။ အဲဒါဆိုရင် ရလဒ်တွေက လက်ရှိ ထက်တောင် ပိုကောင်းလာနိုင်ပါတယ်)
+  
+## Files and Folder Information
+
+Coding ကို ဝင်ပြင်ချင်တဲ့ သူများအတွက်က...  
+  
+  - myword.py (main program of myWord Segmentation Tool)
+  - phrase_segment.py (module for phrase segmentation and training with NPMI Algorithm)
+  - syl_segment.py (module for syllable segmentation)
+  - word_dict.py (module for word unit ngram dictionary building)
+  - word_segment.py (module for word segmentation with Viterbi Algorithm)
+  
+လက်ရှိ Folder တွေနဲ့ ပတ်သက်ပြီး ပြောပြရရင်...  
+  
+  - dict_ver1/ (myWord corpus ကို သုံးပြီးတော့ ဆောက်ထားတဲ့ ngram dictionary version.1.0 ကို သိမ်းထားတဲ့ folder)
+  - documentation/ (README ဖိုင်မှာ သုံးထားတဲ့ figures တွေ, experiment/running log files တချို့)
+  
  
 ### Closed Test
 
