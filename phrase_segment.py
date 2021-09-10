@@ -1,6 +1,6 @@
 """
 This code is updated version of "http://chasen.org/~daiti-m/diary/misc/phraser.py" by Ye Kyaw Thu, LST, NECTEC, Thailand.
-Last Updated: 5 Sept 2021
+Last Updated: 10 Sept 2021
 
  ### Experiment Note by Ye
  parameters for NPMI, -l {1..2} -t 0.1 -f {1..3} (ဆိုရင် phrase level ကောင်းကောင်း အလုပ်လုပ်ပေးတယ်)
@@ -11,6 +11,10 @@ Statistically recognize long phrases with Normalized PMI: http://chasen.org/~dai
 https://courses.engr.illinois.edu/cs440/fa2018/lectures/lect36.html
 https://courses.engr.illinois.edu/cs447/fa2018/Slides/Lecture17HO.pdf
 https://en.wikipedia.org/wiki/Pointwise_mutual_information
+https://stackoverflow.com/questions/6589814/what-is-the-difference-between-dict-and-collections-defaultdict
+https://stackoverflow.com/questions/4406501/change-the-name-of-a-key-in-dictionary
+https://stackoverflow.com/questions/47606995/python3-change-dictionary-key-from-string-to-tuple-of-strings
+
 """
 
 import os
@@ -71,22 +75,26 @@ def parse_write (file, phrases, output):
                 words = line.rstrip('\n').split()
                 if len(words) > 0:
                     sentence = collocate (words, phrases)
+                    #print("sentence:", sentence)
                     oh.write (' '.join (sentence) + '\n')
     return output
 
 
-# for Myanmar language, default threshold=0.2 and default minfreq=3 is best with "corpus2" training corpus
+# for Myanmar language, default threshold=0.2 and default minfreq=5 is best with "corpus2" training corpus
 # for Japanese language, threshold=0.1 and minfreq=1 set by researcher Daichi Mochihashi.
 def compute_phrase (unigram, bigram, threshold, minfreq):
     N = sum (list(unigram.values()))
     phrases = {}
+    #print(bigram.items())
     for bi,freq in bigram.items():
         if freq >= minfreq:
             v = bi[0]; w = bi[1]
+            # print("N:", N, "v:", v, "w:", w, "unigram[v]:", unigram[v], "unigram[w]:", unigram[w])
             npmi = (log(N) + log(freq) - log(unigram[v]) - log(unigram[w])) \
                     / (log(N) - log(freq))
             if npmi > threshold:
                 phrases[bi] = npmi
+    #print("phrases: ", phrases)
     return phrases
 
 
@@ -106,11 +114,20 @@ def count_bigram (file, bigram_dict_txt, bigram_dict_bin):
 
     fileBI_txt.close()
     
+    #new_bigram = {} # got error
+    new_bigram = defaultdict(int)
+    # removed "_" for phrase option or phrase segmentation
+    for key, value in bigram.items():
+        keyi1 = key[0].replace('_', '')
+        keyi2 = key[1].replace('_', '')
+        new_bigram[(keyi1,keyi2)]  = value
+    
     # write binary dictionary
     fileBI_bin = open(bigram_dict_bin, "wb")
-    pickle.dump(bigram, fileBI_bin)
-
-    fileBI_bin.close()            
+    pickle.dump(new_bigram, fileBI_bin)
+    fileBI_bin.close()
+    new_bigram.clear()
+                
     return bigram
 
 
@@ -126,11 +143,17 @@ def count_unigram (file, unigram_dict_txt, unigram_dict_bin):
         fileUNI_txt.write (str(key)+'\t'+str(value)+'\n')
         
     fileUNI_txt.close()
-        
+    
+    #new_unigram = {}, got error
+    new_unigram = defaultdict(int)
+    # removed "_" for phrase option or phrase segmentation       
+    new_unigram = { key.replace('_', ''): value for key, value in unigram.items() }
     # write binary dictionary
-    fileUNI_bin = open(unigram_dict_bin, "wb")    
-    pickle.dump(unigram, fileUNI_bin)
-    fileUNI_bin.close()        
+    fileUNI_bin = open(unigram_dict_bin, "wb") 
+    pickle.dump(new_unigram, fileUNI_bin)
+
+    fileUNI_bin.close()      
+    #new_unigram.clear()  
     
     return unigram
 
@@ -170,6 +193,7 @@ def read_dict (fileDICT):
         with open(fileDICT, 'rb') as input_file:
             dictionary = pickle.load(input_file)
             input_file.close()
+            
     except FileNotFoundError:
         print('Dictionary file', fileDICT, ' not found!')
     return dictionary
@@ -182,6 +206,7 @@ def phrase_segmentation(threshold, minfreq, uni_dict_bin, bi_dict_bin, input, ou
     eprint ('phrase segmentation...')
     eprint ('- read unigram dictionary')
     unigram = read_dict(uni_dict_bin)
+    
     #print(unigram)
     eprint ('- read bigram dictionary')    
     bigram = read_dict(bi_dict_bin)
@@ -189,7 +214,6 @@ def phrase_segmentation(threshold, minfreq, uni_dict_bin, bi_dict_bin, input, ou
     eprint ('- computing phrases..')    
     phrases = compute_phrase (unigram, bigram, threshold, minfreq)
     #print(phrases)
-    #exit()
         # save intermediate file
     fileout = output
 
@@ -200,4 +224,3 @@ def phrase_segmentation(threshold, minfreq, uni_dict_bin, bi_dict_bin, input, ou
     filein = output    
     eprint ('done.')
     
-
