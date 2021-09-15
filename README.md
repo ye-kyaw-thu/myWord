@@ -752,7 +752,7 @@ myWord Segmentation Tool ကို download လုပ်ပြီးတာနဲ
   
   - dict_ver1/ (myWord corpus ကို သုံးပြီးတော့ ဆောက်ထားတဲ့ ngram dictionary version.1.0 ကို သိမ်းထားတဲ့ folder)
   - documentation/ (README ဖိုင်မှာ သုံးထားတဲ့ figures တွေ, experiment/running log files တချို့)
-  - tools/ (ဒီ folder အောက်မှာတော့ preprocessing တို့ myWord Segmentation Tool ကို run ဖို့အတွက် ပြင်ရတာနဲ့ ဆိုင်တဲ့ script တွေကို ထည့်ပေးထားပါတယ်)  
+  - tools/ (ဒီ folder အောက်မှာတော့ preprocessing အလုပ်တို့၊ myWord Segmentation Tool ကို run ဖို့အတွက် ပြင်ရတာနဲ့ ဆိုင်တဲ့ script တွေ၊ input ဖိုင်အပေါ်ကို မူတည်ပြီး segmentation လုပ်ပြီးသွားတဲ့အခါမှာ ပိုနေတဲ့ space တွေရှိရင် space cleaning လုပ်ရတာမျိုးလည်း ရှိတတ်လို့... အသုံးဝင်နိုင်မယ့် script တွေကို ထည့်ပေးထားပါတယ်)   
   
 ## Evaluation of myWord for "Word Segmentation"
  
