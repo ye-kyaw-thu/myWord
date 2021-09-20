@@ -950,6 +950,7 @@ myWord Corpus ကို သေသေချာချာ develop လုပ်ဖ�
 - [ ] adding Beam decoding
 - [ ] evaluation tool for segmentation?!
 - [ ] dealing punctuation characters
+- [ ] -z,  --compress (enable compression of output e.g. zlib)  
 
 ## License
 
