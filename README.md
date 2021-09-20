@@ -952,6 +952,7 @@ myWord Corpus ကို သေသေချာချာ develop လုပ်ဖ�
 - [ ] dealing punctuation characters
 - [ ] -z,  --compress (enable compression of output e.g. zlib)  
 - [ ] -s,  --split (Split segmented output file into small blocks)
+- [ ] plan to support input with "folder" and "stdin"  
 
 ## License
 
