@@ -951,6 +951,7 @@ myWord Corpus ကို သေသေချာချာ develop လုပ်ဖ�
 - [ ] evaluation tool for segmentation?!
 - [ ] dealing punctuation characters
 - [ ] -z,  --compress (enable compression of output e.g. zlib)  
+- [ ] -s,  --split (Split segmented output file into small blocks)
 
 ## License
 
