@@ -79,7 +79,7 @@ $ cat test.txt
 မန္တလေးမှာဒေါ်အောင်ဆန်းစုကြည်မိန့်ခွန်းပြောမယ်တဲ့။
 ```
 
-syllable segmentation လုပ်ဖို့အတွက်က command line argument ကို syllable လို့ ပေးပြီးနောက် <input-file> နဲ့ <output-file> တွေရဲ့ နာမည်တွေကို ရိုက်ထည့်ပေးလိုက်ယုံပါပဲ။  
+syllable segmentation လုပ်ဖို့အတွက်က command line argument ကို syllable လို့ ပေးပြီးနောက် \<input-file\> နဲ့ \<output-file\> တွေရဲ့ နာမည်တွေကို ရိုက်ထည့်ပေးလိုက်ယုံပါပဲ။  
  
 ```console
 $ python ./myword.py syllable ./test.txt ./test.syllable
